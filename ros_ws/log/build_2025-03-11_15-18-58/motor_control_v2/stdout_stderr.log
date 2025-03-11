@@ -1,0 +1,57 @@
+[35m[1mConsolidate compiler generated dependencies of target motor_control_node[0m
+[ 12%] [32mBuilding CXX object CMakeFiles/motor_control_node.dir/src/main.cpp.o[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/motor_control_node.dir/src/serial_communication.cpp.o[0m
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/include/motor_control_v2/serial_communication.hpp:4[m[K,
+                 from [01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/src/serial_communication.cpp:1[m[K:
+[01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/src/serial_communication.cpp:[m[K In member function ‘[01m[Kvoid motor_control_v2::SerialCommunication::Implementation::initSerialPort()[m[K’:
+[01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/src/serial_communication.cpp:49:46:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%s[m[K’ expects a matching ‘[01m[Kchar*[m[K’ argument [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+   49 |             RCLCPP_INFO(node_->get_logger(), [01;35m[K"Serial port opened successfully at %s with baud rate %d"[m[K);
+      |                                              [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/src/serial_communication.cpp:49:83:[m[K [01;36m[Knote: [m[Kformat string is defined here
+   49 |             RCLCPP_INFO(node_->get_logger(), "Serial port opened successfully at [01;36m[K%s[m[K with baud rate %d");
+      |                                                                                  [01;36m[K~^[m[K
+      |                                                                                   [01;36m[K|[m[K
+      |                                                                                   [01;36m[Kchar*[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/include/motor_control_v2/serial_communication.hpp:4[m[K,
+                 from [01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/src/serial_communication.cpp:1[m[K:
+[01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/src/serial_communication.cpp:49:46:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects a matching ‘[01m[Kint[m[K’ argument [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+   49 |             RCLCPP_INFO(node_->get_logger(), [01;35m[K"Serial port opened successfully at %s with baud rate %d"[m[K);
+      |                                              [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/src/serial_communication.cpp:49:101:[m[K [01;36m[Knote: [m[Kformat string is defined here
+   49 |             RCLCPP_INFO(node_->get_logger(), "Serial port opened successfully at %s with baud rate [01;36m[K%d[m[K");
+      |                                                                                                    [01;36m[K~^[m[K
+      |                                                                                                     [01;36m[K|[m[K
+      |                                                                                                     [01;36m[Kint[m[K
+[01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/src/serial_communication.cpp:[m[K In member function ‘[01m[Kstd::vector<unsigned char, std::allocator<unsigned char> > motor_control_v2::SerialCommunication::Implementation::get_feedback_from_motor_Ms(int)[m[K’:
+[01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/src/serial_communication.cpp:102:13:[m[K [01;31m[Kerror: [m[Kreturn-statement with no value, in function returning ‘[01m[Kstd::vector<unsigned char, std::allocator<unsigned char> >[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+  102 |             [01;31m[Kreturn[m[K;
+      |             [01;31m[K^~~~~~[m[K
+[01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/src/serial_communication.cpp:109:13:[m[K [01;31m[Kerror: [m[Kreturn-statement with no value, in function returning ‘[01m[Kstd::vector<unsigned char, std::allocator<unsigned char> >[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+  109 |             [01;31m[Kreturn[m[K;
+      |             [01;31m[K^~~~~~[m[K
+gmake[2]: *** [CMakeFiles/motor_control_node.dir/build.make:104：CMakeFiles/motor_control_node.dir/src/serial_communication.cpp.o] 错误 1
+gmake[2]: *** 正在等待未完成的任务....
+gmake[1]: *** [CMakeFiles/Makefile2:137：CMakeFiles/motor_control_node.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

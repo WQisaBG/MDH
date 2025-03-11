@@ -1,0 +1,261 @@
+[0.017s] Invoking command in '/home/abc/MDH/ros_ws/build/motor_control_command_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/abc/MDH/ros_ws/src/internal_msgs/motor_control_command_msgs -DCMAKE_INSTALL_PREFIX=/home/abc/MDH/ros_ws/install/motor_control_command_msgs
+[0.147s] -- The C compiler identification is GNU 11.4.0
+[0.214s] -- The CXX compiler identification is GNU 11.4.0
+[0.226s] -- Detecting C compiler ABI info
+[0.307s] -- Detecting C compiler ABI info - done
+[0.314s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.314s] -- Detecting C compile features
+[0.314s] -- Detecting C compile features - done
+[0.316s] -- Detecting CXX compiler ABI info
+[0.407s] -- Detecting CXX compiler ABI info - done
+[0.413s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.413s] -- Detecting CXX compile features
+[0.414s] -- Detecting CXX compile features - done
+[0.434s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.675s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.801s] -- Found builtin_interfaces: 1.2.1 (/opt/ros/humble/share/builtin_interfaces/cmake)
+[0.849s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.858s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.873s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.899s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.918s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.942s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[1.227s] -- Found ament_cmake_cppcheck: 0.12.11 (/opt/ros/humble/share/ament_cmake_cppcheck/cmake)
+[1.231s] -- Found ament_cmake_cpplint: 0.12.11 (/opt/ros/humble/share/ament_cmake_cpplint/cmake)
+[1.233s] -- Found ament_cmake_uncrustify: 0.12.11 (/opt/ros/humble/share/ament_cmake_uncrustify/cmake)
+[1.236s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[1.540s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.721s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.751s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[1.754s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[1.796s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[1.796s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.796s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[1.796s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[1.819s] -- Found PythonExtra: .so  
+[1.859s] -- Found ament_cmake_flake8: 0.12.11 (/opt/ros/humble/share/ament_cmake_flake8/cmake)
+[1.861s] -- Found ament_cmake_pep257: 0.12.11 (/opt/ros/humble/share/ament_cmake_pep257/cmake)
+[1.879s] -- Configuring done
+[1.925s] -- Generating done
+[1.940s] -- Build files have been written to: /home/abc/MDH/ros_ws/build/motor_control_command_msgs
+[1.951s] Invoked command in '/home/abc/MDH/ros_ws/build/motor_control_command_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/abc/MDH/ros_ws/src/internal_msgs/motor_control_command_msgs -DCMAKE_INSTALL_PREFIX=/home/abc/MDH/ros_ws/install/motor_control_command_msgs
+[1.953s] Invoking command in '/home/abc/MDH/ros_ws/build/motor_control_command_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/abc/MDH/ros_ws/build/motor_control_command_msgs -- -j8 -l8
+[2.005s] [  2%] [34m[1mGenerating C code for ROS interfaces[0m
+[2.016s] [  5%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[2.027s] [  5%] Built target ament_cmake_python_copy_motor_control_command_msgs
+[2.417s] running egg_info
+[2.418s] creating motor_control_command_msgs.egg-info
+[2.418s] writing motor_control_command_msgs.egg-info/PKG-INFO
+[2.419s] writing dependency_links to motor_control_command_msgs.egg-info/dependency_links.txt
+[2.419s] writing top-level names to motor_control_command_msgs.egg-info/top_level.txt
+[2.419s] writing manifest file 'motor_control_command_msgs.egg-info/SOURCES.txt'
+[2.422s] reading manifest file 'motor_control_command_msgs.egg-info/SOURCES.txt'
+[2.423s] writing manifest file 'motor_control_command_msgs.egg-info/SOURCES.txt'
+[2.479s] [  5%] Built target ament_cmake_python_build_motor_control_command_msgs_egg
+[2.586s] [  5%] Built target motor_control_command_msgs__cpp
+[2.614s] [ 10%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[2.614s] [ 10%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[2.629s] [ 12%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[2.643s] [ 15%] [32mBuilding C object CMakeFiles/motor_control_command_msgs__rosidl_generator_c.dir/rosidl_generator_c/motor_control_command_msgs/msg/detail/motor__functions.c.o[0m
+[2.661s] [ 17%] [32mBuilding C object CMakeFiles/motor_control_command_msgs__rosidl_generator_c.dir/rosidl_generator_c/motor_control_command_msgs/msg/detail/motor_control_command__functions.c.o[0m
+[2.904s] [ 20%] [32m[1mLinking C shared library libmotor_control_command_msgs__rosidl_generator_c.so[0m
+[3.078s] [ 20%] Built target motor_control_command_msgs__rosidl_generator_c
+[3.105s] [ 23%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[3.110s] [ 25%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[3.121s] [ 28%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[3.547s] [ 30%] [32mBuilding CXX object CMakeFiles/motor_control_command_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/motor_control_command_msgs/msg/detail/dds_fastrtps/motor__type_support.cpp.o[0m
+[3.549s] [ 33%] [32mBuilding CXX object CMakeFiles/motor_control_command_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/motor_control_command_msgs/msg/detail/dds_fastrtps/motor_control_command__type_support.cpp.o[0m
+[3.572s] [ 35%] [32mBuilding CXX object CMakeFiles/motor_control_command_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/motor_control_command_msgs/msg/motor__type_support.cpp.o[0m
+[3.581s] [ 38%] [32mBuilding CXX object CMakeFiles/motor_control_command_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/motor_control_command_msgs/msg/motor_control_command__type_support.cpp.o[0m
+[3.623s] [ 41%] [32mBuilding CXX object CMakeFiles/motor_control_command_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/motor_control_command_msgs/msg/detail/motor__type_support.cpp.o[0m
+[4.336s] [ 43%] [32mBuilding C object CMakeFiles/motor_control_command_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/motor_control_command_msgs/msg/detail/motor__type_support.c.o[0m
+[4.337s] [ 46%] [32mBuilding CXX object CMakeFiles/motor_control_command_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/motor_control_command_msgs/msg/motor__type_support.cpp.o[0m
+[4.449s] [ 48%] [32mBuilding CXX object CMakeFiles/motor_control_command_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/motor_control_command_msgs/msg/motor_control_command__type_support.cpp.o[0m
+[4.491s] [ 51%] [32mBuilding C object CMakeFiles/motor_control_command_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/motor_control_command_msgs/msg/detail/motor_control_command__type_support.c.o[0m
+[4.510s] [ 53%] [32mBuilding CXX object CMakeFiles/motor_control_command_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/motor_control_command_msgs/msg/detail/motor__type_support_c.cpp.o[0m
+[4.555s] [ 56%] [32m[1mLinking CXX shared library libmotor_control_command_msgs__rosidl_typesupport_c.so[0m
+[4.702s] [ 58%] [32mBuilding CXX object CMakeFiles/motor_control_command_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/motor_control_command_msgs/msg/detail/motor_control_command__type_support.cpp.o[0m
+[4.741s] [ 61%] [32m[1mLinking C shared library libmotor_control_command_msgs__rosidl_typesupport_introspection_c.so[0m
+[4.777s] [ 64%] [32m[1mLinking CXX shared library libmotor_control_command_msgs__rosidl_typesupport_cpp.so[0m
+[4.945s] [ 64%] Built target motor_control_command_msgs__rosidl_typesupport_c
+[4.998s] [ 66%] [32mBuilding CXX object CMakeFiles/motor_control_command_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/motor_control_command_msgs/msg/detail/motor_control_command__type_support_c.cpp.o[0m
+[5.004s] [ 66%] Built target motor_control_command_msgs__rosidl_typesupport_introspection_c
+[5.056s] [ 66%] Built target motor_control_command_msgs__rosidl_typesupport_cpp
+[5.461s] [ 69%] [32m[1mLinking CXX shared library libmotor_control_command_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[5.756s] [ 69%] Built target motor_control_command_msgs__rosidl_typesupport_fastrtps_cpp
+[6.112s] [ 71%] [32m[1mLinking CXX shared library libmotor_control_command_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[6.114s] [ 74%] [32m[1mLinking CXX shared library libmotor_control_command_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[6.315s] [ 74%] Built target motor_control_command_msgs__rosidl_typesupport_fastrtps_c
+[6.327s] [ 74%] Built target motor_control_command_msgs__rosidl_typesupport_introspection_cpp
+[6.368s] [ 74%] Built target motor_control_command_msgs
+[6.410s] [ 76%] [34m[1mGenerating Python code for ROS interfaces[0m
+[7.341s] [ 76%] Built target motor_control_command_msgs__py
+[7.376s] [ 82%] [32mBuilding C object CMakeFiles/motor_control_command_msgs__rosidl_generator_py.dir/rosidl_generator_py/motor_control_command_msgs/msg/_motor_s.c.o[0m
+[7.376s] [ 82%] [32mBuilding C object CMakeFiles/motor_control_command_msgs__rosidl_generator_py.dir/rosidl_generator_py/motor_control_command_msgs/msg/_motor_control_command_s.c.o[0m
+[7.667s] [ 84%] [32m[1mLinking C shared library rosidl_generator_py/motor_control_command_msgs/libmotor_control_command_msgs__rosidl_generator_py.so[0m
+[7.773s] [ 84%] Built target motor_control_command_msgs__rosidl_generator_py
+[7.832s] [ 87%] [32mBuilding C object CMakeFiles/motor_control_command_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/motor_control_command_msgs/_motor_control_command_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[7.837s] [ 89%] [32mBuilding C object CMakeFiles/motor_control_command_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/motor_control_command_msgs/_motor_control_command_msgs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[7.839s] [ 92%] [32mBuilding C object CMakeFiles/motor_control_command_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/motor_control_command_msgs/_motor_control_command_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[8.093s] [ 97%] [32m[1mLinking C shared library rosidl_generator_py/motor_control_command_msgs/motor_control_command_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[8.093s] [ 97%] [32m[1mLinking C shared library rosidl_generator_py/motor_control_command_msgs/motor_control_command_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[8.154s] [100%] [32m[1mLinking C shared library rosidl_generator_py/motor_control_command_msgs/motor_control_command_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[8.168s] [100%] Built target motor_control_command_msgs__rosidl_typesupport_introspection_c__pyext
+[8.168s] [100%] Built target motor_control_command_msgs__rosidl_typesupport_fastrtps_c__pyext
+[8.227s] [100%] Built target motor_control_command_msgs__rosidl_typesupport_c__pyext
+[8.248s] Invoked command in '/home/abc/MDH/ros_ws/build/motor_control_command_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/abc/MDH/ros_ws/build/motor_control_command_msgs -- -j8 -l8
+[8.250s] Invoking command in '/home/abc/MDH/ros_ws/build/motor_control_command_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/abc/MDH/ros_ws/build/motor_control_command_msgs
+[8.263s] -- Install configuration: ""
+[8.263s] -- Installing: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/share/ament_index/resource_index/rosidl_interfaces/motor_control_command_msgs
+[8.263s] -- Installing: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/include/motor_control_command_msgs/motor_control_command_msgs
+[8.264s] -- Installing: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/include/motor_control_command_msgs/motor_control_command_msgs/msg
+[8.264s] -- Installing: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/include/motor_control_command_msgs/motor_control_command_msgs/msg/motor_control_command.h
+[8.264s] -- Installing: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/include/motor_control_command_msgs/motor_control_command_msgs/msg/detail
+[8.264s] -- Installing: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/include/motor_control_command_msgs/motor_control_command_msgs/msg/detail/motor__functions.h
+[8.264s] -- Installing: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/include/motor_control_command_msgs/motor_control_command_msgs/msg/detail/motor_control_command__functions.h
+[8.265s] -- Installing: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/include/motor_control_command_msgs/motor_control_command_msgs/msg/detail/motor_control_command__type_support.h
+[8.265s] -- Installing: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/include/motor_control_command_msgs/motor_control_command_msgs/msg/detail/motor_control_command__struct.h
+[8.265s] -- Installing: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/include/motor_control_command_msgs/motor_control_command_msgs/msg/detail/motor__struct.h
+[8.265s] -- Installing: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/include/motor_control_command_msgs/motor_control_command_msgs/msg/detail/motor__type_support.h
+[8.265s] -- Installing: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/include/motor_control_command_msgs/motor_control_command_msgs/msg/detail/motor_control_command__functions.c
+[8.265s] -- Installing: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/include/motor_control_command_msgs/motor_control_command_msgs/msg/detail/motor__functions.c
+[8.266s] -- Installing: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/include/motor_control_command_msgs/motor_control_command_msgs/msg/rosidl_generator_c__visibility_control.h
+[8.266s] -- Installing: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/include/motor_control_command_msgs/motor_control_command_msgs/msg/motor.h
+[8.266s] -- Installing: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/share/motor_control_command_msgs/environment/library_path.sh
+[8.266s] -- Installing: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/share/motor_control_command_msgs/environment/library_path.dsv
+[8.266s] -- Installing: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/lib/libmotor_control_command_msgs__rosidl_generator_c.so
+[8.267s] -- Set runtime path of "/home/abc/MDH/ros_ws/install/motor_control_command_msgs/lib/libmotor_control_command_msgs__rosidl_generator_c.so" to ""
+[8.267s] -- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/include/motor_control_command_msgs/motor_control_command_msgs
+[8.267s] -- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/include/motor_control_command_msgs/motor_control_command_msgs/msg
+[8.267s] -- Installing: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/include/motor_control_command_msgs/motor_control_command_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[8.267s] -- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/include/motor_control_command_msgs/motor_control_command_msgs/msg/detail
+[8.267s] -- Installing: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/include/motor_control_command_msgs/motor_control_command_msgs/msg/detail/motor__rosidl_typesupport_fastrtps_c.h
+[8.268s] -- Installing: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/include/motor_control_command_msgs/motor_control_command_msgs/msg/detail/motor_control_command__rosidl_typesupport_fastrtps_c.h
+[8.268s] -- Installing: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/lib/libmotor_control_command_msgs__rosidl_typesupport_fastrtps_c.so
+[8.268s] -- Set runtime path of "/home/abc/MDH/ros_ws/install/motor_control_command_msgs/lib/libmotor_control_command_msgs__rosidl_typesupport_fastrtps_c.so" to ""
+[8.268s] -- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/include/motor_control_command_msgs/motor_control_command_msgs
+[8.268s] -- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/include/motor_control_command_msgs/motor_control_command_msgs/msg
+[8.268s] -- Installing: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/include/motor_control_command_msgs/motor_control_command_msgs/msg/motor_control_command.hpp
+[8.269s] -- Installing: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/include/motor_control_command_msgs/motor_control_command_msgs/msg/motor.hpp
+[8.269s] -- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/include/motor_control_command_msgs/motor_control_command_msgs/msg/detail
+[8.269s] -- Installing: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/include/motor_control_command_msgs/motor_control_command_msgs/msg/detail/motor_control_command__builder.hpp
+[8.269s] -- Installing: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/include/motor_control_command_msgs/motor_control_command_msgs/msg/detail/motor__type_support.hpp
+[8.269s] -- Installing: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/include/motor_control_command_msgs/motor_control_command_msgs/msg/detail/motor_control_command__traits.hpp
+[8.269s] -- Installing: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/include/motor_control_command_msgs/motor_control_command_msgs/msg/detail/motor__traits.hpp
+[8.269s] -- Installing: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/include/motor_control_command_msgs/motor_control_command_msgs/msg/detail/motor__builder.hpp
+[8.270s] -- Installing: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/include/motor_control_command_msgs/motor_control_command_msgs/msg/detail/motor__struct.hpp
+[8.270s] -- Installing: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/include/motor_control_command_msgs/motor_control_command_msgs/msg/detail/motor_control_command__type_support.hpp
+[8.270s] -- Installing: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/include/motor_control_command_msgs/motor_control_command_msgs/msg/detail/motor_control_command__struct.hpp
+[8.270s] -- Installing: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/include/motor_control_command_msgs/motor_control_command_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+[8.270s] -- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/include/motor_control_command_msgs/motor_control_command_msgs
+[8.271s] -- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/include/motor_control_command_msgs/motor_control_command_msgs/msg
+[8.271s] -- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/include/motor_control_command_msgs/motor_control_command_msgs/msg/detail
+[8.271s] -- Installing: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/include/motor_control_command_msgs/motor_control_command_msgs/msg/detail/motor__rosidl_typesupport_fastrtps_cpp.hpp
+[8.271s] -- Installing: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/include/motor_control_command_msgs/motor_control_command_msgs/msg/detail/motor_control_command__rosidl_typesupport_fastrtps_cpp.hpp
+[8.271s] -- Installing: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/include/motor_control_command_msgs/motor_control_command_msgs/msg/detail/dds_fastrtps
+[8.272s] -- Installing: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/include/motor_control_command_msgs/motor_control_command_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[8.272s] -- Installing: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/lib/libmotor_control_command_msgs__rosidl_typesupport_fastrtps_cpp.so
+[8.272s] -- Set runtime path of "/home/abc/MDH/ros_ws/install/motor_control_command_msgs/lib/libmotor_control_command_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""
+[8.273s] -- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/include/motor_control_command_msgs/motor_control_command_msgs
+[8.273s] -- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/include/motor_control_command_msgs/motor_control_command_msgs/msg
+[8.274s] -- Installing: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/include/motor_control_command_msgs/motor_control_command_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[8.274s] -- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/include/motor_control_command_msgs/motor_control_command_msgs/msg/detail
+[8.274s] -- Installing: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/include/motor_control_command_msgs/motor_control_command_msgs/msg/detail/motor_control_command__type_support.c
+[8.275s] -- Installing: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/include/motor_control_command_msgs/motor_control_command_msgs/msg/detail/motor__rosidl_typesupport_introspection_c.h
+[8.275s] -- Installing: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/include/motor_control_command_msgs/motor_control_command_msgs/msg/detail/motor_control_command__rosidl_typesupport_introspection_c.h
+[8.275s] -- Installing: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/include/motor_control_command_msgs/motor_control_command_msgs/msg/detail/motor__type_support.c
+[8.277s] -- Installing: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/lib/libmotor_control_command_msgs__rosidl_typesupport_introspection_c.so
+[8.278s] -- Set runtime path of "/home/abc/MDH/ros_ws/install/motor_control_command_msgs/lib/libmotor_control_command_msgs__rosidl_typesupport_introspection_c.so" to ""
+[8.278s] -- Installing: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/lib/libmotor_control_command_msgs__rosidl_typesupport_c.so
+[8.278s] -- Set runtime path of "/home/abc/MDH/ros_ws/install/motor_control_command_msgs/lib/libmotor_control_command_msgs__rosidl_typesupport_c.so" to ""
+[8.279s] -- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/include/motor_control_command_msgs/motor_control_command_msgs
+[8.279s] -- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/include/motor_control_command_msgs/motor_control_command_msgs/msg
+[8.279s] -- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/include/motor_control_command_msgs/motor_control_command_msgs/msg/detail
+[8.279s] -- Installing: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/include/motor_control_command_msgs/motor_control_command_msgs/msg/detail/motor__rosidl_typesupport_introspection_cpp.hpp
+[8.279s] -- Installing: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/include/motor_control_command_msgs/motor_control_command_msgs/msg/detail/motor__type_support.cpp
+[8.279s] -- Installing: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/include/motor_control_command_msgs/motor_control_command_msgs/msg/detail/motor_control_command__rosidl_typesupport_introspection_cpp.hpp
+[8.279s] -- Installing: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/include/motor_control_command_msgs/motor_control_command_msgs/msg/detail/motor_control_command__type_support.cpp
+[8.279s] -- Installing: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/lib/libmotor_control_command_msgs__rosidl_typesupport_introspection_cpp.so
+[8.279s] -- Set runtime path of "/home/abc/MDH/ros_ws/install/motor_control_command_msgs/lib/libmotor_control_command_msgs__rosidl_typesupport_introspection_cpp.so" to ""
+[8.280s] -- Installing: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/lib/libmotor_control_command_msgs__rosidl_typesupport_cpp.so
+[8.280s] -- Set runtime path of "/home/abc/MDH/ros_ws/install/motor_control_command_msgs/lib/libmotor_control_command_msgs__rosidl_typesupport_cpp.so" to ""
+[8.280s] -- Installing: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/share/motor_control_command_msgs/environment/pythonpath.sh
+[8.280s] -- Installing: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/share/motor_control_command_msgs/environment/pythonpath.dsv
+[8.280s] -- Installing: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/local/lib/python3.10/dist-packages/motor_control_command_msgs-0.0.0-py3.10.egg-info
+[8.281s] -- Installing: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/local/lib/python3.10/dist-packages/motor_control_command_msgs-0.0.0-py3.10.egg-info/top_level.txt
+[8.281s] -- Installing: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/local/lib/python3.10/dist-packages/motor_control_command_msgs-0.0.0-py3.10.egg-info/dependency_links.txt
+[8.281s] -- Installing: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/local/lib/python3.10/dist-packages/motor_control_command_msgs-0.0.0-py3.10.egg-info/SOURCES.txt
+[8.281s] -- Installing: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/local/lib/python3.10/dist-packages/motor_control_command_msgs-0.0.0-py3.10.egg-info/PKG-INFO
+[8.281s] -- Installing: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/local/lib/python3.10/dist-packages/motor_control_command_msgs
+[8.282s] -- Installing: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/local/lib/python3.10/dist-packages/motor_control_command_msgs/libmotor_control_command_msgs__rosidl_generator_py.so
+[8.282s] -- Installing: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/local/lib/python3.10/dist-packages/motor_control_command_msgs/msg
+[8.282s] -- Installing: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/local/lib/python3.10/dist-packages/motor_control_command_msgs/msg/_motor_control_command.py
+[8.282s] -- Installing: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/local/lib/python3.10/dist-packages/motor_control_command_msgs/msg/_motor_control_command_s.c
+[8.283s] -- Installing: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/local/lib/python3.10/dist-packages/motor_control_command_msgs/msg/__init__.py
+[8.283s] -- Installing: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/local/lib/python3.10/dist-packages/motor_control_command_msgs/msg/_motor.py
+[8.283s] -- Installing: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/local/lib/python3.10/dist-packages/motor_control_command_msgs/msg/_motor_s.c
+[8.283s] -- Installing: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/local/lib/python3.10/dist-packages/motor_control_command_msgs/__init__.py
+[8.283s] -- Installing: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/local/lib/python3.10/dist-packages/motor_control_command_msgs/_motor_control_command_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[8.284s] -- Installing: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/local/lib/python3.10/dist-packages/motor_control_command_msgs/motor_control_command_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[8.284s] -- Installing: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/local/lib/python3.10/dist-packages/motor_control_command_msgs/motor_control_command_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[8.284s] -- Installing: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/local/lib/python3.10/dist-packages/motor_control_command_msgs/motor_control_command_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[8.284s] -- Installing: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/local/lib/python3.10/dist-packages/motor_control_command_msgs/_motor_control_command_msgs_s.ep.rosidl_typesupport_c.c
+[8.284s] -- Installing: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/local/lib/python3.10/dist-packages/motor_control_command_msgs/_motor_control_command_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[8.353s] Listing '/home/abc/MDH/ros_ws/install/motor_control_command_msgs/local/lib/python3.10/dist-packages/motor_control_command_msgs'...
+[8.353s] Compiling '/home/abc/MDH/ros_ws/install/motor_control_command_msgs/local/lib/python3.10/dist-packages/motor_control_command_msgs/__init__.py'...
+[8.353s] Listing '/home/abc/MDH/ros_ws/install/motor_control_command_msgs/local/lib/python3.10/dist-packages/motor_control_command_msgs/msg'...
+[8.353s] Compiling '/home/abc/MDH/ros_ws/install/motor_control_command_msgs/local/lib/python3.10/dist-packages/motor_control_command_msgs/msg/__init__.py'...
+[8.353s] Compiling '/home/abc/MDH/ros_ws/install/motor_control_command_msgs/local/lib/python3.10/dist-packages/motor_control_command_msgs/msg/_motor.py'...
+[8.353s] Compiling '/home/abc/MDH/ros_ws/install/motor_control_command_msgs/local/lib/python3.10/dist-packages/motor_control_command_msgs/msg/_motor_control_command.py'...
+[8.361s] -- Installing: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/local/lib/python3.10/dist-packages/motor_control_command_msgs/motor_control_command_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[8.361s] -- Set runtime path of "/home/abc/MDH/ros_ws/install/motor_control_command_msgs/local/lib/python3.10/dist-packages/motor_control_command_msgs/motor_control_command_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+[8.362s] -- Installing: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/local/lib/python3.10/dist-packages/motor_control_command_msgs/motor_control_command_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[8.362s] -- Set runtime path of "/home/abc/MDH/ros_ws/install/motor_control_command_msgs/local/lib/python3.10/dist-packages/motor_control_command_msgs/motor_control_command_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+[8.362s] -- Installing: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/local/lib/python3.10/dist-packages/motor_control_command_msgs/motor_control_command_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[8.363s] -- Set runtime path of "/home/abc/MDH/ros_ws/install/motor_control_command_msgs/local/lib/python3.10/dist-packages/motor_control_command_msgs/motor_control_command_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+[8.363s] -- Installing: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/lib/libmotor_control_command_msgs__rosidl_generator_py.so
+[8.364s] -- Set runtime path of "/home/abc/MDH/ros_ws/install/motor_control_command_msgs/lib/libmotor_control_command_msgs__rosidl_generator_py.so" to ""
+[8.364s] -- Installing: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/share/motor_control_command_msgs/msg/Motor.idl
+[8.365s] -- Installing: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/share/motor_control_command_msgs/msg/MotorControlCommand.idl
+[8.365s] -- Installing: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/share/motor_control_command_msgs/msg/Motor.msg
+[8.365s] -- Installing: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/share/motor_control_command_msgs/msg/MotorControlCommand.msg
+[8.365s] -- Installing: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/share/ament_index/resource_index/package_run_dependencies/motor_control_command_msgs
+[8.365s] -- Installing: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/share/ament_index/resource_index/parent_prefix_path/motor_control_command_msgs
+[8.365s] -- Installing: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/share/motor_control_command_msgs/environment/ament_prefix_path.sh
+[8.365s] -- Installing: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/share/motor_control_command_msgs/environment/ament_prefix_path.dsv
+[8.366s] -- Installing: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/share/motor_control_command_msgs/environment/path.sh
+[8.366s] -- Installing: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/share/motor_control_command_msgs/environment/path.dsv
+[8.366s] -- Installing: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/share/motor_control_command_msgs/local_setup.bash
+[8.366s] -- Installing: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/share/motor_control_command_msgs/local_setup.sh
+[8.367s] -- Installing: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/share/motor_control_command_msgs/local_setup.zsh
+[8.367s] -- Installing: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/share/motor_control_command_msgs/local_setup.dsv
+[8.367s] -- Installing: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/share/motor_control_command_msgs/package.dsv
+[8.367s] -- Installing: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/share/ament_index/resource_index/packages/motor_control_command_msgs
+[8.368s] -- Installing: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/share/motor_control_command_msgs/cmake/export_motor_control_command_msgs__rosidl_generator_cExport.cmake
+[8.368s] -- Installing: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/share/motor_control_command_msgs/cmake/export_motor_control_command_msgs__rosidl_generator_cExport-noconfig.cmake
+[8.368s] -- Installing: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/share/motor_control_command_msgs/cmake/export_motor_control_command_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[8.368s] -- Installing: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/share/motor_control_command_msgs/cmake/export_motor_control_command_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[8.369s] -- Installing: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/share/motor_control_command_msgs/cmake/export_motor_control_command_msgs__rosidl_generator_cppExport.cmake
+[8.369s] -- Installing: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/share/motor_control_command_msgs/cmake/export_motor_control_command_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[8.369s] -- Installing: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/share/motor_control_command_msgs/cmake/export_motor_control_command_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[8.370s] -- Installing: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/share/motor_control_command_msgs/cmake/motor_control_command_msgs__rosidl_typesupport_introspection_cExport.cmake
+[8.370s] -- Installing: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/share/motor_control_command_msgs/cmake/motor_control_command_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[8.370s] -- Installing: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/share/motor_control_command_msgs/cmake/motor_control_command_msgs__rosidl_typesupport_cExport.cmake
+[8.370s] -- Installing: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/share/motor_control_command_msgs/cmake/motor_control_command_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[8.371s] -- Installing: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/share/motor_control_command_msgs/cmake/motor_control_command_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[8.371s] -- Installing: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/share/motor_control_command_msgs/cmake/motor_control_command_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[8.371s] -- Installing: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/share/motor_control_command_msgs/cmake/motor_control_command_msgs__rosidl_typesupport_cppExport.cmake
+[8.371s] -- Installing: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/share/motor_control_command_msgs/cmake/motor_control_command_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[8.372s] -- Installing: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/share/motor_control_command_msgs/cmake/export_motor_control_command_msgs__rosidl_generator_pyExport.cmake
+[8.372s] -- Installing: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/share/motor_control_command_msgs/cmake/export_motor_control_command_msgs__rosidl_generator_pyExport-noconfig.cmake
+[8.372s] -- Installing: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/share/motor_control_command_msgs/cmake/rosidl_cmake-extras.cmake
+[8.372s] -- Installing: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/share/motor_control_command_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[8.373s] -- Installing: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/share/motor_control_command_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[8.373s] -- Installing: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/share/motor_control_command_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[8.373s] -- Installing: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/share/motor_control_command_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[8.374s] -- Installing: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/share/motor_control_command_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[8.374s] -- Installing: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/share/motor_control_command_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[8.374s] -- Installing: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/share/motor_control_command_msgs/cmake/motor_control_command_msgsConfig.cmake
+[8.374s] -- Installing: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/share/motor_control_command_msgs/cmake/motor_control_command_msgsConfig-version.cmake
+[8.374s] -- Installing: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/share/motor_control_command_msgs/package.xml
+[8.379s] Invoked command in '/home/abc/MDH/ros_ws/build/motor_control_command_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/abc/MDH/ros_ws/build/motor_control_command_msgs

@@ -1,0 +1,3 @@
+[35m[1mConsolidate compiler generated dependencies of target motor_control_state[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/motor_control_state.dir/src/motor_control_state.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/motor_control_state.dir/home/abc/MDH/thirdparty/serial/src/Serial.cpp.o[0m

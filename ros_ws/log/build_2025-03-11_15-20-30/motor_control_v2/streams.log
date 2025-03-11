@@ -1,0 +1,78 @@
+[0.016s] Invoking command in '/home/abc/MDH/ros_ws/build/motor_control_v2': AMENT_PREFIX_PATH=/home/abc/MDH/ros_ws/install/motor_control_command_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/abc/MDH/ros_ws/install/motor_control_command_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/abc/MDH/ros_ws/install/motor_control_command_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/abc/MDH/ros_ws/install/motor_control_command_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/abc/MDH/ros_ws/build/motor_control_v2 -- -j8 -l8
+[0.073s] [35m[1mConsolidate compiler generated dependencies of target motor_control_node[0m
+[0.104s] [ 12%] [32mBuilding CXX object CMakeFiles/motor_control_node.dir/src/serial_communication.cpp.o[0m
+[3.650s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[3.650s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[3.650s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[3.650s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[3.650s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[3.650s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[3.650s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[3.650s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[3.651s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[3.651s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[3.651s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[3.651s]                  from [01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/include/motor_control_v2/serial_communication.hpp:4[m[K,
+[3.651s]                  from [01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/src/serial_communication.cpp:1[m[K:
+[3.651s] [01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/src/serial_communication.cpp:[m[K In member function ‘[01m[Kvoid motor_control_v2::SerialCommunication::Implementation::initSerialPort()[m[K’:
+[3.651s] [01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/src/serial_communication.cpp:49:46:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%s[m[K’ expects a matching ‘[01m[Kchar*[m[K’ argument [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+[3.651s]    49 |             RCLCPP_INFO(node_->get_logger(), [01;35m[K"Serial port opened successfully at %s with baud rate %d"[m[K);
+[3.651s]       |                                              [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.651s] [01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/src/serial_communication.cpp:49:83:[m[K [01;36m[Knote: [m[Kformat string is defined here
+[3.651s]    49 | O(node_->get_logger(), "Serial port opened successfully at [01;36m[K%s[m[K with baud rate %d");
+[3.652s]       |                                                            [01;36m[K~^[m[K
+[3.652s]       |                                                             [01;36m[K|[m[K
+[3.652s]       |                                                             [01;36m[Kchar*[m[K
+[3.652s] 
+[3.652s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[3.652s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[3.652s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[3.652s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[3.652s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[3.652s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[3.652s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[3.653s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[3.653s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[3.653s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[3.653s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[3.653s]                  from [01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/include/motor_control_v2/serial_communication.hpp:4[m[K,
+[3.653s]                  from [01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/src/serial_communication.cpp:1[m[K:
+[3.653s] [01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/src/serial_communication.cpp:49:46:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects a matching ‘[01m[Kint[m[K’ argument [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+[3.653s]    49 |             RCLCPP_INFO(node_->get_logger(), [01;35m[K"Serial port opened successfully at %s with baud rate %d"[m[K);
+[3.653s]       |                                              [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.653s] [01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/src/serial_communication.cpp:49:101:[m[K [01;36m[Knote: [m[Kformat string is defined here
+[3.653s]    49 | t_logger(), "Serial port opened successfully at %s with baud rate [01;36m[K%d[m[K");
+[3.653s]       |                                                                   [01;36m[K~^[m[K
+[3.654s]       |                                                                    [01;36m[K|[m[K
+[3.654s]       |                                                                    [01;36m[Kint[m[K
+[3.654s] 
+[4.480s] [ 25%] [32m[1mLinking CXX executable motor_control_node[0m
+[5.149s] [100%] Built target motor_control_node
+[5.166s] Invoked command in '/home/abc/MDH/ros_ws/build/motor_control_v2' returned '0': AMENT_PREFIX_PATH=/home/abc/MDH/ros_ws/install/motor_control_command_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/abc/MDH/ros_ws/install/motor_control_command_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/abc/MDH/ros_ws/install/motor_control_command_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/abc/MDH/ros_ws/install/motor_control_command_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/abc/MDH/ros_ws/build/motor_control_v2 -- -j8 -l8
+[5.171s] Invoking command in '/home/abc/MDH/ros_ws/build/motor_control_v2': AMENT_PREFIX_PATH=/home/abc/MDH/ros_ws/install/motor_control_command_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/abc/MDH/ros_ws/install/motor_control_command_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/abc/MDH/ros_ws/install/motor_control_command_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/abc/MDH/ros_ws/install/motor_control_command_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/abc/MDH/ros_ws/build/motor_control_v2
+[5.179s] -- Install configuration: ""
+[5.181s] -- Installing: /home/abc/MDH/ros_ws/install/motor_control_v2/lib/motor_control_v2/motor_control_node
+[5.199s] -- Set runtime path of "/home/abc/MDH/ros_ws/install/motor_control_v2/lib/motor_control_v2/motor_control_node" to ""
+[5.199s] -- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_v2/include
+[5.199s] -- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_v2/include/motor_control_v2
+[5.199s] -- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_v2/include/motor_control_v2/motor_config.hpp
+[5.199s] -- Installing: /home/abc/MDH/ros_ws/install/motor_control_v2/include/motor_control_v2/serial_communication.hpp
+[5.199s] -- Installing: /home/abc/MDH/ros_ws/install/motor_control_v2/include/motor_control_v2/ros2_communication.hpp
+[5.199s] -- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_v2/include/motor_control_v2/http_server.hpp
+[5.199s] -- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_v2/share/ament_index/resource_index/package_run_dependencies/motor_control_v2
+[5.199s] -- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_v2/share/ament_index/resource_index/parent_prefix_path/motor_control_v2
+[5.199s] -- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_v2/share/motor_control_v2/environment/ament_prefix_path.sh
+[5.199s] -- Installing: /home/abc/MDH/ros_ws/install/motor_control_v2/share/motor_control_v2/environment/ament_prefix_path.dsv
+[5.199s] -- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_v2/share/motor_control_v2/environment/path.sh
+[5.199s] -- Installing: /home/abc/MDH/ros_ws/install/motor_control_v2/share/motor_control_v2/environment/path.dsv
+[5.200s] -- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_v2/share/motor_control_v2/local_setup.bash
+[5.200s] -- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_v2/share/motor_control_v2/local_setup.sh
+[5.200s] -- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_v2/share/motor_control_v2/local_setup.zsh
+[5.200s] -- Installing: /home/abc/MDH/ros_ws/install/motor_control_v2/share/motor_control_v2/local_setup.dsv
+[5.200s] -- Installing: /home/abc/MDH/ros_ws/install/motor_control_v2/share/motor_control_v2/package.dsv
+[5.200s] -- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_v2/share/ament_index/resource_index/packages/motor_control_v2
+[5.200s] -- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_v2/share/motor_control_v2/cmake/ament_cmake_export_dependencies-extras.cmake
+[5.200s] -- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_v2/share/motor_control_v2/cmake/motor_control_v2Config.cmake
+[5.200s] -- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_v2/share/motor_control_v2/cmake/motor_control_v2Config-version.cmake
+[5.200s] -- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_v2/share/motor_control_v2/package.xml
+[5.202s] Invoked command in '/home/abc/MDH/ros_ws/build/motor_control_v2' returned '0': AMENT_PREFIX_PATH=/home/abc/MDH/ros_ws/install/motor_control_command_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/abc/MDH/ros_ws/install/motor_control_command_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/abc/MDH/ros_ws/install/motor_control_command_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/abc/MDH/ros_ws/install/motor_control_command_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/abc/MDH/ros_ws/build/motor_control_v2

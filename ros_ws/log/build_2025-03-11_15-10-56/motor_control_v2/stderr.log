@@ -1,0 +1,34 @@
+In file included from [01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/src/serial_communication.cpp:1[m[K:
+[01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/include/motor_control_v2/serial_communication.hpp:7:10:[m[K [01;31m[Kfatal error: [m[Krmf_utils/impl_ptr.hpp: 没有那个文件或目录
+    7 | #include [01;31m[K"rmf_utils/impl_ptr.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/motor_control_node.dir/build.make:104：CMakeFiles/motor_control_node.dir/src/serial_communication.cpp.o] 错误 1
+gmake[2]: *** 正在等待未完成的任务....
+In file included from [01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/src/main.cpp:3[m[K:
+[01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/include/motor_control_v2/serial_communication.hpp:7:10:[m[K [01;31m[Kfatal error: [m[Krmf_utils/impl_ptr.hpp: 没有那个文件或目录
+    7 | #include [01;31m[K"rmf_utils/impl_ptr.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/motor_control_node.dir/build.make:76：CMakeFiles/motor_control_node.dir/src/main.cpp.o] 错误 1
+[01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/src/motor_config.cpp:[m[K In member function ‘[01m[Kvoid MotorConfig::update_motor_status(const string&)[m[K’:
+[01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/src/motor_config.cpp:38:58:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kfeedback[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   38 | void MotorConfig::update_motor_status([01;35m[Kconst std::string &feedback[m[K)
+      |                                       [01;35m[K~~~~~~~~~~~~~~~~~~~^~~~~~~~[m[K
+[01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/src/http_server.cpp:[m[K In lambda function:
+[01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/src/http_server.cpp:25:63:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kreq[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   25 |     server.Get("/motor/state", [this]([01;35m[Kconst httplib::Request &req[m[K, httplib::Response &res)
+      |                                       [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/src/http_server.cpp:[m[K In member function ‘[01m[Kvoid HttpServerNode::handle_post(const httplib::Request&, httplib::Response&)[m[K’:
+[01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/src/http_server.cpp:36:58:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kreq[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   36 | void HttpServerNode::handle_post([01;35m[Kconst httplib::Request &req[m[K, httplib::Response &res)
+      |                                  [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/src/http_server.cpp:36:82:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kres[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   36 | void HttpServerNode::handle_post(const httplib::Request &req, [01;35m[Khttplib::Response &res[m[K)
+      |                                                               [01;35m[K~~~~~~~~~~~~~~~~~~~^~~[m[K
+[01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/src/http_server.cpp:[m[K In member function ‘[01m[Kjson HttpServerNode::get_motor_status()[m[K’:
+[01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/src/http_server.cpp:44:1:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreturn-type-Wreturn-type]8;;[m[K]
+   44 | [01;35m[K}[m[K
+      | [01;35m[K^[m[K
+gmake[1]: *** [CMakeFiles/Makefile2:137：CMakeFiles/motor_control_node.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

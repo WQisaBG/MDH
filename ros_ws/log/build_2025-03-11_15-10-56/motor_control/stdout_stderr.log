@@ -1,0 +1,35 @@
+[35m[1mConsolidate compiler generated dependencies of target motor_control_state[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/motor_control_state.dir/src/motor_control_state.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/motor_control_state.dir/home/abc/MDH/thirdparty/serial/src/Serial.cpp.o[0m
+[01m[K/home/abc/MDH/ros_ws/src/motor_control/src/motor_control_state.cpp:[m[K In constructor ‘[01m[KHttpServerNode::HttpServerNode()[m[K’:
+[01m[K/home/abc/MDH/ros_ws/src/motor_control/src/motor_control_state.cpp:610:23:[m[K [01;35m[Kwarning: [m[K‘[01m[KHttpServerNode::stop_server_[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+  610 |     std::atomic<bool> [01;35m[Kstop_server_[m[K;
+      |                       [01;35m[K^~~~~~~~~~~~[m[K
+[01m[K/home/abc/MDH/ros_ws/src/motor_control/src/motor_control_state.cpp:608:12:[m[K [01;35m[Kwarning: [m[K  ‘[01m[KSerial HttpServerNode::serial_[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+  608 |     Serial [01;35m[Kserial_[m[K;
+      |            [01;35m[K^~~~~~~[m[K
+[01m[K/home/abc/MDH/ros_ws/src/motor_control/src/motor_control_state.cpp:63:5:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+   63 |     [01;35m[KHttpServerNode[m[K()
+      |     [01;35m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/abc/MDH/ros_ws/src/motor_control/src/motor_control_state.cpp:[m[K In lambda function:
+[01m[K/home/abc/MDH/ros_ws/src/motor_control/src/motor_control_state.cpp:118:67:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kreq[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  118 |   server.Get("/motor/state", [this]([01;35m[Kconst httplib::Request &req[m[K, httplib::Response &res)
+      |                                     [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+
+[01m[K/home/abc/MDH/ros_ws/src/motor_control/src/motor_control_state.cpp:[m[K In member function ‘[01m[Kvoid HttpServerNode::send_serial_command_async(const std::vector<unsigned char>&)[m[K’:
+[01m[K/home/abc/MDH/ros_ws/src/motor_control/src/motor_control_state.cpp:392:54:[m[K [01;35m[Kwarning: [m[Kignoring return value of ‘[01m[Kstd::future<typename std::__invoke_result<typename std::decay<_Tp>::type, typename std::decay<_Args>::type ...>::type> std::async(std::launch, _Fn&&, _Args&& ...) [with _Fn = HttpServerNode::send_serial_command_async(const std::vector<unsigned char>&)::<lambda()>; _Args = {}; typename std::__invoke_result<typename std::decay<_Tp>::type, typename std::decay<_Args>::type ...>::type = void; typename std::decay<_Tp>::type = std::decay<HttpServerNode::send_serial_command_async(const std::vector<unsigned char>&)::<lambda()> >::type][m[K’, declared with attribute ‘[01m[Knodiscard[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-result-Wunused-result]8;;[m[K]
+  392 |                    { send_serial_command(command); })[01;35m[K;[m[K
+      |                                                      [01;35m[K^[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/abc/MDH/ros_ws/src/motor_control/src/motor_control_state.cpp:14[m[K:
+[01m[K/usr/include/c++/11/future:1768:5:[m[K [01;36m[Knote: [m[Kdeclared here
+ 1768 |     [01;36m[Kasync[m[K(launch __policy, _Fn&& __fn, _Args&&... __args)
+      |     [01;36m[K^~~~~[m[K
+[01m[K/home/abc/MDH/ros_ws/src/motor_control/src/motor_control_state.cpp:[m[K In member function ‘[01m[Kbool HttpServerNode::is_valid_feedback(const std::vector<unsigned char>&)[m[K’:
+[01m[K/home/abc/MDH/ros_ws/src/motor_control/src/motor_control_state.cpp:540:29:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kstd::vector<unsigned char>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} and ‘[01m[Kint[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  540 |         if ([01;35m[Kfeedback.size() != 3 + length + 1[m[K)
+      |             [01;35m[K~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/motor_control_state.dir/build.make:76: CMakeFiles/motor_control_state.dir/src/motor_control_state.cpp.o] 中断
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/motor_control_state.dir/all] 中断
+gmake: *** [Makefile:146: all] 中断

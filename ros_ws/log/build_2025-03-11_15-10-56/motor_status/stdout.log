@@ -1,0 +1,5 @@
+[35m[1mConsolidate compiler generated dependencies of target motor_status[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/motor_status.dir/src/motor_status.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/motor_status.dir/home/abc/MDH/thirdparty/serial/src/Serial.cpp.o[0m
+[ 75%] [32m[1mLinking CXX executable motor_status[0m
+[100%] Built target motor_status
