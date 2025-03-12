@@ -28,6 +28,7 @@ include_directories(${CMAKE_SOURCE_DIR}/include)
 add_executable(motor_control_node
     src/main.cpp
     src/motor_config.cpp
+    src/motor_command.cpp
     src/serial_communication.cpp
     src/ros2_communication.cpp
     src/http_server.cpp

@@ -306,6 +306,30 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_control_node.dir/build.make CMakeFiles/motor_control_node.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/motor_command.o: src/motor_command.cpp.o
+.PHONY : src/motor_command.o
+
+# target to build an object file
+src/motor_command.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_control_node.dir/build.make CMakeFiles/motor_control_node.dir/src/motor_command.cpp.o
+.PHONY : src/motor_command.cpp.o
+
+src/motor_command.i: src/motor_command.cpp.i
+.PHONY : src/motor_command.i
+
+# target to preprocess a source file
+src/motor_command.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_control_node.dir/build.make CMakeFiles/motor_control_node.dir/src/motor_command.cpp.i
+.PHONY : src/motor_command.cpp.i
+
+src/motor_command.s: src/motor_command.cpp.s
+.PHONY : src/motor_command.s
+
+# target to generate assembly for a file
+src/motor_command.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_control_node.dir/build.make CMakeFiles/motor_control_node.dir/src/motor_command.cpp.s
+.PHONY : src/motor_command.cpp.s
+
 src/motor_config.o: src/motor_config.cpp.o
 .PHONY : src/motor_config.o
 
@@ -406,6 +430,9 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/motor_command.o"
+	@echo "... src/motor_command.i"
+	@echo "... src/motor_command.s"
 	@echo "... src/motor_config.o"
 	@echo "... src/motor_config.i"
 	@echo "... src/motor_config.s"

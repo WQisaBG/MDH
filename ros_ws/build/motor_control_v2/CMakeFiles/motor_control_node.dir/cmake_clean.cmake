@@ -7,6 +7,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/motor_control_node.dir/src/http_server.cpp.o.d"
   "CMakeFiles/motor_control_node.dir/src/main.cpp.o"
   "CMakeFiles/motor_control_node.dir/src/main.cpp.o.d"
+  "CMakeFiles/motor_control_node.dir/src/motor_command.cpp.o"
+  "CMakeFiles/motor_control_node.dir/src/motor_command.cpp.o.d"
   "CMakeFiles/motor_control_node.dir/src/motor_config.cpp.o"
   "CMakeFiles/motor_control_node.dir/src/motor_config.cpp.o.d"
   "CMakeFiles/motor_control_node.dir/src/ros2_communication.cpp.o"

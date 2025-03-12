@@ -753,10 +753,12 @@ CMakeFiles/motor_control_node.dir/src/main.cpp.o: \
  /usr/include/c++/11/any \
  /home/abc/MDH/ros_ws/src/motor_control_v2/../../../thirdparty/json/include/nlohmann/detail/macro_unscope.hpp \
  /home/abc/MDH/ros_ws/src/motor_control_v2/../../../thirdparty/json/include/nlohmann/thirdparty/hedley/hedley_undef.hpp \
+ /usr/include/c++/11/queue /usr/include/c++/11/bits/stl_queue.h \
  /home/abc/MDH/ros_ws/src/motor_control_v2/include/motor_control_v2/motor_config.hpp \
+ /home/abc/MDH/ros_ws/src/motor_control_v2/include/motor_control_v2/motor_command.hpp \
+ /home/abc/MDH/ros_ws/src/motor_control_v2/../rmf_utils/rmf_utils/include/rmf_utils/impl_ptr.hpp \
  /home/abc/MDH/ros_ws/src/motor_control_v2/include/motor_control_v2/serial_communication.hpp \
  /home/abc/MDH/ros_ws/src/motor_control_v2/../../../thirdparty/serial/src/Serial.h \
- /home/abc/MDH/ros_ws/src/motor_control_v2/../rmf_utils/rmf_utils/include/rmf_utils/impl_ptr.hpp \
  /home/abc/MDH/ros_ws/src/motor_control_v2/include/motor_control_v2/ros2_communication.hpp \
  /home/abc/MDH/ros_ws/install/motor_control_command_msgs/include/motor_control_command_msgs/motor_control_command_msgs/msg/motor_control_command.hpp \
  /home/abc/MDH/ros_ws/install/motor_control_command_msgs/include/motor_control_command_msgs/motor_control_command_msgs/msg/detail/motor_control_command__struct.hpp \
@@ -766,6 +768,9 @@ CMakeFiles/motor_control_node.dir/src/main.cpp.o: \
  /home/abc/MDH/ros_ws/install/motor_control_command_msgs/include/motor_control_command_msgs/motor_control_command_msgs/msg/detail/motor__traits.hpp \
  /home/abc/MDH/ros_ws/install/motor_control_command_msgs/include/motor_control_command_msgs/motor_control_command_msgs/msg/detail/motor_control_command__type_support.hpp \
  /home/abc/MDH/ros_ws/install/motor_control_command_msgs/include/motor_control_command_msgs/motor_control_command_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
+ /home/abc/MDH/ros_ws/install/motor_control_command_msgs/include/motor_control_command_msgs/motor_control_command_msgs/msg/motor.hpp \
+ /home/abc/MDH/ros_ws/install/motor_control_command_msgs/include/motor_control_command_msgs/motor_control_command_msgs/msg/detail/motor__builder.hpp \
+ /home/abc/MDH/ros_ws/install/motor_control_command_msgs/include/motor_control_command_msgs/motor_control_command_msgs/msg/detail/motor__type_support.hpp \
  /opt/ros/humble/include/std_msgs/std_msgs/msg/string.hpp \
  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/string__struct.hpp \
  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/string__builder.hpp \

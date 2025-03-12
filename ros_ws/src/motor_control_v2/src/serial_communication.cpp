@@ -7,7 +7,7 @@ namespace motor_control_v2
     public:
         void initSerialPort();
 
-        void send_serial_command(const unsigned char *&command);
+        void send_serial_command(const unsigned char *command);
         std::vector<unsigned char> get_feedback_from_motor_Ms(int timeout_millsec);
         std::vector<unsigned char> get_feedback_from_motor(int timeout_sec);
 
@@ -55,11 +55,11 @@ namespace motor_control_v2
         }
     }
     //========================================================================================================================
-    void SerialCommunication::Implementation::send_serial_command(const unsigned char *&command)
+    void SerialCommunication::Implementation::send_serial_command(const unsigned char *command)
     {
         if (serial_.setOpt(baud_rate_, 8, 'N', 1) != 0)
         {
-            RCLCPP_ERROR(node_->get_logger(), "Serial port is not open");
+            RCLCPP_ERROR(node_->get_logger(), "Serial port is not open");   
             return;
         }
         size_t bytes_to_write = sizeof(command);
@@ -166,7 +166,7 @@ namespace motor_control_v2
     }
     //========================================================================================================================
 
-    void SerialCommunication::send_serial_command(const unsigned char *&command)
+    void SerialCommunication::send_serial_command(const unsigned char* command)
     {
         _pimpl->send_serial_command(command);
     }
