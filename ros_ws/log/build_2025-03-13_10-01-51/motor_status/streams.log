@@ -1,0 +1,22 @@
+[0.019s] Invoking command in '/home/abc/MDH/ros_ws/build/motor_status': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/abc/MDH/ros_ws/build/motor_status -- -j8 -l8
+[0.086s] [100%] Built target motor_status
+[0.129s] Invoked command in '/home/abc/MDH/ros_ws/build/motor_status' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/abc/MDH/ros_ws/build/motor_status -- -j8 -l8
+[0.130s] Invoking command in '/home/abc/MDH/ros_ws/build/motor_status': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/abc/MDH/ros_ws/build/motor_status
+[0.142s] -- Install configuration: ""
+[0.142s] -- Up-to-date: /home/abc/MDH/ros_ws/install/motor_status/lib/motor_status/motor_status
+[0.142s] -- Up-to-date: /home/abc/MDH/ros_ws/install/motor_status/share/ament_index/resource_index/package_run_dependencies/motor_status
+[0.142s] -- Up-to-date: /home/abc/MDH/ros_ws/install/motor_status/share/ament_index/resource_index/parent_prefix_path/motor_status
+[0.142s] -- Up-to-date: /home/abc/MDH/ros_ws/install/motor_status/share/motor_status/environment/ament_prefix_path.sh
+[0.142s] -- Up-to-date: /home/abc/MDH/ros_ws/install/motor_status/share/motor_status/environment/ament_prefix_path.dsv
+[0.142s] -- Up-to-date: /home/abc/MDH/ros_ws/install/motor_status/share/motor_status/environment/path.sh
+[0.143s] -- Up-to-date: /home/abc/MDH/ros_ws/install/motor_status/share/motor_status/environment/path.dsv
+[0.143s] -- Up-to-date: /home/abc/MDH/ros_ws/install/motor_status/share/motor_status/local_setup.bash
+[0.143s] -- Up-to-date: /home/abc/MDH/ros_ws/install/motor_status/share/motor_status/local_setup.sh
+[0.143s] -- Up-to-date: /home/abc/MDH/ros_ws/install/motor_status/share/motor_status/local_setup.zsh
+[0.144s] -- Up-to-date: /home/abc/MDH/ros_ws/install/motor_status/share/motor_status/local_setup.dsv
+[0.144s] -- Installing: /home/abc/MDH/ros_ws/install/motor_status/share/motor_status/package.dsv
+[0.144s] -- Up-to-date: /home/abc/MDH/ros_ws/install/motor_status/share/ament_index/resource_index/packages/motor_status
+[0.144s] -- Up-to-date: /home/abc/MDH/ros_ws/install/motor_status/share/motor_status/cmake/motor_statusConfig.cmake
+[0.144s] -- Up-to-date: /home/abc/MDH/ros_ws/install/motor_status/share/motor_status/cmake/motor_statusConfig-version.cmake
+[0.145s] -- Up-to-date: /home/abc/MDH/ros_ws/install/motor_status/share/motor_status/package.xml
+[0.174s] Invoked command in '/home/abc/MDH/ros_ws/build/motor_status' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/abc/MDH/ros_ws/build/motor_status

@@ -3,6 +3,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/motor_control_node.dir/home/abc/MDH/thirdparty/serial/src/Serial.cpp.o.d"
   "CMakeFiles/motor_control_node.dir/home/abc/MDH/thirdparty/serial/src/SerialImplUnix.cpp.o"
   "CMakeFiles/motor_control_node.dir/home/abc/MDH/thirdparty/serial/src/SerialImplUnix.cpp.o.d"
+  "CMakeFiles/motor_control_node.dir/src/Node.cpp.o"
+  "CMakeFiles/motor_control_node.dir/src/Node.cpp.o.d"
   "CMakeFiles/motor_control_node.dir/src/http_server.cpp.o"
   "CMakeFiles/motor_control_node.dir/src/http_server.cpp.o.d"
   "CMakeFiles/motor_control_node.dir/src/main.cpp.o"

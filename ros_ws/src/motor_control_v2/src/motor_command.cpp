@@ -30,7 +30,7 @@ namespace motor_control_v2
         void set_baud_rate(int baud_rate);
     };
 
-    MotorCommand::MotorCommand( rclcpp::Node::SharedPtr node, const std::string &serial_port, int baud_rate)
+    MotorCommand::MotorCommand(rclcpp::Node::SharedPtr node, const std::string &serial_port, int baud_rate)
         : _pimpl(std::make_unique<Implementation>(
               Implementation()))
     {
@@ -68,6 +68,43 @@ namespace motor_control_v2
             current_positions[motor_index] = current_position;
             // RCLCPP_INFO(this->get_logger(), "Current position of motor %d: %d", motor_index, current_position);
         }
+        //判断是否所有电机都已到达目标位置
+        while (!are_all_motors_reached(current_positions, target_positions))
+        {
+            // 5、构造广播指令
+            std::vector<unsigned char> trans_cmd = {0x55, 0xAA};
+            trans_cmd.push_back((motor_num * 3 + 1) & 0xFF); // 指令长度
+            trans_cmd.push_back(0xFF);                       // 固定字段
+            trans_cmd.push_back(0xF2);                       // 指令类型
+
+            for (const auto &[motor_index, target_position] : target_positions)
+            {
+                uint16_t current_position = current_positions[motor_index];
+                // 计算下一步目标位置
+                int16_t position_diff = target_position - current_position;
+                int step_target = current_position + (position_diff > 0 ? 10 : -10);
+                step_target = std::clamp(step_target, 0, 2000);
+                RCLCPP_INFO(node_->get_logger(), "Motor %d: current_position=%d, target_position=%d, step_target=%d",
+                            motor_index, current_position, target_position, step_target);
+
+                // 添加电机索引和目标位置
+                trans_cmd.push_back(motor_index);
+                trans_cmd.push_back(step_target & 0xFF);        // 目标位置低字节
+                trans_cmd.push_back((step_target >> 8) & 0xFF); // 目标位置高字节
+            }
+            // 7、计算校验和
+            uint8_t checkSum = calculateChecksum(trans_cmd.data() + 2, trans_cmd.size() - 1);
+
+            trans_cmd.push_back(checkSum);
+            std::stringstream ss;
+            ss << "Commintting command: ";
+            for (auto byte : trans_cmd)
+            {
+                ss << "0x" << std::setfill('0') << std::setw(2) << std::hex << static_cast<int>(byte) << " ";
+            }
+            RCLCPP_INFO(node_->get_logger(), "%s", ss.str().c_str());
+            send_serial_command_async(trans_cmd);
+        }
 
         // 4、检查是否所有电机都已到达目标位置
         if (are_all_motors_reached(current_positions, target_positions))
@@ -75,40 +112,6 @@ namespace motor_control_v2
             // current_request_.clear();
             return; // 所有电机都已到达目标位置，退出循环
         }
-
-        // 5、构造广播指令
-        std::vector<unsigned char> trans_cmd = {0x55, 0xAA};
-        trans_cmd.push_back((motor_num * 3 + 1) & 0xFF); // 指令长度
-        trans_cmd.push_back(0xFF);                       // 固定字段
-        trans_cmd.push_back(0xF2);                       // 指令类型
-
-        for (const auto &[motor_index, target_position] : target_positions)
-        {
-            uint16_t current_position = current_positions[motor_index];
-            // 计算下一步目标位置
-            int16_t position_diff = target_position - current_position;
-            int step_target = current_position + (position_diff > 0 ? 10 : -10);
-            step_target = std::clamp(step_target, 0, 2000);
-            RCLCPP_INFO(node_->get_logger(), "Motor %d: current_position=%d, target_position=%d, step_target=%d",
-                        motor_index, current_position, target_position, step_target);
-
-            // 添加电机索引和目标位置
-            trans_cmd.push_back(motor_index);
-            trans_cmd.push_back(step_target & 0xFF);        // 目标位置低字节
-            trans_cmd.push_back((step_target >> 8) & 0xFF); // 目标位置高字节
-        }
-        // 7、计算校验和
-        uint8_t checkSum = calculateChecksum(trans_cmd.data() + 2, trans_cmd.size() - 1);
-
-        trans_cmd.push_back(checkSum);
-        std::stringstream ss;
-        ss << "Commintting command: ";
-        for (auto byte : trans_cmd)
-        {
-            ss << "0x" << std::setfill('0') << std::setw(2) << std::hex << static_cast<int>(byte) << " ";
-        }
-        RCLCPP_INFO(node_->get_logger(), "%s", ss.str().c_str());
-        send_serial_command_async(trans_cmd);
     }
 
     void MotorCommand::Implementation::send_query_status_command(int motor_id)

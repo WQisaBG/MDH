@@ -258,6 +258,30 @@ home/abc/MDH/thirdparty/serial/src/SerialImplUnix.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_control_node.dir/build.make CMakeFiles/motor_control_node.dir/home/abc/MDH/thirdparty/serial/src/SerialImplUnix.cpp.s
 .PHONY : home/abc/MDH/thirdparty/serial/src/SerialImplUnix.cpp.s
 
+src/Node.o: src/Node.cpp.o
+.PHONY : src/Node.o
+
+# target to build an object file
+src/Node.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_control_node.dir/build.make CMakeFiles/motor_control_node.dir/src/Node.cpp.o
+.PHONY : src/Node.cpp.o
+
+src/Node.i: src/Node.cpp.i
+.PHONY : src/Node.i
+
+# target to preprocess a source file
+src/Node.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_control_node.dir/build.make CMakeFiles/motor_control_node.dir/src/Node.cpp.i
+.PHONY : src/Node.cpp.i
+
+src/Node.s: src/Node.cpp.s
+.PHONY : src/Node.s
+
+# target to generate assembly for a file
+src/Node.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_control_node.dir/build.make CMakeFiles/motor_control_node.dir/src/Node.cpp.s
+.PHONY : src/Node.cpp.s
+
 src/http_server.o: src/http_server.cpp.o
 .PHONY : src/http_server.o
 
@@ -424,6 +448,9 @@ help:
 	@echo "... home/abc/MDH/thirdparty/serial/src/SerialImplUnix.o"
 	@echo "... home/abc/MDH/thirdparty/serial/src/SerialImplUnix.i"
 	@echo "... home/abc/MDH/thirdparty/serial/src/SerialImplUnix.s"
+	@echo "... src/Node.o"
+	@echo "... src/Node.i"
+	@echo "... src/Node.s"
 	@echo "... src/http_server.o"
 	@echo "... src/http_server.i"
 	@echo "... src/http_server.s"

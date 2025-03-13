@@ -1,10 +1,11 @@
 #include "motor_control_v2/http_server.hpp"
+#include "motor_control_v2/http_server.hpp"
 
 namespace motor_control_v2
 {
 
     HttpServerNode::HttpServerNode(const std::string &ip, int port)
-        : Node("http_server_node"), ip_(ip), port_(port), stop_server_(false)
+        : Node("http_server_node_"), ip_(ip), port_(port), stop_server_(false)
     {
         http_server_thread_ = std::thread(&HttpServerNode::start_http_server, this);
     }
@@ -12,39 +13,51 @@ namespace motor_control_v2
     HttpServerNode::~HttpServerNode()
     {
         stop_server_ = true;
-        request_cv_.notify_all();
         if (http_server_thread_.joinable())
             http_server_thread_.join();
     }
 
     void HttpServerNode::start_http_server()
     {
-        httplib::Server server;
-
+        httplib::Server server; // 使用临时变量
         server.Post("/motor/task", [this](const httplib::Request &req, httplib::Response &res)
-                    { handle_post(req, res); });
-
+                     { handle_post(req, res); });
+    
         server.Get("/motor/state", [this](const httplib::Request &req, httplib::Response &res)
-                   { handle_get(req, res); });
-
+                    { handle_get(req, res); });
+    
+        // 打印服务器启动信息
+        RCLCPP_INFO(rclcpp::get_logger("http_server"), "Starting HTTP server on %s:%d", ip_.c_str(), port_);
+    
         try
         {
-            RCLCPP_INFO(rclcpp::get_logger("http_server"), "Starting HTTP server on %s:%d", ip_.c_str(), port_);
-            while (!stop_server_)
+            if (!server.listen(ip_.c_str(), port_))
             {
-                if (!server.listen(ip_.c_str(), port_))
-                {
-                    RCLCPP_ERROR(rclcpp::get_logger("http_server"), "Failed to start HTTP server on %s:%d", ip_.c_str(), port_);
-                    break;
-                }
+                RCLCPP_ERROR(rclcpp::get_logger("http_server"), "Failed to start HTTP server on %s:%d", ip_.c_str(), port_);
             }
         }
         catch (const std::exception &ex)
         {
             RCLCPP_ERROR(rclcpp::get_logger("http_server"), "HTTP server error: %s", ex.what());
         }
+    }
+    /**
+       * @brief 注册POST请求处理函数
+       *
+       * @param path 请求路径
+       * @param handler 处理函数
+       *
+       * path：字符串类型，表示 POST 请求的路径（例如 /motor/task）。
+        handler：PostHandler 类型，是一个函数对象，用于处理指定路径的 POST 请求。
+       */
+    void HttpServerNode::registerPostHandler(const std::string &path, PostHandler handler)
+    {
+        post_handlers_[path] = handler;
+    }
 
-        RCLCPP_INFO(rclcpp::get_logger("http_server"), "HTTP server stopped");
+    void HttpServerNode::registerGetHandler(const std::string &path, GetHandler handler)
+    {
+        get_handlers_[path] = handler;
     }
 
     void HttpServerNode::registerPostDataCallback(PostDataCallback callback)
@@ -55,6 +68,13 @@ namespace motor_control_v2
     void HttpServerNode::handle_post(const httplib::Request &req, httplib::Response &res)
     {
         std::lock_guard<std::mutex> lock(request_mutex_);
+        if (req.body.empty())
+        {
+            RCLCPP_ERROR(rclcpp::get_logger("http_server"), "Empty request body");
+            res.set_content("{\"status\":\"error\",\"message\":\"Empty request body\"}", "application/json");
+            return;
+        }
+
         try
         {
             auto json_data = json::parse(req.body);
@@ -70,8 +90,6 @@ namespace motor_control_v2
                 post_data_callback_(json_data);
             }
 
-            request_queue_.push(std::move(json_data));
-            request_cv_.notify_one();
             res.set_content("{\"status\":\"received\"}", "application/json");
         }
         catch (const json::parse_error &ex)
@@ -93,18 +111,16 @@ namespace motor_control_v2
 
     void HttpServerNode::handle_get(const httplib::Request &req, httplib::Response &res)
     {
-        json response_body;
-
         if (get_handlers_.find(req.path) != get_handlers_.end())
         {
-            get_handlers_[req.path](req, res);
-            res.set_content(response_body.dump(), "application/json");
+            get_handlers_[req.path](req, res); // 调用注册的handler
         }
         else
         {
-            response_body = {{"error", "Path not found"}};
+            json response_body = {{"error", "Path not found"}};
             res.status = 404;
             res.set_content(response_body.dump(), "application/json");
+            RCLCPP_ERROR(rclcpp::get_logger("http_server"), "GET request not found: %s", req.path.c_str());
         }
     }
 

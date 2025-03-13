@@ -83,10 +83,24 @@ CMakeFiles/motor_control_node.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/motor_control_node.dir/src/main.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/abc/MDH/ros_ws/src/motor_control_v2/src/main.cpp -o CMakeFiles/motor_control_node.dir/src/main.cpp.s
 
+CMakeFiles/motor_control_node.dir/src/Node.cpp.o: CMakeFiles/motor_control_node.dir/flags.make
+CMakeFiles/motor_control_node.dir/src/Node.cpp.o: /home/abc/MDH/ros_ws/src/motor_control_v2/src/Node.cpp
+CMakeFiles/motor_control_node.dir/src/Node.cpp.o: CMakeFiles/motor_control_node.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/abc/MDH/ros_ws/build/motor_control_v2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/motor_control_node.dir/src/Node.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/motor_control_node.dir/src/Node.cpp.o -MF CMakeFiles/motor_control_node.dir/src/Node.cpp.o.d -o CMakeFiles/motor_control_node.dir/src/Node.cpp.o -c /home/abc/MDH/ros_ws/src/motor_control_v2/src/Node.cpp
+
+CMakeFiles/motor_control_node.dir/src/Node.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/motor_control_node.dir/src/Node.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/abc/MDH/ros_ws/src/motor_control_v2/src/Node.cpp > CMakeFiles/motor_control_node.dir/src/Node.cpp.i
+
+CMakeFiles/motor_control_node.dir/src/Node.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/motor_control_node.dir/src/Node.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/abc/MDH/ros_ws/src/motor_control_v2/src/Node.cpp -o CMakeFiles/motor_control_node.dir/src/Node.cpp.s
+
 CMakeFiles/motor_control_node.dir/src/motor_config.cpp.o: CMakeFiles/motor_control_node.dir/flags.make
 CMakeFiles/motor_control_node.dir/src/motor_config.cpp.o: /home/abc/MDH/ros_ws/src/motor_control_v2/src/motor_config.cpp
 CMakeFiles/motor_control_node.dir/src/motor_config.cpp.o: CMakeFiles/motor_control_node.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/abc/MDH/ros_ws/build/motor_control_v2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/motor_control_node.dir/src/motor_config.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/abc/MDH/ros_ws/build/motor_control_v2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/motor_control_node.dir/src/motor_config.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/motor_control_node.dir/src/motor_config.cpp.o -MF CMakeFiles/motor_control_node.dir/src/motor_config.cpp.o.d -o CMakeFiles/motor_control_node.dir/src/motor_config.cpp.o -c /home/abc/MDH/ros_ws/src/motor_control_v2/src/motor_config.cpp
 
 CMakeFiles/motor_control_node.dir/src/motor_config.cpp.i: cmake_force
@@ -100,7 +114,7 @@ CMakeFiles/motor_control_node.dir/src/motor_config.cpp.s: cmake_force
 CMakeFiles/motor_control_node.dir/src/motor_command.cpp.o: CMakeFiles/motor_control_node.dir/flags.make
 CMakeFiles/motor_control_node.dir/src/motor_command.cpp.o: /home/abc/MDH/ros_ws/src/motor_control_v2/src/motor_command.cpp
 CMakeFiles/motor_control_node.dir/src/motor_command.cpp.o: CMakeFiles/motor_control_node.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/abc/MDH/ros_ws/build/motor_control_v2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/motor_control_node.dir/src/motor_command.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/abc/MDH/ros_ws/build/motor_control_v2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/motor_control_node.dir/src/motor_command.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/motor_control_node.dir/src/motor_command.cpp.o -MF CMakeFiles/motor_control_node.dir/src/motor_command.cpp.o.d -o CMakeFiles/motor_control_node.dir/src/motor_command.cpp.o -c /home/abc/MDH/ros_ws/src/motor_control_v2/src/motor_command.cpp
 
 CMakeFiles/motor_control_node.dir/src/motor_command.cpp.i: cmake_force
@@ -114,7 +128,7 @@ CMakeFiles/motor_control_node.dir/src/motor_command.cpp.s: cmake_force
 CMakeFiles/motor_control_node.dir/src/serial_communication.cpp.o: CMakeFiles/motor_control_node.dir/flags.make
 CMakeFiles/motor_control_node.dir/src/serial_communication.cpp.o: /home/abc/MDH/ros_ws/src/motor_control_v2/src/serial_communication.cpp
 CMakeFiles/motor_control_node.dir/src/serial_communication.cpp.o: CMakeFiles/motor_control_node.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/abc/MDH/ros_ws/build/motor_control_v2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/motor_control_node.dir/src/serial_communication.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/abc/MDH/ros_ws/build/motor_control_v2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/motor_control_node.dir/src/serial_communication.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/motor_control_node.dir/src/serial_communication.cpp.o -MF CMakeFiles/motor_control_node.dir/src/serial_communication.cpp.o.d -o CMakeFiles/motor_control_node.dir/src/serial_communication.cpp.o -c /home/abc/MDH/ros_ws/src/motor_control_v2/src/serial_communication.cpp
 
 CMakeFiles/motor_control_node.dir/src/serial_communication.cpp.i: cmake_force
@@ -128,7 +142,7 @@ CMakeFiles/motor_control_node.dir/src/serial_communication.cpp.s: cmake_force
 CMakeFiles/motor_control_node.dir/src/ros2_communication.cpp.o: CMakeFiles/motor_control_node.dir/flags.make
 CMakeFiles/motor_control_node.dir/src/ros2_communication.cpp.o: /home/abc/MDH/ros_ws/src/motor_control_v2/src/ros2_communication.cpp
 CMakeFiles/motor_control_node.dir/src/ros2_communication.cpp.o: CMakeFiles/motor_control_node.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/abc/MDH/ros_ws/build/motor_control_v2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/motor_control_node.dir/src/ros2_communication.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/abc/MDH/ros_ws/build/motor_control_v2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/motor_control_node.dir/src/ros2_communication.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/motor_control_node.dir/src/ros2_communication.cpp.o -MF CMakeFiles/motor_control_node.dir/src/ros2_communication.cpp.o.d -o CMakeFiles/motor_control_node.dir/src/ros2_communication.cpp.o -c /home/abc/MDH/ros_ws/src/motor_control_v2/src/ros2_communication.cpp
 
 CMakeFiles/motor_control_node.dir/src/ros2_communication.cpp.i: cmake_force
@@ -142,7 +156,7 @@ CMakeFiles/motor_control_node.dir/src/ros2_communication.cpp.s: cmake_force
 CMakeFiles/motor_control_node.dir/src/http_server.cpp.o: CMakeFiles/motor_control_node.dir/flags.make
 CMakeFiles/motor_control_node.dir/src/http_server.cpp.o: /home/abc/MDH/ros_ws/src/motor_control_v2/src/http_server.cpp
 CMakeFiles/motor_control_node.dir/src/http_server.cpp.o: CMakeFiles/motor_control_node.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/abc/MDH/ros_ws/build/motor_control_v2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/motor_control_node.dir/src/http_server.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/abc/MDH/ros_ws/build/motor_control_v2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/motor_control_node.dir/src/http_server.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/motor_control_node.dir/src/http_server.cpp.o -MF CMakeFiles/motor_control_node.dir/src/http_server.cpp.o.d -o CMakeFiles/motor_control_node.dir/src/http_server.cpp.o -c /home/abc/MDH/ros_ws/src/motor_control_v2/src/http_server.cpp
 
 CMakeFiles/motor_control_node.dir/src/http_server.cpp.i: cmake_force
@@ -156,7 +170,7 @@ CMakeFiles/motor_control_node.dir/src/http_server.cpp.s: cmake_force
 CMakeFiles/motor_control_node.dir/home/abc/MDH/thirdparty/serial/src/Serial.cpp.o: CMakeFiles/motor_control_node.dir/flags.make
 CMakeFiles/motor_control_node.dir/home/abc/MDH/thirdparty/serial/src/Serial.cpp.o: /home/abc/MDH/thirdparty/serial/src/Serial.cpp
 CMakeFiles/motor_control_node.dir/home/abc/MDH/thirdparty/serial/src/Serial.cpp.o: CMakeFiles/motor_control_node.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/abc/MDH/ros_ws/build/motor_control_v2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/motor_control_node.dir/home/abc/MDH/thirdparty/serial/src/Serial.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/abc/MDH/ros_ws/build/motor_control_v2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/motor_control_node.dir/home/abc/MDH/thirdparty/serial/src/Serial.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/motor_control_node.dir/home/abc/MDH/thirdparty/serial/src/Serial.cpp.o -MF CMakeFiles/motor_control_node.dir/home/abc/MDH/thirdparty/serial/src/Serial.cpp.o.d -o CMakeFiles/motor_control_node.dir/home/abc/MDH/thirdparty/serial/src/Serial.cpp.o -c /home/abc/MDH/thirdparty/serial/src/Serial.cpp
 
 CMakeFiles/motor_control_node.dir/home/abc/MDH/thirdparty/serial/src/Serial.cpp.i: cmake_force
@@ -170,7 +184,7 @@ CMakeFiles/motor_control_node.dir/home/abc/MDH/thirdparty/serial/src/Serial.cpp.
 CMakeFiles/motor_control_node.dir/home/abc/MDH/thirdparty/serial/src/SerialImplUnix.cpp.o: CMakeFiles/motor_control_node.dir/flags.make
 CMakeFiles/motor_control_node.dir/home/abc/MDH/thirdparty/serial/src/SerialImplUnix.cpp.o: /home/abc/MDH/thirdparty/serial/src/SerialImplUnix.cpp
 CMakeFiles/motor_control_node.dir/home/abc/MDH/thirdparty/serial/src/SerialImplUnix.cpp.o: CMakeFiles/motor_control_node.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/abc/MDH/ros_ws/build/motor_control_v2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/motor_control_node.dir/home/abc/MDH/thirdparty/serial/src/SerialImplUnix.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/abc/MDH/ros_ws/build/motor_control_v2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/motor_control_node.dir/home/abc/MDH/thirdparty/serial/src/SerialImplUnix.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/motor_control_node.dir/home/abc/MDH/thirdparty/serial/src/SerialImplUnix.cpp.o -MF CMakeFiles/motor_control_node.dir/home/abc/MDH/thirdparty/serial/src/SerialImplUnix.cpp.o.d -o CMakeFiles/motor_control_node.dir/home/abc/MDH/thirdparty/serial/src/SerialImplUnix.cpp.o -c /home/abc/MDH/thirdparty/serial/src/SerialImplUnix.cpp
 
 CMakeFiles/motor_control_node.dir/home/abc/MDH/thirdparty/serial/src/SerialImplUnix.cpp.i: cmake_force
@@ -184,6 +198,7 @@ CMakeFiles/motor_control_node.dir/home/abc/MDH/thirdparty/serial/src/SerialImplU
 # Object files for target motor_control_node
 motor_control_node_OBJECTS = \
 "CMakeFiles/motor_control_node.dir/src/main.cpp.o" \
+"CMakeFiles/motor_control_node.dir/src/Node.cpp.o" \
 "CMakeFiles/motor_control_node.dir/src/motor_config.cpp.o" \
 "CMakeFiles/motor_control_node.dir/src/motor_command.cpp.o" \
 "CMakeFiles/motor_control_node.dir/src/serial_communication.cpp.o" \
@@ -196,6 +211,7 @@ motor_control_node_OBJECTS = \
 motor_control_node_EXTERNAL_OBJECTS =
 
 motor_control_node: CMakeFiles/motor_control_node.dir/src/main.cpp.o
+motor_control_node: CMakeFiles/motor_control_node.dir/src/Node.cpp.o
 motor_control_node: CMakeFiles/motor_control_node.dir/src/motor_config.cpp.o
 motor_control_node: CMakeFiles/motor_control_node.dir/src/motor_command.cpp.o
 motor_control_node: CMakeFiles/motor_control_node.dir/src/serial_communication.cpp.o
@@ -275,7 +291,7 @@ motor_control_node: /opt/ros/humble/lib/librosidl_runtime_c.so
 motor_control_node: /opt/ros/humble/lib/librcutils.so
 motor_control_node: /usr/lib/x86_64-linux-gnu/libpython3.10.so
 motor_control_node: CMakeFiles/motor_control_node.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/abc/MDH/ros_ws/build/motor_control_v2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable motor_control_node"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/abc/MDH/ros_ws/build/motor_control_v2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable motor_control_node"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/motor_control_node.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -63,9 +63,7 @@ namespace motor_control_v2
         std::thread request_processing_thread_;
 
         // 请求队列
-        std::queue<json> request_queue_;
         std::mutex request_mutex_;
-        std::condition_variable request_cv_;
 
         // 路由表
         std::unordered_map<std::string, PostHandler> post_handlers_;

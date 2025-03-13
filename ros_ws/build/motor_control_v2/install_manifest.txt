@@ -2,6 +2,7 @@
 /home/abc/MDH/ros_ws/install/motor_control_v2/include/motor_control_v2/motor_command.hpp
 /home/abc/MDH/ros_ws/install/motor_control_v2/include/motor_control_v2/motor_config.hpp
 /home/abc/MDH/ros_ws/install/motor_control_v2/include/motor_control_v2/serial_communication.hpp
+/home/abc/MDH/ros_ws/install/motor_control_v2/include/motor_control_v2/Node.hpp
 /home/abc/MDH/ros_ws/install/motor_control_v2/include/motor_control_v2/ros2_communication.hpp
 /home/abc/MDH/ros_ws/install/motor_control_v2/include/motor_control_v2/http_server.hpp
 /home/abc/MDH/ros_ws/install/motor_control_v2/share/ament_index/resource_index/package_run_dependencies/motor_control_v2

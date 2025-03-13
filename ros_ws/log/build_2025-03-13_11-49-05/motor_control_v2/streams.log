@@ -1,0 +1,146 @@
+[0.017s] Invoking command in '/home/abc/MDH/ros_ws/build/motor_control_v2': CMAKE_PREFIX_PATH=/home/abc/MDH/ros_ws/install/motor_control_command_msgs:/home/abc/MDH/ros_ws/install/rmf_utils:/home/abc/MDH/ros_ws/install/motor_status:/home/abc/MDH/ros_ws/install/motor_control_v2:/home/abc/MDH/ros_ws/install/motor_control:/opt/ros/humble LD_LIBRARY_PATH=/home/abc/MDH/ros_ws/install/motor_control_command_msgs/lib:/home/abc/MDH/ros_ws/install/rmf_utils/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/abc/MDH/ros_ws/build/motor_control_v2 -- -j8 -l8
+[0.087s] [35m[1mConsolidate compiler generated dependencies of target motor_control_node[0m
+[0.139s] [ 10%] [32mBuilding CXX object CMakeFiles/motor_control_node.dir/src/main.cpp.o[0m
+[0.140s] [ 20%] [32mBuilding CXX object CMakeFiles/motor_control_node.dir/src/Node.cpp.o[0m
+[8.555s] In file included from [01m[K/usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h:33[m[K,
+[8.555s]                  from [01m[K/usr/include/c++/11/bits/allocator.h:46[m[K,
+[8.555s]                  from [01m[K/usr/include/c++/11/unordered_map:40[m[K,
+[8.555s]                  from [01m[K/usr/include/c++/11/functional:61[m[K,
+[8.555s]                  from [01m[K/usr/include/c++/11/pstl/glue_algorithm_defs.h:13[m[K,
+[8.555s]                  from [01m[K/usr/include/c++/11/algorithm:74[m[K,
+[8.555s]                  from [01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/../../../thirdparty/cpp-httplib/httplib.h:232[m[K,
+[8.556s]                  from [01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/include/motor_control_v2/http_server.hpp:4[m[K,
+[8.556s]                  from [01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/include/motor_control_v2/Node.hpp:5[m[K,
+[8.556s]                  from [01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/src/Node.cpp:1[m[K:
+[8.556s] /usr/include/c++/11/ext/new_allocator.h: In instantiation of ‘[01m[Kvoid __gnu_cxx::new_allocator<_Tp>::construct(_Up*, _Args&& ...) [with _Up = MotorConfig; _Args = {motor_control_v2::MotorControlApp*, const char (&)[12]}; _Tp = MotorConfig][m[K’:
+[8.556s] [01m[K/usr/include/c++/11/bits/alloc_traits.h:516:17:[m[K   required from ‘[01m[Kstatic void std::allocator_traits<std::allocator<_Tp1> >::construct(std::allocator_traits<std::allocator<_Tp1> >::allocator_type&, _Up*, _Args&& ...) [with _Up = MotorConfig; _Args = {motor_control_v2::MotorControlApp*, const char (&)[12]}; _Tp = MotorConfig; std::allocator_traits<std::allocator<_Tp1> >::allocator_type = std::allocator<MotorConfig>][m[K’
+[8.556s] [01m[K/usr/include/c++/11/bits/shared_ptr_base.h:519:39:[m[K   required from ‘[01m[Kstd::_Sp_counted_ptr_inplace<_Tp, _Alloc, _Lp>::_Sp_counted_ptr_inplace(_Alloc, _Args&& ...) [with _Args = {motor_control_v2::MotorControlApp*, const char (&)[12]}; _Tp = MotorConfig; _Alloc = std::allocator<MotorConfig>; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K’
+[8.556s] [01m[K/usr/include/c++/11/bits/shared_ptr_base.h:650:16:[m[K   required from ‘[01m[Kstd::__shared_count<_Lp>::__shared_count(_Tp*&, std::_Sp_alloc_shared_tag<_Alloc>, _Args&& ...) [with _Tp = MotorConfig; _Alloc = std::allocator<MotorConfig>; _Args = {motor_control_v2::MotorControlApp*, const char (&)[12]}; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K’
+[8.556s] [01m[K/usr/include/c++/11/bits/shared_ptr_base.h:1342:14:[m[K   required from ‘[01m[Kstd::__shared_ptr<_Tp, _Lp>::__shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<MotorConfig>; _Args = {motor_control_v2::MotorControlApp*, const char (&)[12]}; _Tp = MotorConfig; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K’
+[8.556s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:409:59:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp>::shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<MotorConfig>; _Args = {motor_control_v2::MotorControlApp*, const char (&)[12]}; _Tp = MotorConfig][m[K’
+[8.556s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:862:14:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp> std::allocate_shared(const _Alloc&, _Args&& ...) [with _Tp = MotorConfig; _Alloc = std::allocator<MotorConfig>; _Args = {motor_control_v2::MotorControlApp*, const char (&)[12]}][m[K’
+[8.556s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:878:39:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp> std::make_shared(_Args&& ...) [with _Tp = MotorConfig; _Args = {motor_control_v2::MotorControlApp*, const char (&)[12]}][m[K’
+[8.556s] [01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/src/Node.cpp:25:50:[m[K   required from here
+[8.556s] [01m[K/usr/include/c++/11/ext/new_allocator.h:162:11:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KMotorConfig::MotorConfig(motor_control_v2::MotorControlApp*, const char [12])[m[K’
+[8.556s]   162 |         { [01;31m[K::new((void *)__p) _Up(std::forward<_Args>(__args)...)[m[K; }
+[8.557s]       |           [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[8.557s] In file included from [01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/include/motor_control_v2/http_server.hpp:13[m[K,
+[8.557s]                  from [01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/include/motor_control_v2/Node.hpp:5[m[K,
+[8.557s]                  from [01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/src/Node.cpp:1[m[K:
+[8.557s] [01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/include/motor_control_v2/motor_config.hpp:14:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KMotorConfig::MotorConfig(rclcpp::Node::SharedPtr, const string&)[m[K’
+[8.557s]    14 |     [01;36m[KMotorConfig[m[K(rclcpp::Node::SharedPtr node, const std::string &config_file);
+[8.557s]       |     [01;36m[K^~~~~~~~~~~[m[K
+[8.557s] [01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/include/motor_control_v2/motor_config.hpp:14:41:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kmotor_control_v2::MotorControlApp*[m[K’ to ‘[01m[Krclcpp::Node::SharedPtr[m[K’ {aka ‘[01m[Kstd::shared_ptr<rclcpp::Node>[m[K’}
+[8.557s]    14 |     MotorConfig([01;36m[Krclcpp::Node::SharedPtr node[m[K, const std::string &config_file);
+[8.557s]       |                 [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~^~~~[m[K
+[8.560s] In file included from [01m[K/usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h:33[m[K,
+[8.560s]                  from [01m[K/usr/include/c++/11/bits/allocator.h:46[m[K,
+[8.560s]                  from [01m[K/usr/include/c++/11/unordered_map:40[m[K,
+[8.560s]                  from [01m[K/usr/include/c++/11/functional:61[m[K,
+[8.560s]                  from [01m[K/usr/include/c++/11/pstl/glue_algorithm_defs.h:13[m[K,
+[8.560s]                  from [01m[K/usr/include/c++/11/algorithm:74[m[K,
+[8.560s]                  from [01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/../../../thirdparty/cpp-httplib/httplib.h:232[m[K,
+[8.560s]                  from [01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/include/motor_control_v2/http_server.hpp:4[m[K,
+[8.560s]                  from [01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/include/motor_control_v2/Node.hpp:5[m[K,
+[8.560s]                  from [01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/src/Node.cpp:1[m[K:
+[8.560s] /usr/include/c++/11/ext/new_allocator.h: In instantiation of ‘[01m[Kvoid __gnu_cxx::new_allocator<_Tp>::construct(_Up*, _Args&& ...) [with _Up = motor_control_v2::SerialCommunication; _Args = {motor_control_v2::MotorControlApp*, const char*, int}; _Tp = motor_control_v2::SerialCommunication][m[K’:
+[8.560s] [01m[K/usr/include/c++/11/bits/alloc_traits.h:516:17:[m[K   required from ‘[01m[Kstatic void std::allocator_traits<std::allocator<_Tp1> >::construct(std::allocator_traits<std::allocator<_Tp1> >::allocator_type&, _Up*, _Args&& ...) [with _Up = motor_control_v2::SerialCommunication; _Args = {motor_control_v2::MotorControlApp*, const char*, int}; _Tp = motor_control_v2::SerialCommunication; std::allocator_traits<std::allocator<_Tp1> >::allocator_type = std::allocator<motor_control_v2::SerialCommunication>][m[K’
+[8.560s] [01m[K/usr/include/c++/11/bits/shared_ptr_base.h:519:39:[m[K   required from ‘[01m[Kstd::_Sp_counted_ptr_inplace<_Tp, _Alloc, _Lp>::_Sp_counted_ptr_inplace(_Alloc, _Args&& ...) [with _Args = {motor_control_v2::MotorControlApp*, const char*, int}; _Tp = motor_control_v2::SerialCommunication; _Alloc = std::allocator<motor_control_v2::SerialCommunication>; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K’
+[8.560s] [01m[K/usr/include/c++/11/bits/shared_ptr_base.h:650:16:[m[K   required from ‘[01m[Kstd::__shared_count<_Lp>::__shared_count(_Tp*&, std::_Sp_alloc_shared_tag<_Alloc>, _Args&& ...) [with _Tp = motor_control_v2::SerialCommunication; _Alloc = std::allocator<motor_control_v2::SerialCommunication>; _Args = {motor_control_v2::MotorControlApp*, const char*, int}; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K’
+[8.560s] [01m[K/usr/include/c++/11/bits/shared_ptr_base.h:1342:14:[m[K   required from ‘[01m[Kstd::__shared_ptr<_Tp, _Lp>::__shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<motor_control_v2::SerialCommunication>; _Args = {motor_control_v2::MotorControlApp*, const char*, int}; _Tp = motor_control_v2::SerialCommunication; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K’
+[8.560s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:409:59:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp>::shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<motor_control_v2::SerialCommunication>; _Args = {motor_control_v2::MotorControlApp*, const char*, int}; _Tp = motor_control_v2::SerialCommunication][m[K’
+[8.560s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:862:14:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp> std::allocate_shared(const _Alloc&, _Args&& ...) [with _Tp = motor_control_v2::SerialCommunication; _Alloc = std::allocator<motor_control_v2::SerialCommunication>; _Args = {motor_control_v2::MotorControlApp*, const char*, int}][m[K’
+[8.561s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:878:39:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp> std::make_shared(_Args&& ...) [with _Tp = motor_control_v2::SerialCommunication; _Args = {motor_control_v2::MotorControlApp*, const char*, int}][m[K’
+[8.561s] [01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/src/Node.cpp:52:57:[m[K   required from here
+[8.561s] [01m[K/usr/include/c++/11/ext/new_allocator.h:162:11:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kmotor_control_v2::SerialCommunication::SerialCommunication(motor_control_v2::MotorControlApp*, const char*, int)[m[K’
+[8.561s]   162 |         { [01;31m[K::new((void *)__p) _Up(std::forward<_Args>(__args)...)[m[K; }
+[8.561s]       |           [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[8.561s] In file included from [01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/include/motor_control_v2/Node.hpp:8[m[K,
+[8.561s]                  from [01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/src/Node.cpp:1[m[K:
+[8.561s] [01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/include/motor_control_v2/serial_communication.hpp:14:9:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kmotor_control_v2::SerialCommunication::SerialCommunication(rclcpp::Node::SharedPtr, const char*, int)[m[K’
+[8.561s]    14 |         [01;36m[KSerialCommunication[m[K(rclcpp::Node::SharedPtr node,  const char* serial_port, int baud_rate);
+[8.561s]       |         [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[8.561s] [01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/include/motor_control_v2/serial_communication.hpp:14:53:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kmotor_control_v2::MotorControlApp*[m[K’ to ‘[01m[Krclcpp::Node::SharedPtr[m[K’ {aka ‘[01m[Kstd::shared_ptr<rclcpp::Node>[m[K’}
+[8.561s]    14 |         SerialCommunication([01;36m[Krclcpp::Node::SharedPtr node[m[K,  const char* serial_port, int baud_rate);
+[8.561s]       |                             [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~^~~~[m[K
+[8.561s] [01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/include/motor_control_v2/serial_communication.hpp:11:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kmotor_control_v2::SerialCommunication::SerialCommunication(const motor_control_v2::SerialCommunication&)[m[K’
+[8.561s]    11 | class [01;36m[KSerialCommunication[m[K
+[8.561s]       |       [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[8.561s] [01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/include/motor_control_v2/serial_communication.hpp:11:7:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 3 provided
+[8.562s] In file included from [01m[K/usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h:33[m[K,
+[8.562s]                  from [01m[K/usr/include/c++/11/bits/allocator.h:46[m[K,
+[8.562s]                  from [01m[K/usr/include/c++/11/unordered_map:40[m[K,
+[8.562s]                  from [01m[K/usr/include/c++/11/functional:61[m[K,
+[8.562s]                  from [01m[K/usr/include/c++/11/pstl/glue_algorithm_defs.h:13[m[K,
+[8.562s]                  from [01m[K/usr/include/c++/11/algorithm:74[m[K,
+[8.562s]                  from [01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/../../../thirdparty/cpp-httplib/httplib.h:232[m[K,
+[8.562s]                  from [01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/include/motor_control_v2/http_server.hpp:4[m[K,
+[8.562s]                  from [01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/include/motor_control_v2/Node.hpp:5[m[K,
+[8.562s]                  from [01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/src/Node.cpp:1[m[K:
+[8.562s] /usr/include/c++/11/ext/new_allocator.h: In instantiation of ‘[01m[Kvoid __gnu_cxx::new_allocator<_Tp>::construct(_Up*, _Args&& ...) [with _Up = motor_control_v2::ROS2Communication; _Args = {motor_control_v2::MotorControlApp*}; _Tp = motor_control_v2::ROS2Communication][m[K’:
+[8.562s] [01m[K/usr/include/c++/11/bits/alloc_traits.h:516:17:[m[K   required from ‘[01m[Kstatic void std::allocator_traits<std::allocator<_Tp1> >::construct(std::allocator_traits<std::allocator<_Tp1> >::allocator_type&, _Up*, _Args&& ...) [with _Up = motor_control_v2::ROS2Communication; _Args = {motor_control_v2::MotorControlApp*}; _Tp = motor_control_v2::ROS2Communication; std::allocator_traits<std::allocator<_Tp1> >::allocator_type = std::allocator<motor_control_v2::ROS2Communication>][m[K’
+[8.563s] [01m[K/usr/include/c++/11/bits/shared_ptr_base.h:519:39:[m[K   required from ‘[01m[Kstd::_Sp_counted_ptr_inplace<_Tp, _Alloc, _Lp>::_Sp_counted_ptr_inplace(_Alloc, _Args&& ...) [with _Args = {motor_control_v2::MotorControlApp*}; _Tp = motor_control_v2::ROS2Communication; _Alloc = std::allocator<motor_control_v2::ROS2Communication>; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K’
+[8.563s] [01m[K/usr/include/c++/11/bits/shared_ptr_base.h:650:16:[m[K   required from ‘[01m[Kstd::__shared_count<_Lp>::__shared_count(_Tp*&, std::_Sp_alloc_shared_tag<_Alloc>, _Args&& ...) [with _Tp = motor_control_v2::ROS2Communication; _Alloc = std::allocator<motor_control_v2::ROS2Communication>; _Args = {motor_control_v2::MotorControlApp*}; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K’
+[8.563s] [01m[K/usr/include/c++/11/bits/shared_ptr_base.h:1342:14:[m[K   required from ‘[01m[Kstd::__shared_ptr<_Tp, _Lp>::__shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<motor_control_v2::ROS2Communication>; _Args = {motor_control_v2::MotorControlApp*}; _Tp = motor_control_v2::ROS2Communication; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K’
+[8.563s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:409:59:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp>::shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<motor_control_v2::ROS2Communication>; _Args = {motor_control_v2::MotorControlApp*}; _Tp = motor_control_v2::ROS2Communication][m[K’
+[8.563s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:862:14:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp> std::allocate_shared(const _Alloc&, _Args&& ...) [with _Tp = motor_control_v2::ROS2Communication; _Alloc = std::allocator<motor_control_v2::ROS2Communication>; _Args = {motor_control_v2::MotorControlApp*}][m[K’
+[8.563s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:878:39:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp> std::make_shared(_Args&& ...) [with _Tp = motor_control_v2::ROS2Communication; _Args = {motor_control_v2::MotorControlApp*}][m[K’
+[8.563s] [01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/src/Node.cpp:53:53:[m[K   required from here
+[8.563s] [01m[K/usr/include/c++/11/ext/new_allocator.h:162:11:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kmotor_control_v2::ROS2Communication::ROS2Communication(motor_control_v2::MotorControlApp*)[m[K’
+[8.563s]   162 |         { [01;31m[K::new((void *)__p) _Up(std::forward<_Args>(__args)...)[m[K; }
+[8.563s]       |           [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[8.563s] In file included from [01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/include/motor_control_v2/Node.hpp:9[m[K,
+[8.563s]                  from [01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/src/Node.cpp:1[m[K:
+[8.563s] [01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/include/motor_control_v2/ros2_communication.hpp:14:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kmotor_control_v2::ROS2Communication::ROS2Communication(rclcpp::Node::SharedPtr)[m[K’
+[8.563s]    14 |     [01;36m[KROS2Communication[m[K(rclcpp::Node::SharedPtr node);
+[8.563s]       |     [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[8.564s] [01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/include/motor_control_v2/ros2_communication.hpp:14:47:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kmotor_control_v2::MotorControlApp*[m[K’ to ‘[01m[Krclcpp::Node::SharedPtr[m[K’ {aka ‘[01m[Kstd::shared_ptr<rclcpp::Node>[m[K’}
+[8.564s]    14 |     ROS2Communication([01;36m[Krclcpp::Node::SharedPtr node[m[K);
+[8.564s]       |                       [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~^~~~[m[K
+[8.564s] [01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/include/motor_control_v2/ros2_communication.hpp:11:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kmotor_control_v2::ROS2Communication::ROS2Communication(const motor_control_v2::ROS2Communication&)[m[K’
+[8.564s]    11 | class [01;36m[KROS2Communication[m[K
+[8.564s]       |       [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[8.564s] [01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/include/motor_control_v2/ros2_communication.hpp:11:7:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kmotor_control_v2::MotorControlApp*[m[K’ to ‘[01m[Kconst motor_control_v2::ROS2Communication&[m[K’
+[8.564s] [01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/include/motor_control_v2/ros2_communication.hpp:11:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kmotor_control_v2::ROS2Communication::ROS2Communication(motor_control_v2::ROS2Communication&&)[m[K’
+[8.564s] [01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/include/motor_control_v2/ros2_communication.hpp:11:7:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kmotor_control_v2::MotorControlApp*[m[K’ to ‘[01m[Kmotor_control_v2::ROS2Communication&&[m[K’
+[8.564s] In file included from [01m[K/usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h:33[m[K,
+[8.564s]                  from [01m[K/usr/include/c++/11/bits/allocator.h:46[m[K,
+[8.564s]                  from [01m[K/usr/include/c++/11/unordered_map:40[m[K,
+[8.564s]                  from [01m[K/usr/include/c++/11/functional:61[m[K,
+[8.564s]                  from [01m[K/usr/include/c++/11/pstl/glue_algorithm_defs.h:13[m[K,
+[8.564s]                  from [01m[K/usr/include/c++/11/algorithm:74[m[K,
+[8.564s]                  from [01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/../../../thirdparty/cpp-httplib/httplib.h:232[m[K,
+[8.564s]                  from [01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/include/motor_control_v2/http_server.hpp:4[m[K,
+[8.564s]                  from [01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/include/motor_control_v2/Node.hpp:5[m[K,
+[8.564s]                  from [01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/src/Node.cpp:1[m[K:
+[8.564s] /usr/include/c++/11/ext/new_allocator.h: In instantiation of ‘[01m[Kvoid __gnu_cxx::new_allocator<_Tp>::construct(_Up*, _Args&& ...) [with _Up = motor_control_v2::MotorCommand; _Args = {motor_control_v2::MotorControlApp*, const char*, int}; _Tp = motor_control_v2::MotorCommand][m[K’:
+[8.564s] [01m[K/usr/include/c++/11/bits/alloc_traits.h:516:17:[m[K   required from ‘[01m[Kstatic void std::allocator_traits<std::allocator<_Tp1> >::construct(std::allocator_traits<std::allocator<_Tp1> >::allocator_type&, _Up*, _Args&& ...) [with _Up = motor_control_v2::MotorCommand; _Args = {motor_control_v2::MotorControlApp*, const char*, int}; _Tp = motor_control_v2::MotorCommand; std::allocator_traits<std::allocator<_Tp1> >::allocator_type = std::allocator<motor_control_v2::MotorCommand>][m[K’
+[8.564s] [01m[K/usr/include/c++/11/bits/shared_ptr_base.h:519:39:[m[K   required from ‘[01m[Kstd::_Sp_counted_ptr_inplace<_Tp, _Alloc, _Lp>::_Sp_counted_ptr_inplace(_Alloc, _Args&& ...) [with _Args = {motor_control_v2::MotorControlApp*, const char*, int}; _Tp = motor_control_v2::MotorCommand; _Alloc = std::allocator<motor_control_v2::MotorCommand>; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K’
+[8.564s] [01m[K/usr/include/c++/11/bits/shared_ptr_base.h:650:16:[m[K   required from ‘[01m[Kstd::__shared_count<_Lp>::__shared_count(_Tp*&, std::_Sp_alloc_shared_tag<_Alloc>, _Args&& ...) [with _Tp = motor_control_v2::MotorCommand; _Alloc = std::allocator<motor_control_v2::MotorCommand>; _Args = {motor_control_v2::MotorControlApp*, const char*, int}; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K’
+[8.564s] [01m[K/usr/include/c++/11/bits/shared_ptr_base.h:1342:14:[m[K   required from ‘[01m[Kstd::__shared_ptr<_Tp, _Lp>::__shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<motor_control_v2::MotorCommand>; _Args = {motor_control_v2::MotorControlApp*, const char*, int}; _Tp = motor_control_v2::MotorCommand; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K’
+[8.565s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:409:59:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp>::shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<motor_control_v2::MotorCommand>; _Args = {motor_control_v2::MotorControlApp*, const char*, int}; _Tp = motor_control_v2::MotorCommand][m[K’
+[8.565s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:862:14:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp> std::allocate_shared(const _Alloc&, _Args&& ...) [with _Tp = motor_control_v2::MotorCommand; _Alloc = std::allocator<motor_control_v2::MotorCommand>; _Args = {motor_control_v2::MotorControlApp*, const char*, int}][m[K’
+[8.565s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:878:39:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp> std::make_shared(_Args&& ...) [with _Tp = motor_control_v2::MotorCommand; _Args = {motor_control_v2::MotorControlApp*, const char*, int}][m[K’
+[8.565s] [01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/src/Node.cpp:54:52:[m[K   required from here
+[8.565s] [01m[K/usr/include/c++/11/ext/new_allocator.h:162:11:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kmotor_control_v2::MotorCommand::MotorCommand(motor_control_v2::MotorControlApp*, const char*, int)[m[K’
+[8.565s]   162 |         { [01;31m[K::new((void *)__p) _Up(std::forward<_Args>(__args)...)[m[K; }
+[8.565s]       |           [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[8.565s] In file included from [01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/include/motor_control_v2/Node.hpp:7[m[K,
+[8.565s]                  from [01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/src/Node.cpp:1[m[K:
+[8.565s] [01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/include/motor_control_v2/motor_command.hpp:26:9:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kmotor_control_v2::MotorCommand::MotorCommand(rclcpp::Node::SharedPtr, const string&, int)[m[K’
+[8.565s]    26 |         [01;36m[KMotorCommand[m[K(rclcpp::Node::SharedPtr node, const std::string &serial_port, int baud_rate);
+[8.565s]       |         [01;36m[K^~~~~~~~~~~~[m[K
+[8.565s] [01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/include/motor_control_v2/motor_command.hpp:26:46:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kmotor_control_v2::MotorControlApp*[m[K’ to ‘[01m[Krclcpp::Node::SharedPtr[m[K’ {aka ‘[01m[Kstd::shared_ptr<rclcpp::Node>[m[K’}
+[8.565s]    26 |         MotorCommand([01;36m[Krclcpp::Node::SharedPtr node[m[K, const std::string &serial_port, int baud_rate);
+[8.565s]       |                      [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~^~~~[m[K
+[8.565s] [01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/include/motor_control_v2/motor_command.hpp:23:11:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kmotor_control_v2::MotorCommand::MotorCommand(const motor_control_v2::MotorCommand&)[m[K’
+[8.565s]    23 |     class [01;36m[KMotorCommand[m[K
+[8.565s]       |           [01;36m[K^~~~~~~~~~~~[m[K
+[8.565s] [01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/include/motor_control_v2/motor_command.hpp:23:11:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 3 provided
+[8.566s] [01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/include/motor_control_v2/motor_command.hpp:23:11:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kmotor_control_v2::MotorCommand::MotorCommand(motor_control_v2::MotorCommand&&)[m[K’
+[8.566s] [01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/include/motor_control_v2/motor_command.hpp:23:11:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 3 provided
+[9.188s] gmake[2]: *** [CMakeFiles/motor_control_node.dir/build.make:90：CMakeFiles/motor_control_node.dir/src/Node.cpp.o] 错误 1
+[9.188s] gmake[2]: *** 正在等待未完成的任务....
+[11.017s] gmake[1]: *** [CMakeFiles/Makefile2:137：CMakeFiles/motor_control_node.dir/all] 错误 2
+[11.017s] gmake: *** [Makefile:146：all] 错误 2
+[11.020s] Invoked command in '/home/abc/MDH/ros_ws/build/motor_control_v2' returned '2': CMAKE_PREFIX_PATH=/home/abc/MDH/ros_ws/install/motor_control_command_msgs:/home/abc/MDH/ros_ws/install/rmf_utils:/home/abc/MDH/ros_ws/install/motor_status:/home/abc/MDH/ros_ws/install/motor_control_v2:/home/abc/MDH/ros_ws/install/motor_control:/opt/ros/humble LD_LIBRARY_PATH=/home/abc/MDH/ros_ws/install/motor_control_command_msgs/lib:/home/abc/MDH/ros_ws/install/rmf_utils/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/abc/MDH/ros_ws/build/motor_control_v2 -- -j8 -l8

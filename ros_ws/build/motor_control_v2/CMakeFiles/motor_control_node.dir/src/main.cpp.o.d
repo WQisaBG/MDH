@@ -1,6 +1,7 @@
 CMakeFiles/motor_control_node.dir/src/main.cpp.o: \
  /home/abc/MDH/ros_ws/src/motor_control_v2/src/main.cpp \
  /usr/include/stdc-predef.h \
+ /home/abc/MDH/ros_ws/src/motor_control_v2/include/motor_control_v2/Node.hpp \
  /home/abc/MDH/ros_ws/src/motor_control_v2/include/motor_control_v2/http_server.hpp \
  /home/abc/MDH/ros_ws/src/motor_control_v2/../../../thirdparty/cpp-httplib/httplib.h \
  /usr/include/arpa/inet.h /usr/include/features.h \

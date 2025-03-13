@@ -27,6 +27,7 @@ include_directories(${CMAKE_SOURCE_DIR}/include)
 # 添加可执行文件
 add_executable(motor_control_node
     src/main.cpp
+    src/Node.cpp
     src/motor_config.cpp
     src/motor_command.cpp
     src/serial_communication.cpp

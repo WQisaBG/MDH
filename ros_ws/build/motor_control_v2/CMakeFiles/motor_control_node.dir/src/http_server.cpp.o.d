@@ -753,4 +753,5 @@ CMakeFiles/motor_control_node.dir/src/http_server.cpp.o: \
  /usr/include/c++/11/any \
  /home/abc/MDH/ros_ws/src/motor_control_v2/../../../thirdparty/json/include/nlohmann/detail/macro_unscope.hpp \
  /home/abc/MDH/ros_ws/src/motor_control_v2/../../../thirdparty/json/include/nlohmann/thirdparty/hedley/hedley_undef.hpp \
- /usr/include/c++/11/queue /usr/include/c++/11/bits/stl_queue.h
+ /usr/include/c++/11/queue /usr/include/c++/11/bits/stl_queue.h \
+ /home/abc/MDH/ros_ws/src/motor_control_v2/include/motor_control_v2/motor_config.hpp

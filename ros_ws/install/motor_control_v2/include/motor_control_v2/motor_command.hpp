@@ -20,7 +20,7 @@ using json = nlohmann::json;
 namespace motor_control_v2
 {
 
-    class MotorCommand
+    class MotorCommand 
     {
     public:
         MotorCommand(rclcpp::Node::SharedPtr node, const std::string &serial_port, int baud_rate);
