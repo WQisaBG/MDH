@@ -1,0 +1,6 @@
+Invoking command in '/home/abc/MDH/ros_ws/build/motor_status': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/abc/MDH/ros_ws/src/motor_status -DCMAKE_INSTALL_PREFIX=/home/abc/MDH/ros_ws/install/motor_status
+Invoked command in '/home/abc/MDH/ros_ws/build/motor_status' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/abc/MDH/ros_ws/src/motor_status -DCMAKE_INSTALL_PREFIX=/home/abc/MDH/ros_ws/install/motor_status
+Invoking command in '/home/abc/MDH/ros_ws/build/motor_status': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/abc/MDH/ros_ws/build/motor_status -- -j8 -l8
+Invoked command in '/home/abc/MDH/ros_ws/build/motor_status' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/abc/MDH/ros_ws/build/motor_status -- -j8 -l8
+Invoking command in '/home/abc/MDH/ros_ws/build/motor_status': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/abc/MDH/ros_ws/build/motor_status
+Invoked command in '/home/abc/MDH/ros_ws/build/motor_status' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/abc/MDH/ros_ws/build/motor_status

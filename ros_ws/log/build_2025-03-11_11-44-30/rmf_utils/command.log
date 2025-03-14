@@ -1,6 +1,0 @@
-Invoking command in '/home/abc/MDH/ros_ws/build/rmf_utils': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/abc/MDH/ros_ws/src/rmf_utils/rmf_utils -DCMAKE_INSTALL_PREFIX=/home/abc/MDH/ros_ws/install/rmf_utils
-Invoked command in '/home/abc/MDH/ros_ws/build/rmf_utils' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/abc/MDH/ros_ws/src/rmf_utils/rmf_utils -DCMAKE_INSTALL_PREFIX=/home/abc/MDH/ros_ws/install/rmf_utils
-Invoking command in '/home/abc/MDH/ros_ws/build/rmf_utils': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/abc/MDH/ros_ws/build/rmf_utils -- -j8 -l8
-Invoked command in '/home/abc/MDH/ros_ws/build/rmf_utils' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/abc/MDH/ros_ws/build/rmf_utils -- -j8 -l8
-Invoking command in '/home/abc/MDH/ros_ws/build/rmf_utils': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/abc/MDH/ros_ws/build/rmf_utils
-Invoked command in '/home/abc/MDH/ros_ws/build/rmf_utils' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/abc/MDH/ros_ws/build/rmf_utils

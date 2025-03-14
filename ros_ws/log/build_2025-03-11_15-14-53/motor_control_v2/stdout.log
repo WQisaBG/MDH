@@ -1,3 +1,0 @@
-[35m[1mConsolidate compiler generated dependencies of target motor_control_node[0m
-[ 25%] [32mBuilding CXX object CMakeFiles/motor_control_node.dir/src/main.cpp.o[0m
-[ 25%] [32mBuilding CXX object CMakeFiles/motor_control_node.dir/src/serial_communication.cpp.o[0m
