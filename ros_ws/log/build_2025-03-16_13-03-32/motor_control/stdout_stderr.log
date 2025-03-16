@@ -1,0 +1,52 @@
+[35m[1mConsolidate compiler generated dependencies of target motor_control_state[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/motor_control_state.dir/src/motor_control_state.cpp.o[0m
+[01m[K/home/abc/MDH/ros_ws/src/motor_control/src/motor_control_state.cpp:[m[K In constructor ‘[01m[KHttpServerNode::HttpServerNode()[m[K’:
+[01m[K/home/abc/MDH/ros_ws/src/motor_control/src/motor_control_state.cpp:593:23:[m[K [01;35m[Kwarning: [m[K‘[01m[KHttpServerNode::stop_server_[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+  593 |     std::atomic<bool> [01;35m[Kstop_server_[m[K;
+      |                       [01;35m[K^~~~~~~~~~~~[m[K
+[01m[K/home/abc/MDH/ros_ws/src/motor_control/src/motor_control_state.cpp:591:12:[m[K [01;35m[Kwarning: [m[K  ‘[01m[KSerial HttpServerNode::serial_[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+  591 |     Serial [01;35m[Kserial_[m[K;
+      |            [01;35m[K^~~~~~~[m[K
+[01m[K/home/abc/MDH/ros_ws/src/motor_control/src/motor_control_state.cpp:64:5:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+   64 |     [01;35m[KHttpServerNode[m[K()
+      |     [01;35m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/abc/MDH/ros_ws/src/motor_control/src/motor_control_state.cpp:[m[K In lambda function:
+[01m[K/home/abc/MDH/ros_ws/src/motor_control/src/motor_control_state.cpp:119:67:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kreq[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  119 |         server.Get("/motor/state", [this]([01;35m[Kconst httplib::Request &req[m[K, httplib::Response &res)
+      |                                           [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[01m[K/home/abc/MDH/ros_ws/src/motor_control/src/motor_control_state.cpp:[m[K In member function ‘[01m[Kvoid HttpServerNode::send_serial_command_async(const std::vector<unsigned char>&)[m[K’:
+[01m[K/home/abc/MDH/ros_ws/src/motor_control/src/motor_control_state.cpp:390:54:[m[K [01;35m[Kwarning: [m[Kignoring return value of ‘[01m[Kstd::future<typename std::__invoke_result<typename std::decay<_Tp>::type, typename std::decay<_Args>::type ...>::type> std::async(std::launch, _Fn&&, _Args&& ...) [with _Fn = HttpServerNode::send_serial_command_async(const std::vector<unsigned char>&)::<lambda()>; _Args = {}; typename std::__invoke_result<typename std::decay<_Tp>::type, typename std::decay<_Args>::type ...>::type = void; typename std::decay<_Tp>::type = std::decay<HttpServerNode::send_serial_command_async(const std::vector<unsigned char>&)::<lambda()> >::type][m[K’, declared with attribute ‘[01m[Knodiscard[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-result-Wunused-result]8;;[m[K]
+  390 |                    { send_serial_command(command); })[01;35m[K;[m[K
+      |                                                      [01;35m[K^[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/abc/MDH/ros_ws/src/motor_control/src/motor_control_state.cpp:15[m[K:
+[01m[K/usr/include/c++/11/future:1768:5:[m[K [01;36m[Knote: [m[Kdeclared here
+ 1768 |     [01;36m[Kasync[m[K(launch __policy, _Fn&& __fn, _Args&&... __args)
+      |     [01;36m[K^~~~~[m[K
+[01m[K/home/abc/MDH/ros_ws/src/motor_control/src/motor_control_state.cpp:[m[K In member function ‘[01m[Kbool HttpServerNode::is_valid_feedback(const std::vector<unsigned char>&)[m[K’:
+[01m[K/home/abc/MDH/ros_ws/src/motor_control/src/motor_control_state.cpp:518:29:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kstd::vector<unsigned char>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} and ‘[01m[Kint[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  518 |         if ([01;35m[Kfeedback.size() != 3 + length + 1[m[K)
+      |             [01;35m[K~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~[m[K
+[ 50%] [32m[1mLinking CXX executable motor_control_state[0m
+[100%] Built target motor_control_state
+-- Install configuration: ""
+-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control/share/motor_control/launch
+-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control/share/motor_control/launch/adapter_launch.xml
+-- Installing: /home/abc/MDH/ros_ws/install/motor_control/lib/motor_control/motor_control_state
+-- Set runtime path of "/home/abc/MDH/ros_ws/install/motor_control/lib/motor_control/motor_control_state" to ""
+-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control/share/ament_index/resource_index/package_run_dependencies/motor_control
+-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control/share/ament_index/resource_index/parent_prefix_path/motor_control
+-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control/share/motor_control/environment/ament_prefix_path.sh
+-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control/share/motor_control/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control/share/motor_control/environment/path.sh
+-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control/share/motor_control/environment/path.dsv
+-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control/share/motor_control/local_setup.bash
+-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control/share/motor_control/local_setup.sh
+-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control/share/motor_control/local_setup.zsh
+-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control/share/motor_control/local_setup.dsv
+-- Installing: /home/abc/MDH/ros_ws/install/motor_control/share/motor_control/package.dsv
+-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control/share/ament_index/resource_index/packages/motor_control
+-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control/share/motor_control/cmake/motor_controlConfig.cmake
+-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control/share/motor_control/cmake/motor_controlConfig-version.cmake
+-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control/share/motor_control/package.xml

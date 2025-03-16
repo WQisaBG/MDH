@@ -1,0 +1,551 @@
+[0.000000] (-) TimerEvent: {}
+[0.002199] (motor_control_command_msgs) JobQueued: {'identifier': 'motor_control_command_msgs', 'dependencies': OrderedDict()}
+[0.002306] (motor_status) JobQueued: {'identifier': 'motor_status', 'dependencies': OrderedDict()}
+[0.002421] (rmf_utils) JobQueued: {'identifier': 'rmf_utils', 'dependencies': OrderedDict()}
+[0.002454] (motor_control) JobQueued: {'identifier': 'motor_control', 'dependencies': OrderedDict([('motor_control_command_msgs', '/home/abc/MDH/ros_ws/install/motor_control_command_msgs')])}
+[0.002510] (motor_control_command_msgs) JobStarted: {'identifier': 'motor_control_command_msgs'}
+[0.024769] (motor_status) JobStarted: {'identifier': 'motor_status'}
+[0.030321] (rmf_utils) JobStarted: {'identifier': 'rmf_utils'}
+[0.043673] (motor_control_command_msgs) JobProgress: {'identifier': 'motor_control_command_msgs', 'progress': 'cmake'}
+[0.046955] (motor_control_command_msgs) JobProgress: {'identifier': 'motor_control_command_msgs', 'progress': 'build'}
+[0.047251] (motor_control_command_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/abc/MDH/ros_ws/build/motor_control_command_msgs', '--', '-j8', '-l8'], 'cwd': '/home/abc/MDH/ros_ws/build/motor_control_command_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HTTPS_PROXY', 'http://127.0.0.1:7890/'), ('no_proxy', 'localhost,127.0.0.0/8,::1'), ('LANGUAGE', 'zh_CN:en'), ('USER', 'abc'), ('LC_TIME', 'zh_CN.UTF-8'), ('all_proxy', 'socks://127.0.0.1:7890/'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/abc'), ('OLDPWD', '/home/abc/MDH'), ('DESKTOP_SESSION', 'ubuntu'), ('NO_PROXY', 'localhost,127.0.0.0/8,::1'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('SYSTEMD_EXEC_PID', '1697'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('https_proxy', 'http://127.0.0.1:7890/'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'fcitx'), ('LOGNAME', 'abc'), ('ALL_PROXY', 'socks://127.0.0.1:7890/'), ('http_proxy', 'http://127.0.0.1:7890/'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'abc'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/abc123:@/tmp/.ICE-unix/1511,unix/abc123:/tmp/.ICE-unix/1511'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/3b9c974c_9c27_4745_bffd_b0e8fc33bfd8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=fcitx'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.KEKH32'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.120'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('QT_IM_MODULE', 'fcitx'), ('PWD', '/home/abc/MDH/ros_ws/build/motor_control_command_msgs'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CLUTTER_IM_MODULE', 'fcitx'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('HTTP_PROXY', 'http://127.0.0.1:7890/'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.060213] (motor_status) JobProgress: {'identifier': 'motor_status', 'progress': 'cmake'}
+[0.065052] (motor_status) JobProgress: {'identifier': 'motor_status', 'progress': 'build'}
+[0.065248] (motor_status) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/abc/MDH/ros_ws/build/motor_status', '--', '-j8', '-l8'], 'cwd': '/home/abc/MDH/ros_ws/build/motor_status', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HTTPS_PROXY', 'http://127.0.0.1:7890/'), ('no_proxy', 'localhost,127.0.0.0/8,::1'), ('LANGUAGE', 'zh_CN:en'), ('USER', 'abc'), ('LC_TIME', 'zh_CN.UTF-8'), ('all_proxy', 'socks://127.0.0.1:7890/'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/abc'), ('OLDPWD', '/home/abc/MDH'), ('DESKTOP_SESSION', 'ubuntu'), ('NO_PROXY', 'localhost,127.0.0.0/8,::1'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('SYSTEMD_EXEC_PID', '1697'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('https_proxy', 'http://127.0.0.1:7890/'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'fcitx'), ('LOGNAME', 'abc'), ('ALL_PROXY', 'socks://127.0.0.1:7890/'), ('http_proxy', 'http://127.0.0.1:7890/'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'abc'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/abc123:@/tmp/.ICE-unix/1511,unix/abc123:/tmp/.ICE-unix/1511'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/3b9c974c_9c27_4745_bffd_b0e8fc33bfd8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=fcitx'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.KEKH32'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.120'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('QT_IM_MODULE', 'fcitx'), ('PWD', '/home/abc/MDH/ros_ws/build/motor_status'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CLUTTER_IM_MODULE', 'fcitx'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('HTTP_PROXY', 'http://127.0.0.1:7890/'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.082605] (rmf_utils) JobProgress: {'identifier': 'rmf_utils', 'progress': 'cmake'}
+[0.087684] (rmf_utils) JobProgress: {'identifier': 'rmf_utils', 'progress': 'build'}
+[0.088192] (rmf_utils) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/abc/MDH/ros_ws/build/rmf_utils', '--', '-j8', '-l8'], 'cwd': '/home/abc/MDH/ros_ws/build/rmf_utils', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HTTPS_PROXY', 'http://127.0.0.1:7890/'), ('no_proxy', 'localhost,127.0.0.0/8,::1'), ('LANGUAGE', 'zh_CN:en'), ('USER', 'abc'), ('LC_TIME', 'zh_CN.UTF-8'), ('all_proxy', 'socks://127.0.0.1:7890/'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/abc'), ('OLDPWD', '/home/abc/MDH'), ('DESKTOP_SESSION', 'ubuntu'), ('NO_PROXY', 'localhost,127.0.0.0/8,::1'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('SYSTEMD_EXEC_PID', '1697'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('https_proxy', 'http://127.0.0.1:7890/'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'fcitx'), ('LOGNAME', 'abc'), ('ALL_PROXY', 'socks://127.0.0.1:7890/'), ('http_proxy', 'http://127.0.0.1:7890/'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'abc'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/abc123:@/tmp/.ICE-unix/1511,unix/abc123:/tmp/.ICE-unix/1511'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/3b9c974c_9c27_4745_bffd_b0e8fc33bfd8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=fcitx'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.KEKH32'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.120'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('QT_IM_MODULE', 'fcitx'), ('PWD', '/home/abc/MDH/ros_ws/build/rmf_utils'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CLUTTER_IM_MODULE', 'fcitx'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('HTTP_PROXY', 'http://127.0.0.1:7890/'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.100018] (-) TimerEvent: {}
+[0.205995] (-) TimerEvent: {}
+[0.273571] (rmf_utils) StdoutLine: {'line': b'[100%] Built target rmf_utils\n'}
+[0.286211] (motor_control_command_msgs) StdoutLine: {'line': b'[  2%] Built target motor_control_command_msgs__cpp\n'}
+[0.294673] (rmf_utils) CommandEnded: {'returncode': 0}
+[0.296096] (rmf_utils) JobProgress: {'identifier': 'rmf_utils', 'progress': 'install'}
+[0.301197] (motor_control_command_msgs) StdoutLine: {'line': b'[ 12%] Built target motor_control_command_msgs__rosidl_generator_c\n'}
+[0.307670] (-) TimerEvent: {}
+[0.320705] (rmf_utils) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/abc/MDH/ros_ws/build/rmf_utils'], 'cwd': '/home/abc/MDH/ros_ws/build/rmf_utils', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HTTPS_PROXY', 'http://127.0.0.1:7890/'), ('no_proxy', 'localhost,127.0.0.0/8,::1'), ('LANGUAGE', 'zh_CN:en'), ('USER', 'abc'), ('LC_TIME', 'zh_CN.UTF-8'), ('all_proxy', 'socks://127.0.0.1:7890/'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/abc'), ('OLDPWD', '/home/abc/MDH'), ('DESKTOP_SESSION', 'ubuntu'), ('NO_PROXY', 'localhost,127.0.0.0/8,::1'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('SYSTEMD_EXEC_PID', '1697'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('https_proxy', 'http://127.0.0.1:7890/'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'fcitx'), ('LOGNAME', 'abc'), ('ALL_PROXY', 'socks://127.0.0.1:7890/'), ('http_proxy', 'http://127.0.0.1:7890/'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'abc'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/abc123:@/tmp/.ICE-unix/1511,unix/abc123:/tmp/.ICE-unix/1511'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/3b9c974c_9c27_4745_bffd_b0e8fc33bfd8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=fcitx'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.KEKH32'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.120'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('QT_IM_MODULE', 'fcitx'), ('PWD', '/home/abc/MDH/ros_ws/build/rmf_utils'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CLUTTER_IM_MODULE', 'fcitx'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('HTTP_PROXY', 'http://127.0.0.1:7890/'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.339602] (motor_status) StdoutLine: {'line': b'[100%] Built target motor_status\n'}
+[0.343789] (motor_control_command_msgs) StdoutLine: {'line': b'[ 12%] Built target ament_cmake_python_copy_motor_control_command_msgs\n'}
+[0.346188] (motor_status) CommandEnded: {'returncode': 0}
+[0.355862] (motor_status) JobProgress: {'identifier': 'motor_status', 'progress': 'install'}
+[0.358657] (motor_status) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/abc/MDH/ros_ws/build/motor_status'], 'cwd': '/home/abc/MDH/ros_ws/build/motor_status', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HTTPS_PROXY', 'http://127.0.0.1:7890/'), ('no_proxy', 'localhost,127.0.0.0/8,::1'), ('LANGUAGE', 'zh_CN:en'), ('USER', 'abc'), ('LC_TIME', 'zh_CN.UTF-8'), ('all_proxy', 'socks://127.0.0.1:7890/'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/abc'), ('OLDPWD', '/home/abc/MDH'), ('DESKTOP_SESSION', 'ubuntu'), ('NO_PROXY', 'localhost,127.0.0.0/8,::1'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('SYSTEMD_EXEC_PID', '1697'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('https_proxy', 'http://127.0.0.1:7890/'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'fcitx'), ('LOGNAME', 'abc'), ('ALL_PROXY', 'socks://127.0.0.1:7890/'), ('http_proxy', 'http://127.0.0.1:7890/'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'abc'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/abc123:@/tmp/.ICE-unix/1511,unix/abc123:/tmp/.ICE-unix/1511'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/3b9c974c_9c27_4745_bffd_b0e8fc33bfd8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=fcitx'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.KEKH32'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.120'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('QT_IM_MODULE', 'fcitx'), ('PWD', '/home/abc/MDH/ros_ws/build/motor_status'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CLUTTER_IM_MODULE', 'fcitx'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('HTTP_PROXY', 'http://127.0.0.1:7890/'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.359368] (rmf_utils) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.359595] (rmf_utils) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/rmf_utils/lib/librmf_utils.so\n'}
+[0.359922] (rmf_utils) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/rmf_utils/include/rmf_utils\n'}
+[0.359992] (rmf_utils) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/rmf_utils/include/rmf_utils/math.hpp\n'}
+[0.360049] (rmf_utils) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/rmf_utils/include/rmf_utils/clone_ptr.hpp\n'}
+[0.360102] (rmf_utils) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/rmf_utils/include/rmf_utils/catch.hpp\n'}
+[0.360156] (rmf_utils) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/rmf_utils/include/rmf_utils/impl_ptr.hpp\n'}
+[0.360206] (rmf_utils) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/rmf_utils/include/rmf_utils/AssignID.hpp\n'}
+[0.375113] (rmf_utils) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/rmf_utils/include/rmf_utils/optional.hpp\n'}
+[0.375232] (rmf_utils) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/rmf_utils/include/rmf_utils/RateLimiter.hpp\n'}
+[0.375532] (rmf_utils) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/rmf_utils/include/rmf_utils/macros.hpp\n'}
+[0.375655] (rmf_utils) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/rmf_utils/include/rmf_utils/Modular.hpp\n'}
+[0.375710] (rmf_utils) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/rmf_utils/lib/rmf_utils/cmake/rmf_utils-config-version.cmake\n'}
+[0.375764] (rmf_utils) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/rmf_utils/lib/rmf_utils/cmake/rmf_utils-config.cmake\n'}
+[0.375818] (rmf_utils) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/rmf_utils/lib/rmf_utils/cmake/rmf_utils-targets.cmake\n'}
+[0.375875] (rmf_utils) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/rmf_utils/lib/rmf_utils/cmake/rmf_utils-targets-noconfig.cmake\n'}
+[0.375932] (rmf_utils) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/rmf_utils/share/rmf_utils/rmf_code_style.cfg\n'}
+[0.376015] (rmf_utils) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/rmf_utils/share/ament_index/resource_index/packages/rmf_utils\n'}
+[0.376069] (rmf_utils) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/rmf_utils/share/rmf_utils/hook/ament_prefix_path.dsv\n'}
+[0.376122] (motor_control_command_msgs) StdoutLine: {'line': b'[ 23%] Built target motor_control_command_msgs__rosidl_typesupport_cpp\n'}
+[0.381202] (motor_control_command_msgs) StdoutLine: {'line': b'[ 33%] Built target motor_control_command_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[0.382087] (motor_status) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.382201] (motor_status) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_status/lib/motor_status/motor_status\n'}
+[0.382254] (motor_status) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_status/share/ament_index/resource_index/package_run_dependencies/motor_status\n'}
+[0.382328] (motor_status) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_status/share/ament_index/resource_index/parent_prefix_path/motor_status\n'}
+[0.382391] (motor_status) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_status/share/motor_status/environment/ament_prefix_path.sh\n'}
+[0.382917] (motor_status) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_status/share/motor_status/environment/ament_prefix_path.dsv\n'}
+[0.383053] (motor_status) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_status/share/motor_status/environment/path.sh\n'}
+[0.383126] (motor_status) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_status/share/motor_status/environment/path.dsv\n'}
+[0.383198] (motor_status) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_status/share/motor_status/local_setup.bash\n'}
+[0.383264] (motor_status) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_status/share/motor_status/local_setup.sh\n'}
+[0.383322] (motor_status) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_status/share/motor_status/local_setup.zsh\n'}
+[0.388487] (motor_status) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_status/share/motor_status/local_setup.dsv\n'}
+[0.389064] (motor_status) StdoutLine: {'line': b'-- Installing: /home/abc/MDH/ros_ws/install/motor_status/share/motor_status/package.dsv\n'}
+[0.389266] (motor_status) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_status/share/ament_index/resource_index/packages/motor_status\n'}
+[0.389403] (motor_status) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_status/share/motor_status/cmake/motor_statusConfig.cmake\n'}
+[0.390298] (motor_status) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_status/share/motor_status/cmake/motor_statusConfig-version.cmake\n'}
+[0.390951] (motor_status) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_status/share/motor_status/package.xml\n'}
+[0.391395] (rmf_utils) CommandEnded: {'returncode': 0}
+[0.391980] (motor_control_command_msgs) StdoutLine: {'line': b'[ 53%] Built target motor_control_command_msgs__rosidl_typesupport_introspection_cpp\n'}
+[0.392099] (motor_control_command_msgs) StdoutLine: {'line': b'[ 43%] Built target motor_control_command_msgs__rosidl_typesupport_fastrtps_c\n'}
+[0.392188] (motor_control_command_msgs) StdoutLine: {'line': b'[ 66%] Built target motor_control_command_msgs__rosidl_typesupport_c\n'}
+[0.392361] (motor_control_command_msgs) StdoutLine: {'line': b'[ 74%] Built target motor_control_command_msgs__rosidl_typesupport_introspection_c\n'}
+[0.410477] (-) TimerEvent: {}
+[0.449468] (motor_control_command_msgs) StdoutLine: {'line': b'[ 74%] Built target motor_control_command_msgs\n'}
+[0.467052] (rmf_utils) JobEnded: {'identifier': 'rmf_utils', 'rc': 0}
+[0.473955] (motor_status) CommandEnded: {'returncode': 0}
+[0.496824] (motor_control_command_msgs) StdoutLine: {'line': b'[ 76%] Built target motor_control_command_msgs__py\n'}
+[0.500778] (motor_status) JobEnded: {'identifier': 'motor_status', 'rc': 0}
+[0.510753] (-) TimerEvent: {}
+[0.525805] (motor_control_command_msgs) StdoutLine: {'line': b'[ 84%] Built target motor_control_command_msgs__rosidl_generator_py\n'}
+[0.564297] (motor_control_command_msgs) StdoutLine: {'line': b'[ 89%] Built target motor_control_command_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[0.566421] (motor_control_command_msgs) StdoutLine: {'line': b'[100%] Built target motor_control_command_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[0.567039] (motor_control_command_msgs) StdoutLine: {'line': b'[100%] Built target motor_control_command_msgs__rosidl_typesupport_c__pyext\n'}
+[0.611420] (-) TimerEvent: {}
+[0.712035] (-) TimerEvent: {}
+[0.732064] (motor_control_command_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[0.733547] (motor_control_command_msgs) StdoutLine: {'line': b'writing motor_control_command_msgs.egg-info/PKG-INFO\n'}
+[0.734069] (motor_control_command_msgs) StdoutLine: {'line': b'writing dependency_links to motor_control_command_msgs.egg-info/dependency_links.txt\n'}
+[0.734400] (motor_control_command_msgs) StdoutLine: {'line': b'writing top-level names to motor_control_command_msgs.egg-info/top_level.txt\n'}
+[0.742868] (motor_control_command_msgs) StdoutLine: {'line': b"reading manifest file 'motor_control_command_msgs.egg-info/SOURCES.txt'\n"}
+[0.743895] (motor_control_command_msgs) StdoutLine: {'line': b"writing manifest file 'motor_control_command_msgs.egg-info/SOURCES.txt'\n"}
+[0.812494] (-) TimerEvent: {}
+[0.819597] (motor_control_command_msgs) StdoutLine: {'line': b'[100%] Built target ament_cmake_python_build_motor_control_command_msgs_egg\n'}
+[0.836091] (motor_control_command_msgs) CommandEnded: {'returncode': 0}
+[0.838909] (motor_control_command_msgs) JobProgress: {'identifier': 'motor_control_command_msgs', 'progress': 'install'}
+[0.840085] (motor_control_command_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/abc/MDH/ros_ws/build/motor_control_command_msgs'], 'cwd': '/home/abc/MDH/ros_ws/build/motor_control_command_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HTTPS_PROXY', 'http://127.0.0.1:7890/'), ('no_proxy', 'localhost,127.0.0.0/8,::1'), ('LANGUAGE', 'zh_CN:en'), ('USER', 'abc'), ('LC_TIME', 'zh_CN.UTF-8'), ('all_proxy', 'socks://127.0.0.1:7890/'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/abc'), ('OLDPWD', '/home/abc/MDH'), ('DESKTOP_SESSION', 'ubuntu'), ('NO_PROXY', 'localhost,127.0.0.0/8,::1'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('SYSTEMD_EXEC_PID', '1697'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('https_proxy', 'http://127.0.0.1:7890/'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'fcitx'), ('LOGNAME', 'abc'), ('ALL_PROXY', 'socks://127.0.0.1:7890/'), ('http_proxy', 'http://127.0.0.1:7890/'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'abc'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/abc123:@/tmp/.ICE-unix/1511,unix/abc123:/tmp/.ICE-unix/1511'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/3b9c974c_9c27_4745_bffd_b0e8fc33bfd8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=fcitx'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.KEKH32'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.120'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('QT_IM_MODULE', 'fcitx'), ('PWD', '/home/abc/MDH/ros_ws/build/motor_control_command_msgs'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CLUTTER_IM_MODULE', 'fcitx'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('HTTP_PROXY', 'http://127.0.0.1:7890/'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.852244] (motor_control_command_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.854500] (motor_control_command_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/share/ament_index/resource_index/rosidl_interfaces/motor_control_command_msgs\n'}
+[0.854566] (motor_control_command_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/include/motor_control_command_msgs/motor_control_command_msgs\n'}
+[0.854605] (motor_control_command_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/include/motor_control_command_msgs/motor_control_command_msgs/msg\n'}
+[0.854673] (motor_control_command_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/include/motor_control_command_msgs/motor_control_command_msgs/msg/motor_control_command.h\n'}
+[0.854715] (motor_control_command_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/include/motor_control_command_msgs/motor_control_command_msgs/msg/detail\n'}
+[0.857980] (motor_control_command_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/include/motor_control_command_msgs/motor_control_command_msgs/msg/detail/motor__functions.h\n'}
+[0.858236] (motor_control_command_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/include/motor_control_command_msgs/motor_control_command_msgs/msg/detail/motor_control_command__functions.h\n'}
+[0.858317] (motor_control_command_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/include/motor_control_command_msgs/motor_control_command_msgs/msg/detail/motor_control_command__type_support.h\n'}
+[0.858384] (motor_control_command_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/include/motor_control_command_msgs/motor_control_command_msgs/msg/detail/motor_control_command__struct.h\n'}
+[0.858434] (motor_control_command_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/include/motor_control_command_msgs/motor_control_command_msgs/msg/detail/motor__struct.h\n'}
+[0.858496] (motor_control_command_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/include/motor_control_command_msgs/motor_control_command_msgs/msg/detail/motor__type_support.h\n'}
+[0.858555] (motor_control_command_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/include/motor_control_command_msgs/motor_control_command_msgs/msg/detail/motor_control_command__functions.c\n'}
+[0.858610] (motor_control_command_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/include/motor_control_command_msgs/motor_control_command_msgs/msg/detail/motor__functions.c\n'}
+[0.858818] (motor_control_command_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/include/motor_control_command_msgs/motor_control_command_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[0.858889] (motor_control_command_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/include/motor_control_command_msgs/motor_control_command_msgs/msg/motor.h\n'}
+[0.858930] (motor_control_command_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/share/motor_control_command_msgs/environment/library_path.sh\n'}
+[0.858970] (motor_control_command_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/share/motor_control_command_msgs/environment/library_path.dsv\n'}
+[0.859018] (motor_control_command_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/lib/libmotor_control_command_msgs__rosidl_generator_c.so\n'}
+[0.859051] (motor_control_command_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/include/motor_control_command_msgs/motor_control_command_msgs\n'}
+[0.859082] (motor_control_command_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/include/motor_control_command_msgs/motor_control_command_msgs/msg\n'}
+[0.859112] (motor_control_command_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/include/motor_control_command_msgs/motor_control_command_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[0.859156] (motor_control_command_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/include/motor_control_command_msgs/motor_control_command_msgs/msg/detail\n'}
+[0.859230] (motor_control_command_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/include/motor_control_command_msgs/motor_control_command_msgs/msg/detail/motor__rosidl_typesupport_fastrtps_c.h\n'}
+[0.859265] (motor_control_command_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/include/motor_control_command_msgs/motor_control_command_msgs/msg/detail/motor_control_command__rosidl_typesupport_fastrtps_c.h\n'}
+[0.859297] (motor_control_command_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/lib/libmotor_control_command_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[0.859329] (motor_control_command_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/include/motor_control_command_msgs/motor_control_command_msgs\n'}
+[0.859399] (motor_control_command_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/include/motor_control_command_msgs/motor_control_command_msgs/msg\n'}
+[0.859442] (motor_control_command_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/include/motor_control_command_msgs/motor_control_command_msgs/msg/motor_control_command.hpp\n'}
+[0.860759] (motor_control_command_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/include/motor_control_command_msgs/motor_control_command_msgs/msg/motor.hpp\n'}
+[0.860946] (motor_control_command_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/include/motor_control_command_msgs/motor_control_command_msgs/msg/detail\n'}
+[0.861009] (motor_control_command_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/include/motor_control_command_msgs/motor_control_command_msgs/msg/detail/motor_control_command__builder.hpp\n'}
+[0.861068] (motor_control_command_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/include/motor_control_command_msgs/motor_control_command_msgs/msg/detail/motor__type_support.hpp\n'}
+[0.861125] (motor_control_command_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/include/motor_control_command_msgs/motor_control_command_msgs/msg/detail/motor_control_command__traits.hpp\n'}
+[0.861181] (motor_control_command_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/include/motor_control_command_msgs/motor_control_command_msgs/msg/detail/motor__traits.hpp\n'}
+[0.861237] (motor_control_command_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/include/motor_control_command_msgs/motor_control_command_msgs/msg/detail/motor__builder.hpp\n'}
+[0.861300] (motor_control_command_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/include/motor_control_command_msgs/motor_control_command_msgs/msg/detail/motor__struct.hpp\n'}
+[0.861387] (motor_control_command_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/include/motor_control_command_msgs/motor_control_command_msgs/msg/detail/motor_control_command__type_support.hpp\n'}
+[0.861512] (motor_control_command_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/include/motor_control_command_msgs/motor_control_command_msgs/msg/detail/motor_control_command__struct.hpp\n'}
+[0.861572] (motor_control_command_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/include/motor_control_command_msgs/motor_control_command_msgs/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[0.861626] (motor_control_command_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/include/motor_control_command_msgs/motor_control_command_msgs\n'}
+[0.861680] (motor_control_command_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/include/motor_control_command_msgs/motor_control_command_msgs/msg\n'}
+[0.861731] (motor_control_command_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/include/motor_control_command_msgs/motor_control_command_msgs/msg/detail\n'}
+[0.861780] (motor_control_command_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/include/motor_control_command_msgs/motor_control_command_msgs/msg/detail/motor__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.861840] (motor_control_command_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/include/motor_control_command_msgs/motor_control_command_msgs/msg/detail/motor_control_command__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.861892] (motor_control_command_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/include/motor_control_command_msgs/motor_control_command_msgs/msg/detail/dds_fastrtps\n'}
+[0.861942] (motor_control_command_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/include/motor_control_command_msgs/motor_control_command_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[0.861997] (motor_control_command_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/lib/libmotor_control_command_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[0.862072] (motor_control_command_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/include/motor_control_command_msgs/motor_control_command_msgs\n'}
+[0.862124] (motor_control_command_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/include/motor_control_command_msgs/motor_control_command_msgs/msg\n'}
+[0.862173] (motor_control_command_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/include/motor_control_command_msgs/motor_control_command_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[0.862228] (motor_control_command_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/include/motor_control_command_msgs/motor_control_command_msgs/msg/detail\n'}
+[0.862281] (motor_control_command_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/include/motor_control_command_msgs/motor_control_command_msgs/msg/detail/motor_control_command__type_support.c\n'}
+[0.862338] (motor_control_command_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/include/motor_control_command_msgs/motor_control_command_msgs/msg/detail/motor__rosidl_typesupport_introspection_c.h\n'}
+[0.862399] (motor_control_command_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/include/motor_control_command_msgs/motor_control_command_msgs/msg/detail/motor_control_command__rosidl_typesupport_introspection_c.h\n'}
+[0.862456] (motor_control_command_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/include/motor_control_command_msgs/motor_control_command_msgs/msg/detail/motor__type_support.c\n'}
+[0.862514] (motor_control_command_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/lib/libmotor_control_command_msgs__rosidl_typesupport_introspection_c.so\n'}
+[0.862567] (motor_control_command_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/lib/libmotor_control_command_msgs__rosidl_typesupport_c.so\n'}
+[0.862620] (motor_control_command_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/include/motor_control_command_msgs/motor_control_command_msgs\n'}
+[0.862667] (motor_control_command_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/include/motor_control_command_msgs/motor_control_command_msgs/msg\n'}
+[0.862758] (motor_control_command_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/include/motor_control_command_msgs/motor_control_command_msgs/msg/detail\n'}
+[0.862831] (motor_control_command_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/include/motor_control_command_msgs/motor_control_command_msgs/msg/detail/motor__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.862867] (motor_control_command_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/include/motor_control_command_msgs/motor_control_command_msgs/msg/detail/motor__type_support.cpp\n'}
+[0.862900] (motor_control_command_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/include/motor_control_command_msgs/motor_control_command_msgs/msg/detail/motor_control_command__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.862932] (motor_control_command_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/include/motor_control_command_msgs/motor_control_command_msgs/msg/detail/motor_control_command__type_support.cpp\n'}
+[0.862969] (motor_control_command_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/lib/libmotor_control_command_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[0.863000] (motor_control_command_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/lib/libmotor_control_command_msgs__rosidl_typesupport_cpp.so\n'}
+[0.863033] (motor_control_command_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/share/motor_control_command_msgs/environment/pythonpath.sh\n'}
+[0.863064] (motor_control_command_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/share/motor_control_command_msgs/environment/pythonpath.dsv\n'}
+[0.863103] (motor_control_command_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/local/lib/python3.10/dist-packages/motor_control_command_msgs-0.0.0-py3.10.egg-info\n'}
+[0.863135] (motor_control_command_msgs) StdoutLine: {'line': b'-- Installing: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/local/lib/python3.10/dist-packages/motor_control_command_msgs-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[0.863167] (motor_control_command_msgs) StdoutLine: {'line': b'-- Installing: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/local/lib/python3.10/dist-packages/motor_control_command_msgs-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[0.863199] (motor_control_command_msgs) StdoutLine: {'line': b'-- Installing: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/local/lib/python3.10/dist-packages/motor_control_command_msgs-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[0.863229] (motor_control_command_msgs) StdoutLine: {'line': b'-- Installing: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/local/lib/python3.10/dist-packages/motor_control_command_msgs-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[0.863260] (motor_control_command_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/local/lib/python3.10/dist-packages/motor_control_command_msgs\n'}
+[0.863292] (motor_control_command_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/local/lib/python3.10/dist-packages/motor_control_command_msgs/libmotor_control_command_msgs__rosidl_generator_py.so\n'}
+[0.863334] (motor_control_command_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/local/lib/python3.10/dist-packages/motor_control_command_msgs/msg\n'}
+[0.863427] (motor_control_command_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/local/lib/python3.10/dist-packages/motor_control_command_msgs/msg/_motor_control_command.py\n'}
+[0.863520] (motor_control_command_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/local/lib/python3.10/dist-packages/motor_control_command_msgs/msg/_motor_control_command_s.c\n'}
+[0.863573] (motor_control_command_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/local/lib/python3.10/dist-packages/motor_control_command_msgs/msg/__init__.py\n'}
+[0.863622] (motor_control_command_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/local/lib/python3.10/dist-packages/motor_control_command_msgs/msg/_motor.py\n'}
+[0.863674] (motor_control_command_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/local/lib/python3.10/dist-packages/motor_control_command_msgs/msg/_motor_s.c\n'}
+[0.863729] (motor_control_command_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/local/lib/python3.10/dist-packages/motor_control_command_msgs/__init__.py\n'}
+[0.863779] (motor_control_command_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/local/lib/python3.10/dist-packages/motor_control_command_msgs/_motor_control_command_msgs_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[0.863830] (motor_control_command_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/local/lib/python3.10/dist-packages/motor_control_command_msgs/motor_control_command_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.863884] (motor_control_command_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/local/lib/python3.10/dist-packages/motor_control_command_msgs/motor_control_command_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.863937] (motor_control_command_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/local/lib/python3.10/dist-packages/motor_control_command_msgs/motor_control_command_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.863987] (motor_control_command_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/local/lib/python3.10/dist-packages/motor_control_command_msgs/_motor_control_command_msgs_s.ep.rosidl_typesupport_c.c\n'}
+[0.864022] (motor_control_command_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/local/lib/python3.10/dist-packages/motor_control_command_msgs/_motor_control_command_msgs_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[0.912899] (-) TimerEvent: {}
+[0.920663] (motor_control_command_msgs) StdoutLine: {'line': b"Listing '/home/abc/MDH/ros_ws/install/motor_control_command_msgs/local/lib/python3.10/dist-packages/motor_control_command_msgs'...\n"}
+[0.921880] (motor_control_command_msgs) StdoutLine: {'line': b"Listing '/home/abc/MDH/ros_ws/install/motor_control_command_msgs/local/lib/python3.10/dist-packages/motor_control_command_msgs/msg'...\n"}
+[0.931369] (motor_control_command_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/local/lib/python3.10/dist-packages/motor_control_command_msgs/motor_control_command_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.931826] (motor_control_command_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/local/lib/python3.10/dist-packages/motor_control_command_msgs/motor_control_command_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.931995] (motor_control_command_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/local/lib/python3.10/dist-packages/motor_control_command_msgs/motor_control_command_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.932104] (motor_control_command_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/lib/libmotor_control_command_msgs__rosidl_generator_py.so\n'}
+[0.932388] (motor_control_command_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/share/motor_control_command_msgs/msg/Motor.idl\n'}
+[0.932594] (motor_control_command_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/share/motor_control_command_msgs/msg/MotorControlCommand.idl\n'}
+[0.932662] (motor_control_command_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/share/motor_control_command_msgs/msg/Motor.msg\n'}
+[0.932803] (motor_control_command_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/share/motor_control_command_msgs/msg/MotorControlCommand.msg\n'}
+[0.932959] (motor_control_command_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/share/ament_index/resource_index/package_run_dependencies/motor_control_command_msgs\n'}
+[0.933038] (motor_control_command_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/share/ament_index/resource_index/parent_prefix_path/motor_control_command_msgs\n'}
+[0.933094] (motor_control_command_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/share/motor_control_command_msgs/environment/ament_prefix_path.sh\n'}
+[0.933267] (motor_control_command_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/share/motor_control_command_msgs/environment/ament_prefix_path.dsv\n'}
+[0.933347] (motor_control_command_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/share/motor_control_command_msgs/environment/path.sh\n'}
+[0.933401] (motor_control_command_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/share/motor_control_command_msgs/environment/path.dsv\n'}
+[0.933455] (motor_control_command_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/share/motor_control_command_msgs/local_setup.bash\n'}
+[0.933509] (motor_control_command_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/share/motor_control_command_msgs/local_setup.sh\n'}
+[0.933601] (motor_control_command_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/share/motor_control_command_msgs/local_setup.zsh\n'}
+[0.933658] (motor_control_command_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/share/motor_control_command_msgs/local_setup.dsv\n'}
+[0.933721] (motor_control_command_msgs) StdoutLine: {'line': b'-- Installing: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/share/motor_control_command_msgs/package.dsv\n'}
+[0.939714] (motor_control_command_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/share/ament_index/resource_index/packages/motor_control_command_msgs\n'}
+[0.940951] (motor_control_command_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/share/motor_control_command_msgs/cmake/export_motor_control_command_msgs__rosidl_generator_cExport.cmake\n'}
+[0.941079] (motor_control_command_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/share/motor_control_command_msgs/cmake/export_motor_control_command_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[0.941166] (motor_control_command_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/share/motor_control_command_msgs/cmake/export_motor_control_command_msgs__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[0.941231] (motor_control_command_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/share/motor_control_command_msgs/cmake/export_motor_control_command_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[0.941288] (motor_control_command_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/share/motor_control_command_msgs/cmake/export_motor_control_command_msgs__rosidl_generator_cppExport.cmake\n'}
+[0.941336] (motor_control_command_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/share/motor_control_command_msgs/cmake/export_motor_control_command_msgs__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[0.941390] (motor_control_command_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/share/motor_control_command_msgs/cmake/export_motor_control_command_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[0.941441] (motor_control_command_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/share/motor_control_command_msgs/cmake/motor_control_command_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[0.941505] (motor_control_command_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/share/motor_control_command_msgs/cmake/motor_control_command_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[0.941561] (motor_control_command_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/share/motor_control_command_msgs/cmake/motor_control_command_msgs__rosidl_typesupport_cExport.cmake\n'}
+[0.941611] (motor_control_command_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/share/motor_control_command_msgs/cmake/motor_control_command_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[0.941992] (motor_control_command_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/share/motor_control_command_msgs/cmake/motor_control_command_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[0.942071] (motor_control_command_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/share/motor_control_command_msgs/cmake/motor_control_command_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[0.942139] (motor_control_command_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/share/motor_control_command_msgs/cmake/motor_control_command_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[0.942296] (motor_control_command_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/share/motor_control_command_msgs/cmake/motor_control_command_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[0.942430] (motor_control_command_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/share/motor_control_command_msgs/cmake/export_motor_control_command_msgs__rosidl_generator_pyExport.cmake\n'}
+[0.943039] (motor_control_command_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/share/motor_control_command_msgs/cmake/export_motor_control_command_msgs__rosidl_generator_pyExport-noconfig.cmake\n'}
+[0.943101] (motor_control_command_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/share/motor_control_command_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[0.943169] (motor_control_command_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/share/motor_control_command_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[0.943466] (motor_control_command_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/share/motor_control_command_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[0.943561] (motor_control_command_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/share/motor_control_command_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[0.943629] (motor_control_command_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/share/motor_control_command_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[0.943693] (motor_control_command_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/share/motor_control_command_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[0.943752] (motor_control_command_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/share/motor_control_command_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[0.943816] (motor_control_command_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/share/motor_control_command_msgs/cmake/motor_control_command_msgsConfig.cmake\n'}
+[0.943885] (motor_control_command_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/share/motor_control_command_msgs/cmake/motor_control_command_msgsConfig-version.cmake\n'}
+[0.943948] (motor_control_command_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/share/motor_control_command_msgs/package.xml\n'}
+[0.946695] (motor_control_command_msgs) CommandEnded: {'returncode': 0}
+[0.985452] (motor_control_command_msgs) JobEnded: {'identifier': 'motor_control_command_msgs', 'rc': 0}
+[0.991582] (motor_control) JobStarted: {'identifier': 'motor_control'}
+[1.000908] (motor_control) JobProgress: {'identifier': 'motor_control', 'progress': 'cmake'}
+[1.010214] (motor_control) JobProgress: {'identifier': 'motor_control', 'progress': 'build'}
+[1.010613] (motor_control) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/abc/MDH/ros_ws/build/motor_control', '--', '-j8', '-l8'], 'cwd': '/home/abc/MDH/ros_ws/build/motor_control', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HTTPS_PROXY', 'http://127.0.0.1:7890/'), ('no_proxy', 'localhost,127.0.0.0/8,::1'), ('LANGUAGE', 'zh_CN:en'), ('USER', 'abc'), ('LC_TIME', 'zh_CN.UTF-8'), ('all_proxy', 'socks://127.0.0.1:7890/'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/abc/MDH/ros_ws/install/motor_control_command_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/abc'), ('OLDPWD', '/home/abc/MDH'), ('DESKTOP_SESSION', 'ubuntu'), ('NO_PROXY', 'localhost,127.0.0.0/8,::1'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('SYSTEMD_EXEC_PID', '1697'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('https_proxy', 'http://127.0.0.1:7890/'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'fcitx'), ('LOGNAME', 'abc'), ('ALL_PROXY', 'socks://127.0.0.1:7890/'), ('http_proxy', 'http://127.0.0.1:7890/'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'abc'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/abc123:@/tmp/.ICE-unix/1511,unix/abc123:/tmp/.ICE-unix/1511'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/3b9c974c_9c27_4745_bffd_b0e8fc33bfd8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=fcitx'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.KEKH32'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.120'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/abc/MDH/ros_ws/install/motor_control_command_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('QT_IM_MODULE', 'fcitx'), ('PWD', '/home/abc/MDH/ros_ws/build/motor_control'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CLUTTER_IM_MODULE', 'fcitx'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/abc/MDH/ros_ws/install/motor_control_command_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('HTTP_PROXY', 'http://127.0.0.1:7890/'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/abc/MDH/ros_ws/install/motor_control_command_msgs:/opt/ros/humble')]), 'shell': False}
+[1.014160] (-) TimerEvent: {}
+[1.091180] (motor_control) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target motor_control_state\x1b[0m\n'}
+[1.114831] (-) TimerEvent: {}
+[1.118665] (motor_control) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/motor_control_state.dir/src/motor_control_state.cpp.o\x1b[0m\n'}
+[1.215506] (-) TimerEvent: {}
+[1.315920] (-) TimerEvent: {}
+[1.416332] (-) TimerEvent: {}
+[1.517104] (-) TimerEvent: {}
+[1.618497] (-) TimerEvent: {}
+[1.719608] (-) TimerEvent: {}
+[1.820347] (-) TimerEvent: {}
+[1.921865] (-) TimerEvent: {}
+[2.023234] (-) TimerEvent: {}
+[2.124597] (-) TimerEvent: {}
+[2.225686] (-) TimerEvent: {}
+[2.326701] (-) TimerEvent: {}
+[2.427491] (-) TimerEvent: {}
+[2.527873] (-) TimerEvent: {}
+[2.628404] (-) TimerEvent: {}
+[2.728879] (-) TimerEvent: {}
+[2.829387] (-) TimerEvent: {}
+[2.929898] (-) TimerEvent: {}
+[3.030454] (-) TimerEvent: {}
+[3.130830] (-) TimerEvent: {}
+[3.231854] (-) TimerEvent: {}
+[3.333150] (-) TimerEvent: {}
+[3.434823] (-) TimerEvent: {}
+[3.535822] (-) TimerEvent: {}
+[3.637575] (-) TimerEvent: {}
+[3.739043] (-) TimerEvent: {}
+[3.840473] (-) TimerEvent: {}
+[3.941817] (-) TimerEvent: {}
+[4.043465] (-) TimerEvent: {}
+[4.144298] (-) TimerEvent: {}
+[4.245764] (-) TimerEvent: {}
+[4.346531] (-) TimerEvent: {}
+[4.447016] (-) TimerEvent: {}
+[4.547510] (-) TimerEvent: {}
+[4.648049] (-) TimerEvent: {}
+[4.749299] (-) TimerEvent: {}
+[4.851053] (-) TimerEvent: {}
+[4.952438] (-) TimerEvent: {}
+[5.053235] (-) TimerEvent: {}
+[5.154749] (-) TimerEvent: {}
+[5.256148] (-) TimerEvent: {}
+[5.357730] (-) TimerEvent: {}
+[5.459303] (-) TimerEvent: {}
+[5.560783] (-) TimerEvent: {}
+[5.661700] (-) TimerEvent: {}
+[5.762218] (-) TimerEvent: {}
+[5.862941] (-) TimerEvent: {}
+[5.963399] (-) TimerEvent: {}
+[6.063895] (-) TimerEvent: {}
+[6.164462] (-) TimerEvent: {}
+[6.265007] (-) TimerEvent: {}
+[6.366572] (-) TimerEvent: {}
+[6.467635] (-) TimerEvent: {}
+[6.569853] (-) TimerEvent: {}
+[6.670956] (-) TimerEvent: {}
+[6.771612] (-) TimerEvent: {}
+[6.872715] (-) TimerEvent: {}
+[6.974267] (-) TimerEvent: {}
+[7.075561] (-) TimerEvent: {}
+[7.177015] (-) TimerEvent: {}
+[7.278447] (-) TimerEvent: {}
+[7.379531] (-) TimerEvent: {}
+[7.480521] (-) TimerEvent: {}
+[7.581616] (-) TimerEvent: {}
+[7.682554] (-) TimerEvent: {}
+[7.783469] (-) TimerEvent: {}
+[7.884475] (-) TimerEvent: {}
+[7.985926] (-) TimerEvent: {}
+[8.087191] (-) TimerEvent: {}
+[8.188385] (-) TimerEvent: {}
+[8.289544] (-) TimerEvent: {}
+[8.391012] (-) TimerEvent: {}
+[8.490002] (motor_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/abc/MDH/ros_ws/src/motor_control/src/motor_control_state.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KHttpServerNode::HttpServerNode()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[8.490689] (motor_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/abc/MDH/ros_ws/src/motor_control/src/motor_control_state.cpp:593:23:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KHttpServerNode::stop_server_\x1b[m\x1b[K\xe2\x80\x99 will be initialized after [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder\x07-Wreorder\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[8.491082] (-) TimerEvent: {}
+[8.491256] (motor_control) StderrLine: {'line': b'  593 |     std::atomic<bool> \x1b[01;35m\x1b[Kstop_server_\x1b[m\x1b[K;\n'}
+[8.491357] (motor_control) StderrLine: {'line': b'      |                       \x1b[01;35m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.491437] (motor_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/abc/MDH/ros_ws/src/motor_control/src/motor_control_state.cpp:591:12:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[KSerial HttpServerNode::serial_\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder\x07-Wreorder\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[8.491751] (motor_control) StderrLine: {'line': b'  591 |     Serial \x1b[01;35m\x1b[Kserial_\x1b[m\x1b[K;\n'}
+[8.491831] (motor_control) StderrLine: {'line': b'      |            \x1b[01;35m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[8.491911] (motor_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/abc/MDH/ros_ws/src/motor_control/src/motor_control_state.cpp:64:5:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K  when initialized here [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder\x07-Wreorder\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[8.491971] (motor_control) StderrLine: {'line': b'   64 |     \x1b[01;35m\x1b[KHttpServerNode\x1b[m\x1b[K()\n'}
+[8.492025] (motor_control) StderrLine: {'line': b'      |     \x1b[01;35m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.591460] (-) TimerEvent: {}
+[8.627162] (motor_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/abc/MDH/ros_ws/src/motor_control/src/motor_control_state.cpp:\x1b[m\x1b[K In lambda function:\n'}
+[8.627625] (motor_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/abc/MDH/ros_ws/src/motor_control/src/motor_control_state.cpp:119:67:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kreq\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[8.627737] (motor_control) StderrLine: {'line': b'  119 |   server.Get("/motor/state", [this](\x1b[01;35m\x1b[Kconst httplib::Request &req\x1b[m\x1b[K, httplib::Response &res)\n'}
+[8.627830] (motor_control) StderrLine: {'line': b'      |                                     \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[8.627928] (motor_control) StderrLine: {'line': b'\n'}
+[8.692051] (-) TimerEvent: {}
+[8.793037] (-) TimerEvent: {}
+[8.827883] (motor_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/abc/MDH/ros_ws/src/motor_control/src/motor_control_state.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid HttpServerNode::send_serial_command_async(const std::vector<unsigned char>&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[8.828265] (motor_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/abc/MDH/ros_ws/src/motor_control/src/motor_control_state.cpp:390:54:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kignoring return value of \xe2\x80\x98\x1b[01m\x1b[Kstd::future<typename std::__invoke_result<typename std::decay<_Tp>::type, typename std::decay<_Args>::type ...>::type> std::async(std::launch, _Fn&&, _Args&& ...) [with _Fn = HttpServerNode::send_serial_command_async(const std::vector<unsigned char>&)::<lambda()>; _Args = {}; typename std::__invoke_result<typename std::decay<_Tp>::type, typename std::decay<_Args>::type ...>::type = void; typename std::decay<_Tp>::type = std::decay<HttpServerNode::send_serial_command_async(const std::vector<unsigned char>&)::<lambda()> >::type]\x1b[m\x1b[K\xe2\x80\x99, declared with attribute \xe2\x80\x98\x1b[01m\x1b[Knodiscard\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-result\x07-Wunused-result\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[8.828411] (motor_control) StderrLine: {'line': b'  390 |                    { send_serial_command(command); })\x1b[01;35m\x1b[K;\x1b[m\x1b[K\n'}
+[8.828504] (motor_control) StderrLine: {'line': b'      |                                                      \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[8.828594] (motor_control) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:18\x1b[m\x1b[K,\n'}
+[8.828782] (motor_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[8.828909] (motor_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/abc/MDH/ros_ws/src/motor_control/src/motor_control_state.cpp:15\x1b[m\x1b[K:\n'}
+[8.829000] (motor_control) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/future:1768:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[8.829088] (motor_control) StderrLine: {'line': b' 1768 |     \x1b[01;36m\x1b[Kasync\x1b[m\x1b[K(launch __policy, _Fn&& __fn, _Args&&... __args)\n'}
+[8.829177] (motor_control) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[8.893484] (-) TimerEvent: {}
+[8.939780] (motor_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/abc/MDH/ros_ws/src/motor_control/src/motor_control_state.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kbool HttpServerNode::is_valid_feedback(const std::vector<unsigned char>&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[8.941183] (motor_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/abc/MDH/ros_ws/src/motor_control/src/motor_control_state.cpp:518:29:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<unsigned char>::size_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99} and \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare\x07-Wsign-compare\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[8.941433] (motor_control) StderrLine: {'line': b'  518 |         if (\x1b[01;35m\x1b[Kfeedback.size() != 3 + length + 1\x1b[m\x1b[K)\n'}
+[8.941531] (motor_control) StderrLine: {'line': b'      |             \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.994255] (-) TimerEvent: {}
+[9.095346] (-) TimerEvent: {}
+[9.196053] (-) TimerEvent: {}
+[9.297748] (-) TimerEvent: {}
+[9.398346] (-) TimerEvent: {}
+[9.499171] (-) TimerEvent: {}
+[9.600111] (-) TimerEvent: {}
+[9.700630] (-) TimerEvent: {}
+[9.801952] (-) TimerEvent: {}
+[9.903075] (-) TimerEvent: {}
+[10.004342] (-) TimerEvent: {}
+[10.105477] (-) TimerEvent: {}
+[10.206733] (-) TimerEvent: {}
+[10.307702] (-) TimerEvent: {}
+[10.409385] (-) TimerEvent: {}
+[10.510894] (-) TimerEvent: {}
+[10.611962] (-) TimerEvent: {}
+[10.712907] (-) TimerEvent: {}
+[10.813689] (-) TimerEvent: {}
+[10.914637] (-) TimerEvent: {}
+[11.015876] (-) TimerEvent: {}
+[11.116537] (-) TimerEvent: {}
+[11.217719] (-) TimerEvent: {}
+[11.320588] (-) TimerEvent: {}
+[11.421539] (-) TimerEvent: {}
+[11.523337] (-) TimerEvent: {}
+[11.624171] (-) TimerEvent: {}
+[11.724845] (-) TimerEvent: {}
+[11.825702] (-) TimerEvent: {}
+[11.927473] (-) TimerEvent: {}
+[12.027993] (-) TimerEvent: {}
+[12.129059] (-) TimerEvent: {}
+[12.230074] (-) TimerEvent: {}
+[12.330917] (-) TimerEvent: {}
+[12.431844] (-) TimerEvent: {}
+[12.532517] (-) TimerEvent: {}
+[12.633308] (-) TimerEvent: {}
+[12.734376] (-) TimerEvent: {}
+[12.834937] (-) TimerEvent: {}
+[12.935770] (-) TimerEvent: {}
+[13.036792] (-) TimerEvent: {}
+[13.137564] (-) TimerEvent: {}
+[13.239123] (-) TimerEvent: {}
+[13.340426] (-) TimerEvent: {}
+[13.441877] (-) TimerEvent: {}
+[13.543151] (-) TimerEvent: {}
+[13.644974] (-) TimerEvent: {}
+[13.746337] (-) TimerEvent: {}
+[13.847672] (-) TimerEvent: {}
+[13.949984] (-) TimerEvent: {}
+[14.051729] (-) TimerEvent: {}
+[14.152463] (-) TimerEvent: {}
+[14.253701] (-) TimerEvent: {}
+[14.355057] (-) TimerEvent: {}
+[14.456026] (-) TimerEvent: {}
+[14.556971] (-) TimerEvent: {}
+[14.658447] (-) TimerEvent: {}
+[14.759848] (-) TimerEvent: {}
+[14.860928] (-) TimerEvent: {}
+[14.962010] (-) TimerEvent: {}
+[15.064705] (-) TimerEvent: {}
+[15.166037] (-) TimerEvent: {}
+[15.267129] (-) TimerEvent: {}
+[15.367757] (-) TimerEvent: {}
+[15.468545] (-) TimerEvent: {}
+[15.570265] (-) TimerEvent: {}
+[15.671654] (-) TimerEvent: {}
+[15.772759] (-) TimerEvent: {}
+[15.874053] (-) TimerEvent: {}
+[15.975796] (-) TimerEvent: {}
+[16.077003] (-) TimerEvent: {}
+[16.178771] (-) TimerEvent: {}
+[16.280449] (-) TimerEvent: {}
+[16.381567] (-) TimerEvent: {}
+[16.482217] (-) TimerEvent: {}
+[16.582997] (-) TimerEvent: {}
+[16.683353] (-) TimerEvent: {}
+[16.783843] (-) TimerEvent: {}
+[16.884455] (-) TimerEvent: {}
+[16.984975] (-) TimerEvent: {}
+[17.085969] (-) TimerEvent: {}
+[17.187009] (-) TimerEvent: {}
+[17.288924] (-) TimerEvent: {}
+[17.389955] (-) TimerEvent: {}
+[17.491413] (-) TimerEvent: {}
+[17.592909] (-) TimerEvent: {}
+[17.694889] (-) TimerEvent: {}
+[17.795449] (-) TimerEvent: {}
+[17.896548] (-) TimerEvent: {}
+[17.997132] (-) TimerEvent: {}
+[18.097938] (-) TimerEvent: {}
+[18.198864] (-) TimerEvent: {}
+[18.299441] (-) TimerEvent: {}
+[18.400052] (-) TimerEvent: {}
+[18.500805] (-) TimerEvent: {}
+[18.601584] (-) TimerEvent: {}
+[18.702065] (-) TimerEvent: {}
+[18.803189] (-) TimerEvent: {}
+[18.904990] (-) TimerEvent: {}
+[19.006323] (-) TimerEvent: {}
+[19.107503] (-) TimerEvent: {}
+[19.208689] (-) TimerEvent: {}
+[19.309894] (-) TimerEvent: {}
+[19.410654] (-) TimerEvent: {}
+[19.511364] (-) TimerEvent: {}
+[19.612177] (-) TimerEvent: {}
+[19.713335] (-) TimerEvent: {}
+[19.814597] (-) TimerEvent: {}
+[19.915402] (-) TimerEvent: {}
+[20.016329] (-) TimerEvent: {}
+[20.117422] (-) TimerEvent: {}
+[20.218054] (-) TimerEvent: {}
+[20.318772] (-) TimerEvent: {}
+[20.420172] (-) TimerEvent: {}
+[20.520950] (-) TimerEvent: {}
+[20.622303] (-) TimerEvent: {}
+[20.723925] (-) TimerEvent: {}
+[20.824887] (-) TimerEvent: {}
+[20.926178] (-) TimerEvent: {}
+[21.027071] (-) TimerEvent: {}
+[21.128718] (-) TimerEvent: {}
+[21.229634] (-) TimerEvent: {}
+[21.330297] (-) TimerEvent: {}
+[21.430764] (-) TimerEvent: {}
+[21.531465] (-) TimerEvent: {}
+[21.632182] (-) TimerEvent: {}
+[21.732710] (-) TimerEvent: {}
+[21.833616] (-) TimerEvent: {}
+[21.934777] (-) TimerEvent: {}
+[22.035942] (-) TimerEvent: {}
+[22.137383] (-) TimerEvent: {}
+[22.238730] (-) TimerEvent: {}
+[22.339681] (-) TimerEvent: {}
+[22.441399] (-) TimerEvent: {}
+[22.542189] (-) TimerEvent: {}
+[22.643255] (-) TimerEvent: {}
+[22.744805] (-) TimerEvent: {}
+[22.846070] (-) TimerEvent: {}
+[22.946992] (-) TimerEvent: {}
+[23.047593] (-) TimerEvent: {}
+[23.148439] (-) TimerEvent: {}
+[23.249039] (-) TimerEvent: {}
+[23.350443] (-) TimerEvent: {}
+[23.451209] (-) TimerEvent: {}
+[23.552348] (-) TimerEvent: {}
+[23.653128] (-) TimerEvent: {}
+[23.754392] (-) TimerEvent: {}
+[23.855456] (-) TimerEvent: {}
+[23.956269] (-) TimerEvent: {}
+[24.057851] (-) TimerEvent: {}
+[24.159632] (-) TimerEvent: {}
+[24.260610] (-) TimerEvent: {}
+[24.361774] (-) TimerEvent: {}
+[24.462520] (-) TimerEvent: {}
+[24.563646] (-) TimerEvent: {}
+[24.664526] (-) TimerEvent: {}
+[24.699902] (motor_control) StdoutLine: {'line': b'[ 50%] \x1b[32m\x1b[1mLinking CXX executable motor_control_state\x1b[0m\n'}
+[24.765422] (-) TimerEvent: {}
+[24.865852] (-) TimerEvent: {}
+[24.966862] (-) TimerEvent: {}
+[25.069762] (-) TimerEvent: {}
+[25.170769] (-) TimerEvent: {}
+[25.272198] (-) TimerEvent: {}
+[25.373467] (-) TimerEvent: {}
+[25.474729] (-) TimerEvent: {}
+[25.575632] (-) TimerEvent: {}
+[25.677832] (-) TimerEvent: {}
+[25.780213] (-) TimerEvent: {}
+[25.880823] (-) TimerEvent: {}
+[25.967183] (motor_control) StdoutLine: {'line': b'[100%] Built target motor_control_state\n'}
+[25.981099] (-) TimerEvent: {}
+[25.992684] (motor_control) CommandEnded: {'returncode': 0}
+[26.007774] (motor_control) JobProgress: {'identifier': 'motor_control', 'progress': 'install'}
+[26.008618] (motor_control) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/abc/MDH/ros_ws/build/motor_control'], 'cwd': '/home/abc/MDH/ros_ws/build/motor_control', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HTTPS_PROXY', 'http://127.0.0.1:7890/'), ('no_proxy', 'localhost,127.0.0.0/8,::1'), ('LANGUAGE', 'zh_CN:en'), ('USER', 'abc'), ('LC_TIME', 'zh_CN.UTF-8'), ('all_proxy', 'socks://127.0.0.1:7890/'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/abc/MDH/ros_ws/install/motor_control_command_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/abc'), ('OLDPWD', '/home/abc/MDH'), ('DESKTOP_SESSION', 'ubuntu'), ('NO_PROXY', 'localhost,127.0.0.0/8,::1'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('SYSTEMD_EXEC_PID', '1697'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('https_proxy', 'http://127.0.0.1:7890/'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'fcitx'), ('LOGNAME', 'abc'), ('ALL_PROXY', 'socks://127.0.0.1:7890/'), ('http_proxy', 'http://127.0.0.1:7890/'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'abc'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/abc123:@/tmp/.ICE-unix/1511,unix/abc123:/tmp/.ICE-unix/1511'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/3b9c974c_9c27_4745_bffd_b0e8fc33bfd8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=fcitx'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.KEKH32'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.120'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/abc/MDH/ros_ws/install/motor_control_command_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('QT_IM_MODULE', 'fcitx'), ('PWD', '/home/abc/MDH/ros_ws/build/motor_control'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CLUTTER_IM_MODULE', 'fcitx'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/abc/MDH/ros_ws/install/motor_control_command_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('HTTP_PROXY', 'http://127.0.0.1:7890/'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/abc/MDH/ros_ws/install/motor_control_command_msgs:/opt/ros/humble')]), 'shell': False}
+[26.033143] (motor_control) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[26.033419] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control/share/motor_control/launch\n'}
+[26.033952] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control/share/motor_control/launch/adapter_launch.xml\n'}
+[26.036431] (motor_control) StdoutLine: {'line': b'-- Installing: /home/abc/MDH/ros_ws/install/motor_control/lib/motor_control/motor_control_state\n'}
+[26.044194] (motor_control) StdoutLine: {'line': b'-- Set runtime path of "/home/abc/MDH/ros_ws/install/motor_control/lib/motor_control/motor_control_state" to ""\n'}
+[26.045233] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control/share/ament_index/resource_index/package_run_dependencies/motor_control\n'}
+[26.045418] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control/share/ament_index/resource_index/parent_prefix_path/motor_control\n'}
+[26.045596] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control/share/motor_control/environment/ament_prefix_path.sh\n'}
+[26.045758] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control/share/motor_control/environment/ament_prefix_path.dsv\n'}
+[26.045845] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control/share/motor_control/environment/path.sh\n'}
+[26.045933] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control/share/motor_control/environment/path.dsv\n'}
+[26.046738] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control/share/motor_control/local_setup.bash\n'}
+[26.046974] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control/share/motor_control/local_setup.sh\n'}
+[26.047084] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control/share/motor_control/local_setup.zsh\n'}
+[26.047676] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control/share/motor_control/local_setup.dsv\n'}
+[26.048025] (motor_control) StdoutLine: {'line': b'-- Installing: /home/abc/MDH/ros_ws/install/motor_control/share/motor_control/package.dsv\n'}
+[26.048112] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control/share/ament_index/resource_index/packages/motor_control\n'}
+[26.048172] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control/share/motor_control/cmake/motor_controlConfig.cmake\n'}
+[26.048234] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control/share/motor_control/cmake/motor_controlConfig-version.cmake\n'}
+[26.048312] (motor_control) StdoutLine: {'line': b'-- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control/share/motor_control/package.xml\n'}
+[26.051190] (motor_control) CommandEnded: {'returncode': 0}
+[26.081350] (-) TimerEvent: {}
+[26.096528] (motor_control) JobEnded: {'identifier': 'motor_control', 'rc': 0}
+[26.098301] (-) EventReactorShutdown: {}
