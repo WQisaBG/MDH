@@ -1,0 +1,35 @@
+[35m[1mConsolidate compiler generated dependencies of target motor_control_node[0m
+[ 10%] [32mBuilding CXX object CMakeFiles/motor_control_node.dir/src/main.cpp.o[0m
+[ 20%] [32mBuilding CXX object CMakeFiles/motor_control_node.dir/src/Node.cpp.o[0m
+[ 30%] [32mBuilding CXX object CMakeFiles/motor_control_node.dir/src/motor_command.cpp.o[0m
+[ 40%] [32mBuilding CXX object CMakeFiles/motor_control_node.dir/src/serial_communication.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/motor_control_node.dir/src/http_server.cpp.o[0m
+[ 60%] [32m[1mLinking CXX executable motor_control_node[0m
+[100%] Built target motor_control_node
+-- Install configuration: ""
+-- Installing: /home/abc/MDH/ros_ws/install/motor_control_v2/lib/motor_control_v2/motor_control_node
+-- Set runtime path of "/home/abc/MDH/ros_ws/install/motor_control_v2/lib/motor_control_v2/motor_control_node" to ""
+-- Installing: /home/abc/MDH/ros_ws/install/motor_control_v2/include
+-- Installing: /home/abc/MDH/ros_ws/install/motor_control_v2/include/motor_control_v2
+-- Installing: /home/abc/MDH/ros_ws/install/motor_control_v2/include/motor_control_v2/motor_command.hpp
+-- Installing: /home/abc/MDH/ros_ws/install/motor_control_v2/include/motor_control_v2/motor_config.hpp
+-- Installing: /home/abc/MDH/ros_ws/install/motor_control_v2/include/motor_control_v2/serial_communication.hpp
+-- Installing: /home/abc/MDH/ros_ws/install/motor_control_v2/include/motor_control_v2/Node.hpp
+-- Installing: /home/abc/MDH/ros_ws/install/motor_control_v2/include/motor_control_v2/ros2_communication.hpp
+-- Installing: /home/abc/MDH/ros_ws/install/motor_control_v2/include/motor_control_v2/http_server.hpp
+-- Installing: /home/abc/MDH/ros_ws/install/motor_control_v2/share/ament_index/resource_index/package_run_dependencies/motor_control_v2
+-- Installing: /home/abc/MDH/ros_ws/install/motor_control_v2/share/ament_index/resource_index/parent_prefix_path/motor_control_v2
+-- Installing: /home/abc/MDH/ros_ws/install/motor_control_v2/share/motor_control_v2/environment/ament_prefix_path.sh
+-- Installing: /home/abc/MDH/ros_ws/install/motor_control_v2/share/motor_control_v2/environment/ament_prefix_path.dsv
+-- Installing: /home/abc/MDH/ros_ws/install/motor_control_v2/share/motor_control_v2/environment/path.sh
+-- Installing: /home/abc/MDH/ros_ws/install/motor_control_v2/share/motor_control_v2/environment/path.dsv
+-- Installing: /home/abc/MDH/ros_ws/install/motor_control_v2/share/motor_control_v2/local_setup.bash
+-- Installing: /home/abc/MDH/ros_ws/install/motor_control_v2/share/motor_control_v2/local_setup.sh
+-- Installing: /home/abc/MDH/ros_ws/install/motor_control_v2/share/motor_control_v2/local_setup.zsh
+-- Installing: /home/abc/MDH/ros_ws/install/motor_control_v2/share/motor_control_v2/local_setup.dsv
+-- Installing: /home/abc/MDH/ros_ws/install/motor_control_v2/share/motor_control_v2/package.dsv
+-- Installing: /home/abc/MDH/ros_ws/install/motor_control_v2/share/ament_index/resource_index/packages/motor_control_v2
+-- Installing: /home/abc/MDH/ros_ws/install/motor_control_v2/share/motor_control_v2/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Installing: /home/abc/MDH/ros_ws/install/motor_control_v2/share/motor_control_v2/cmake/motor_control_v2Config.cmake
+-- Installing: /home/abc/MDH/ros_ws/install/motor_control_v2/share/motor_control_v2/cmake/motor_control_v2Config-version.cmake
+-- Installing: /home/abc/MDH/ros_ws/install/motor_control_v2/share/motor_control_v2/package.xml

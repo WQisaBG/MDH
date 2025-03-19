@@ -1,0 +1,59 @@
+
+
+// namespace motor_control_v2
+// {
+//     class InternalHttpServerNode : public HttpServerNode
+//     {
+//     public:
+//         InternalHttpServerNode(const std::string &node_name,
+//                                const std::string &ip = "127.0.0.1", int port = 8080,
+//                                const std::string &serial_port, int baud_rate);
+
+//
+
+//     private:
+//         MotorCommand motor_command_;
+//     };
+
+// }
+
+#ifndef MOTOR_CONTROL_V2_INTERNAL_HTTP_SERVER_HPP_
+#define MOTOR_CONTROL_V2_INTERNAL_HTTP_SERVER_HPP_
+
+#include <string>
+#include "motor_control_v2/http_server.hpp"
+#include "motor_control_v2/motor_command.hpp"
+#include "rmf_utils/impl_ptr.hpp"
+
+namespace motor_control_v2
+{
+
+    class InternalHttpServer
+    {
+    public:
+        InternalHttpServer( rclcpp::Node::SharedPtr node,
+                           const std::string &serial_port, int baud_rate,
+                           const std::string &ip = "127.0.0.1", int port = 8080);
+
+        void start_http_server();
+
+        void handle_motor_task(const httplib::Request &req, httplib::Response &res);
+        void handle_motor_status(const httplib::Request &req, httplib::Response &res);
+
+
+        class Implementation;
+
+        private:
+
+        std::queue<json> request_queue_;
+
+        std::thread http_server_thread;
+
+
+        rmf_utils::impl_ptr<Implementation> _pimpl;
+
+    };
+
+} // namespace motor_control_v2
+
+#endif // MOTOR_CONTROL_V2_INTERNAL_HTTP_SERVER_HPP_
