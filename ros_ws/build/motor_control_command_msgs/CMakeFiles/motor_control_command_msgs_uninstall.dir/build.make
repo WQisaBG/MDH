@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/abc/MDH/ros_ws/src/internal_msgs/motor_control_command_msgs
+CMAKE_SOURCE_DIR = /home/wq/MDH/ros_ws/src/internal_msgs/motor_control_command_msgs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/abc/MDH/ros_ws/build/motor_control_command_msgs
+CMAKE_BINARY_DIR = /home/wq/MDH/ros_ws/build/motor_control_command_msgs
 
 # Utility rule file for motor_control_command_msgs_uninstall.
 
@@ -67,7 +67,7 @@ include CMakeFiles/motor_control_command_msgs_uninstall.dir/compiler_depend.make
 include CMakeFiles/motor_control_command_msgs_uninstall.dir/progress.make
 
 CMakeFiles/motor_control_command_msgs_uninstall:
-	/usr/bin/cmake -P /home/abc/MDH/ros_ws/build/motor_control_command_msgs/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
+	/usr/bin/cmake -P /home/wq/MDH/ros_ws/build/motor_control_command_msgs/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
 
 motor_control_command_msgs_uninstall: CMakeFiles/motor_control_command_msgs_uninstall
 motor_control_command_msgs_uninstall: CMakeFiles/motor_control_command_msgs_uninstall.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/motor_control_command_msgs_uninstall.dir/clean:
 .PHONY : CMakeFiles/motor_control_command_msgs_uninstall.dir/clean
 
 CMakeFiles/motor_control_command_msgs_uninstall.dir/depend:
-	cd /home/abc/MDH/ros_ws/build/motor_control_command_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/abc/MDH/ros_ws/src/internal_msgs/motor_control_command_msgs /home/abc/MDH/ros_ws/src/internal_msgs/motor_control_command_msgs /home/abc/MDH/ros_ws/build/motor_control_command_msgs /home/abc/MDH/ros_ws/build/motor_control_command_msgs /home/abc/MDH/ros_ws/build/motor_control_command_msgs/CMakeFiles/motor_control_command_msgs_uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/wq/MDH/ros_ws/build/motor_control_command_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/wq/MDH/ros_ws/src/internal_msgs/motor_control_command_msgs /home/wq/MDH/ros_ws/src/internal_msgs/motor_control_command_msgs /home/wq/MDH/ros_ws/build/motor_control_command_msgs /home/wq/MDH/ros_ws/build/motor_control_command_msgs /home/wq/MDH/ros_ws/build/motor_control_command_msgs/CMakeFiles/motor_control_command_msgs_uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/motor_control_command_msgs_uninstall.dir/depend
 

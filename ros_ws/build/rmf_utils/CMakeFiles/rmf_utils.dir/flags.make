@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = -Drmf_utils_EXPORTS
 
-CXX_INCLUDES = -I/home/abc/MDH/ros_ws/src/rmf_utils/rmf_utils/include
+CXX_INCLUDES = -I/home/wq/MDH/ros_ws/src/rmf_utils/rmf_utils/include
 
 CXX_FLAGS = -fPIC -Wall -Wextra -Wpedantic
 

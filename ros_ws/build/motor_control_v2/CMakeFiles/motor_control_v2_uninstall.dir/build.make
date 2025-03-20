@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/abc/MDH/ros_ws/src/motor_control_v2
+CMAKE_SOURCE_DIR = /home/wq/MDH/ros_ws/src/motor_control_v2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/abc/MDH/ros_ws/build/motor_control_v2
+CMAKE_BINARY_DIR = /home/wq/MDH/ros_ws/build/motor_control_v2
 
 # Utility rule file for motor_control_v2_uninstall.
 
@@ -67,7 +67,7 @@ include CMakeFiles/motor_control_v2_uninstall.dir/compiler_depend.make
 include CMakeFiles/motor_control_v2_uninstall.dir/progress.make
 
 CMakeFiles/motor_control_v2_uninstall:
-	/usr/bin/cmake -P /home/abc/MDH/ros_ws/build/motor_control_v2/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
+	/usr/bin/cmake -P /home/wq/MDH/ros_ws/build/motor_control_v2/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
 
 motor_control_v2_uninstall: CMakeFiles/motor_control_v2_uninstall
 motor_control_v2_uninstall: CMakeFiles/motor_control_v2_uninstall.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/motor_control_v2_uninstall.dir/clean:
 .PHONY : CMakeFiles/motor_control_v2_uninstall.dir/clean
 
 CMakeFiles/motor_control_v2_uninstall.dir/depend:
-	cd /home/abc/MDH/ros_ws/build/motor_control_v2 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/abc/MDH/ros_ws/src/motor_control_v2 /home/abc/MDH/ros_ws/src/motor_control_v2 /home/abc/MDH/ros_ws/build/motor_control_v2 /home/abc/MDH/ros_ws/build/motor_control_v2 /home/abc/MDH/ros_ws/build/motor_control_v2/CMakeFiles/motor_control_v2_uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/wq/MDH/ros_ws/build/motor_control_v2 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/wq/MDH/ros_ws/src/motor_control_v2 /home/wq/MDH/ros_ws/src/motor_control_v2 /home/wq/MDH/ros_ws/build/motor_control_v2 /home/wq/MDH/ros_ws/build/motor_control_v2 /home/wq/MDH/ros_ws/build/motor_control_v2/CMakeFiles/motor_control_v2_uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/motor_control_v2_uninstall.dir/depend
 

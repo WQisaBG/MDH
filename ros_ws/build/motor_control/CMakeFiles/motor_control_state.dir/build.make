@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/abc/MDH/ros_ws/src/motor_control
+CMAKE_SOURCE_DIR = /home/wq/MDH/ros_ws/src/motor_control
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/abc/MDH/ros_ws/build/motor_control
+CMAKE_BINARY_DIR = /home/wq/MDH/ros_ws/build/motor_control
 
 # Include any dependencies generated for this target.
 include CMakeFiles/motor_control_state.dir/depend.make
@@ -70,59 +70,59 @@ include CMakeFiles/motor_control_state.dir/progress.make
 include CMakeFiles/motor_control_state.dir/flags.make
 
 CMakeFiles/motor_control_state.dir/src/motor_control_state.cpp.o: CMakeFiles/motor_control_state.dir/flags.make
-CMakeFiles/motor_control_state.dir/src/motor_control_state.cpp.o: /home/abc/MDH/ros_ws/src/motor_control/src/motor_control_state.cpp
+CMakeFiles/motor_control_state.dir/src/motor_control_state.cpp.o: /home/wq/MDH/ros_ws/src/motor_control/src/motor_control_state.cpp
 CMakeFiles/motor_control_state.dir/src/motor_control_state.cpp.o: CMakeFiles/motor_control_state.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/abc/MDH/ros_ws/build/motor_control/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/motor_control_state.dir/src/motor_control_state.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/motor_control_state.dir/src/motor_control_state.cpp.o -MF CMakeFiles/motor_control_state.dir/src/motor_control_state.cpp.o.d -o CMakeFiles/motor_control_state.dir/src/motor_control_state.cpp.o -c /home/abc/MDH/ros_ws/src/motor_control/src/motor_control_state.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wq/MDH/ros_ws/build/motor_control/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/motor_control_state.dir/src/motor_control_state.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/motor_control_state.dir/src/motor_control_state.cpp.o -MF CMakeFiles/motor_control_state.dir/src/motor_control_state.cpp.o.d -o CMakeFiles/motor_control_state.dir/src/motor_control_state.cpp.o -c /home/wq/MDH/ros_ws/src/motor_control/src/motor_control_state.cpp
 
 CMakeFiles/motor_control_state.dir/src/motor_control_state.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/motor_control_state.dir/src/motor_control_state.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/abc/MDH/ros_ws/src/motor_control/src/motor_control_state.cpp > CMakeFiles/motor_control_state.dir/src/motor_control_state.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wq/MDH/ros_ws/src/motor_control/src/motor_control_state.cpp > CMakeFiles/motor_control_state.dir/src/motor_control_state.cpp.i
 
 CMakeFiles/motor_control_state.dir/src/motor_control_state.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/motor_control_state.dir/src/motor_control_state.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/abc/MDH/ros_ws/src/motor_control/src/motor_control_state.cpp -o CMakeFiles/motor_control_state.dir/src/motor_control_state.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wq/MDH/ros_ws/src/motor_control/src/motor_control_state.cpp -o CMakeFiles/motor_control_state.dir/src/motor_control_state.cpp.s
 
-CMakeFiles/motor_control_state.dir/home/abc/MDH/thirdparty/serial/src/Serial.cpp.o: CMakeFiles/motor_control_state.dir/flags.make
-CMakeFiles/motor_control_state.dir/home/abc/MDH/thirdparty/serial/src/Serial.cpp.o: /home/abc/MDH/thirdparty/serial/src/Serial.cpp
-CMakeFiles/motor_control_state.dir/home/abc/MDH/thirdparty/serial/src/Serial.cpp.o: CMakeFiles/motor_control_state.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/abc/MDH/ros_ws/build/motor_control/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/motor_control_state.dir/home/abc/MDH/thirdparty/serial/src/Serial.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/motor_control_state.dir/home/abc/MDH/thirdparty/serial/src/Serial.cpp.o -MF CMakeFiles/motor_control_state.dir/home/abc/MDH/thirdparty/serial/src/Serial.cpp.o.d -o CMakeFiles/motor_control_state.dir/home/abc/MDH/thirdparty/serial/src/Serial.cpp.o -c /home/abc/MDH/thirdparty/serial/src/Serial.cpp
+CMakeFiles/motor_control_state.dir/home/wq/MDH/thirdparty/serial/src/Serial.cpp.o: CMakeFiles/motor_control_state.dir/flags.make
+CMakeFiles/motor_control_state.dir/home/wq/MDH/thirdparty/serial/src/Serial.cpp.o: /home/wq/MDH/thirdparty/serial/src/Serial.cpp
+CMakeFiles/motor_control_state.dir/home/wq/MDH/thirdparty/serial/src/Serial.cpp.o: CMakeFiles/motor_control_state.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wq/MDH/ros_ws/build/motor_control/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/motor_control_state.dir/home/wq/MDH/thirdparty/serial/src/Serial.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/motor_control_state.dir/home/wq/MDH/thirdparty/serial/src/Serial.cpp.o -MF CMakeFiles/motor_control_state.dir/home/wq/MDH/thirdparty/serial/src/Serial.cpp.o.d -o CMakeFiles/motor_control_state.dir/home/wq/MDH/thirdparty/serial/src/Serial.cpp.o -c /home/wq/MDH/thirdparty/serial/src/Serial.cpp
 
-CMakeFiles/motor_control_state.dir/home/abc/MDH/thirdparty/serial/src/Serial.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/motor_control_state.dir/home/abc/MDH/thirdparty/serial/src/Serial.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/abc/MDH/thirdparty/serial/src/Serial.cpp > CMakeFiles/motor_control_state.dir/home/abc/MDH/thirdparty/serial/src/Serial.cpp.i
+CMakeFiles/motor_control_state.dir/home/wq/MDH/thirdparty/serial/src/Serial.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/motor_control_state.dir/home/wq/MDH/thirdparty/serial/src/Serial.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wq/MDH/thirdparty/serial/src/Serial.cpp > CMakeFiles/motor_control_state.dir/home/wq/MDH/thirdparty/serial/src/Serial.cpp.i
 
-CMakeFiles/motor_control_state.dir/home/abc/MDH/thirdparty/serial/src/Serial.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/motor_control_state.dir/home/abc/MDH/thirdparty/serial/src/Serial.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/abc/MDH/thirdparty/serial/src/Serial.cpp -o CMakeFiles/motor_control_state.dir/home/abc/MDH/thirdparty/serial/src/Serial.cpp.s
+CMakeFiles/motor_control_state.dir/home/wq/MDH/thirdparty/serial/src/Serial.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/motor_control_state.dir/home/wq/MDH/thirdparty/serial/src/Serial.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wq/MDH/thirdparty/serial/src/Serial.cpp -o CMakeFiles/motor_control_state.dir/home/wq/MDH/thirdparty/serial/src/Serial.cpp.s
 
-CMakeFiles/motor_control_state.dir/home/abc/MDH/thirdparty/serial/src/SerialImplUnix.cpp.o: CMakeFiles/motor_control_state.dir/flags.make
-CMakeFiles/motor_control_state.dir/home/abc/MDH/thirdparty/serial/src/SerialImplUnix.cpp.o: /home/abc/MDH/thirdparty/serial/src/SerialImplUnix.cpp
-CMakeFiles/motor_control_state.dir/home/abc/MDH/thirdparty/serial/src/SerialImplUnix.cpp.o: CMakeFiles/motor_control_state.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/abc/MDH/ros_ws/build/motor_control/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/motor_control_state.dir/home/abc/MDH/thirdparty/serial/src/SerialImplUnix.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/motor_control_state.dir/home/abc/MDH/thirdparty/serial/src/SerialImplUnix.cpp.o -MF CMakeFiles/motor_control_state.dir/home/abc/MDH/thirdparty/serial/src/SerialImplUnix.cpp.o.d -o CMakeFiles/motor_control_state.dir/home/abc/MDH/thirdparty/serial/src/SerialImplUnix.cpp.o -c /home/abc/MDH/thirdparty/serial/src/SerialImplUnix.cpp
+CMakeFiles/motor_control_state.dir/home/wq/MDH/thirdparty/serial/src/SerialImplUnix.cpp.o: CMakeFiles/motor_control_state.dir/flags.make
+CMakeFiles/motor_control_state.dir/home/wq/MDH/thirdparty/serial/src/SerialImplUnix.cpp.o: /home/wq/MDH/thirdparty/serial/src/SerialImplUnix.cpp
+CMakeFiles/motor_control_state.dir/home/wq/MDH/thirdparty/serial/src/SerialImplUnix.cpp.o: CMakeFiles/motor_control_state.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wq/MDH/ros_ws/build/motor_control/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/motor_control_state.dir/home/wq/MDH/thirdparty/serial/src/SerialImplUnix.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/motor_control_state.dir/home/wq/MDH/thirdparty/serial/src/SerialImplUnix.cpp.o -MF CMakeFiles/motor_control_state.dir/home/wq/MDH/thirdparty/serial/src/SerialImplUnix.cpp.o.d -o CMakeFiles/motor_control_state.dir/home/wq/MDH/thirdparty/serial/src/SerialImplUnix.cpp.o -c /home/wq/MDH/thirdparty/serial/src/SerialImplUnix.cpp
 
-CMakeFiles/motor_control_state.dir/home/abc/MDH/thirdparty/serial/src/SerialImplUnix.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/motor_control_state.dir/home/abc/MDH/thirdparty/serial/src/SerialImplUnix.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/abc/MDH/thirdparty/serial/src/SerialImplUnix.cpp > CMakeFiles/motor_control_state.dir/home/abc/MDH/thirdparty/serial/src/SerialImplUnix.cpp.i
+CMakeFiles/motor_control_state.dir/home/wq/MDH/thirdparty/serial/src/SerialImplUnix.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/motor_control_state.dir/home/wq/MDH/thirdparty/serial/src/SerialImplUnix.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wq/MDH/thirdparty/serial/src/SerialImplUnix.cpp > CMakeFiles/motor_control_state.dir/home/wq/MDH/thirdparty/serial/src/SerialImplUnix.cpp.i
 
-CMakeFiles/motor_control_state.dir/home/abc/MDH/thirdparty/serial/src/SerialImplUnix.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/motor_control_state.dir/home/abc/MDH/thirdparty/serial/src/SerialImplUnix.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/abc/MDH/thirdparty/serial/src/SerialImplUnix.cpp -o CMakeFiles/motor_control_state.dir/home/abc/MDH/thirdparty/serial/src/SerialImplUnix.cpp.s
+CMakeFiles/motor_control_state.dir/home/wq/MDH/thirdparty/serial/src/SerialImplUnix.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/motor_control_state.dir/home/wq/MDH/thirdparty/serial/src/SerialImplUnix.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wq/MDH/thirdparty/serial/src/SerialImplUnix.cpp -o CMakeFiles/motor_control_state.dir/home/wq/MDH/thirdparty/serial/src/SerialImplUnix.cpp.s
 
 # Object files for target motor_control_state
 motor_control_state_OBJECTS = \
 "CMakeFiles/motor_control_state.dir/src/motor_control_state.cpp.o" \
-"CMakeFiles/motor_control_state.dir/home/abc/MDH/thirdparty/serial/src/Serial.cpp.o" \
-"CMakeFiles/motor_control_state.dir/home/abc/MDH/thirdparty/serial/src/SerialImplUnix.cpp.o"
+"CMakeFiles/motor_control_state.dir/home/wq/MDH/thirdparty/serial/src/Serial.cpp.o" \
+"CMakeFiles/motor_control_state.dir/home/wq/MDH/thirdparty/serial/src/SerialImplUnix.cpp.o"
 
 # External object files for target motor_control_state
 motor_control_state_EXTERNAL_OBJECTS =
 
 motor_control_state: CMakeFiles/motor_control_state.dir/src/motor_control_state.cpp.o
-motor_control_state: CMakeFiles/motor_control_state.dir/home/abc/MDH/thirdparty/serial/src/Serial.cpp.o
-motor_control_state: CMakeFiles/motor_control_state.dir/home/abc/MDH/thirdparty/serial/src/SerialImplUnix.cpp.o
+motor_control_state: CMakeFiles/motor_control_state.dir/home/wq/MDH/thirdparty/serial/src/Serial.cpp.o
+motor_control_state: CMakeFiles/motor_control_state.dir/home/wq/MDH/thirdparty/serial/src/SerialImplUnix.cpp.o
 motor_control_state: CMakeFiles/motor_control_state.dir/build.make
 motor_control_state: /opt/ros/humble/lib/librclcpp.so
 motor_control_state: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_fastrtps_c.so
@@ -131,12 +131,12 @@ motor_control_state: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_introsp
 motor_control_state: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_introspection_cpp.so
 motor_control_state: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_cpp.so
 motor_control_state: /opt/ros/humble/lib/libstd_msgs__rosidl_generator_py.so
-motor_control_state: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/lib/libmotor_control_command_msgs__rosidl_typesupport_fastrtps_c.so
-motor_control_state: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/lib/libmotor_control_command_msgs__rosidl_typesupport_fastrtps_cpp.so
-motor_control_state: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/lib/libmotor_control_command_msgs__rosidl_typesupport_introspection_c.so
-motor_control_state: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/lib/libmotor_control_command_msgs__rosidl_typesupport_introspection_cpp.so
-motor_control_state: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/lib/libmotor_control_command_msgs__rosidl_typesupport_cpp.so
-motor_control_state: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/lib/libmotor_control_command_msgs__rosidl_generator_py.so
+motor_control_state: /home/wq/MDH/ros_ws/install/motor_control_command_msgs/lib/libmotor_control_command_msgs__rosidl_typesupport_fastrtps_c.so
+motor_control_state: /home/wq/MDH/ros_ws/install/motor_control_command_msgs/lib/libmotor_control_command_msgs__rosidl_typesupport_fastrtps_cpp.so
+motor_control_state: /home/wq/MDH/ros_ws/install/motor_control_command_msgs/lib/libmotor_control_command_msgs__rosidl_typesupport_introspection_c.so
+motor_control_state: /home/wq/MDH/ros_ws/install/motor_control_command_msgs/lib/libmotor_control_command_msgs__rosidl_typesupport_introspection_cpp.so
+motor_control_state: /home/wq/MDH/ros_ws/install/motor_control_command_msgs/lib/libmotor_control_command_msgs__rosidl_typesupport_cpp.so
+motor_control_state: /home/wq/MDH/ros_ws/install/motor_control_command_msgs/lib/libmotor_control_command_msgs__rosidl_generator_py.so
 motor_control_state: /opt/ros/humble/lib/liblibstatistics_collector.so
 motor_control_state: /opt/ros/humble/lib/librcl.so
 motor_control_state: /opt/ros/humble/lib/librmw_implementation.so
@@ -184,8 +184,8 @@ motor_control_state: /opt/ros/humble/lib/librosidl_typesupport_introspection_cpp
 motor_control_state: /opt/ros/humble/lib/librosidl_typesupport_introspection_c.so
 motor_control_state: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_cpp.so
 motor_control_state: /opt/ros/humble/lib/librosidl_typesupport_cpp.so
-motor_control_state: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/lib/libmotor_control_command_msgs__rosidl_typesupport_c.so
-motor_control_state: /home/abc/MDH/ros_ws/install/motor_control_command_msgs/lib/libmotor_control_command_msgs__rosidl_generator_c.so
+motor_control_state: /home/wq/MDH/ros_ws/install/motor_control_command_msgs/lib/libmotor_control_command_msgs__rosidl_typesupport_c.so
+motor_control_state: /home/wq/MDH/ros_ws/install/motor_control_command_msgs/lib/libmotor_control_command_msgs__rosidl_generator_c.so
 motor_control_state: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_generator_py.so
 motor_control_state: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_c.so
 motor_control_state: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_generator_c.so
@@ -195,7 +195,7 @@ motor_control_state: /opt/ros/humble/lib/librosidl_runtime_c.so
 motor_control_state: /opt/ros/humble/lib/librcutils.so
 motor_control_state: /usr/lib/x86_64-linux-gnu/libpython3.10.so
 motor_control_state: CMakeFiles/motor_control_state.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/abc/MDH/ros_ws/build/motor_control/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable motor_control_state"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/wq/MDH/ros_ws/build/motor_control/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable motor_control_state"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/motor_control_state.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -207,6 +207,6 @@ CMakeFiles/motor_control_state.dir/clean:
 .PHONY : CMakeFiles/motor_control_state.dir/clean
 
 CMakeFiles/motor_control_state.dir/depend:
-	cd /home/abc/MDH/ros_ws/build/motor_control && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/abc/MDH/ros_ws/src/motor_control /home/abc/MDH/ros_ws/src/motor_control /home/abc/MDH/ros_ws/build/motor_control /home/abc/MDH/ros_ws/build/motor_control /home/abc/MDH/ros_ws/build/motor_control/CMakeFiles/motor_control_state.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/wq/MDH/ros_ws/build/motor_control && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/wq/MDH/ros_ws/src/motor_control /home/wq/MDH/ros_ws/src/motor_control /home/wq/MDH/ros_ws/build/motor_control /home/wq/MDH/ros_ws/build/motor_control /home/wq/MDH/ros_ws/build/motor_control/CMakeFiles/motor_control_state.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/motor_control_state.dir/depend
 

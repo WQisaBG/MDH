@@ -31,7 +31,7 @@ namespace motor_control_v2
     class InternalHttpServer
     {
     public:
-        InternalHttpServer( rclcpp::Node::SharedPtr node,
+        InternalHttpServer(rclcpp::Node::SharedPtr node,
                            const std::string &serial_port, int baud_rate,
                            const std::string &ip = "127.0.0.1", int port = 8080);
 
@@ -44,6 +44,12 @@ namespace motor_control_v2
             //GET请求
         void handle_motor_status(const httplib::Request &req, httplib::Response &res);
 
+        void deal_post_request();
+
+        void update_motor_status();
+
+
+
 
         class Implementation;
 
@@ -51,6 +57,9 @@ namespace motor_control_v2
 
 
         std::thread http_server_thread;
+        std::thread deal_post_request_thread;
+        std::thread update_motor_status_thread;
+
 
 
         rmf_utils::impl_ptr<Implementation> _pimpl;

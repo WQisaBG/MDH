@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/abc/MDH/ros_ws/src/internal_msgs/motor_control_command_msgs
+CMAKE_SOURCE_DIR = /home/wq/MDH/ros_ws/src/internal_msgs/motor_control_command_msgs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/abc/MDH/ros_ws/build/motor_control_command_msgs
+CMAKE_BINARY_DIR = /home/wq/MDH/ros_ws/build/motor_control_command_msgs
 
 # Utility rule file for motor_control_command_msgs.
 
@@ -66,8 +66,8 @@ include CMakeFiles/motor_control_command_msgs.dir/compiler_depend.make
 # Include the progress variables for this target.
 include CMakeFiles/motor_control_command_msgs.dir/progress.make
 
-CMakeFiles/motor_control_command_msgs: /home/abc/MDH/ros_ws/src/internal_msgs/motor_control_command_msgs/msg/Motor.msg
-CMakeFiles/motor_control_command_msgs: /home/abc/MDH/ros_ws/src/internal_msgs/motor_control_command_msgs/msg/MotorControlCommand.msg
+CMakeFiles/motor_control_command_msgs: /home/wq/MDH/ros_ws/src/internal_msgs/motor_control_command_msgs/msg/Motor.msg
+CMakeFiles/motor_control_command_msgs: /home/wq/MDH/ros_ws/src/internal_msgs/motor_control_command_msgs/msg/MotorControlCommand.msg
 CMakeFiles/motor_control_command_msgs: /opt/ros/humble/share/builtin_interfaces/msg/Duration.idl
 CMakeFiles/motor_control_command_msgs: /opt/ros/humble/share/builtin_interfaces/msg/Time.idl
 
@@ -84,6 +84,6 @@ CMakeFiles/motor_control_command_msgs.dir/clean:
 .PHONY : CMakeFiles/motor_control_command_msgs.dir/clean
 
 CMakeFiles/motor_control_command_msgs.dir/depend:
-	cd /home/abc/MDH/ros_ws/build/motor_control_command_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/abc/MDH/ros_ws/src/internal_msgs/motor_control_command_msgs /home/abc/MDH/ros_ws/src/internal_msgs/motor_control_command_msgs /home/abc/MDH/ros_ws/build/motor_control_command_msgs /home/abc/MDH/ros_ws/build/motor_control_command_msgs /home/abc/MDH/ros_ws/build/motor_control_command_msgs/CMakeFiles/motor_control_command_msgs.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/wq/MDH/ros_ws/build/motor_control_command_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/wq/MDH/ros_ws/src/internal_msgs/motor_control_command_msgs /home/wq/MDH/ros_ws/src/internal_msgs/motor_control_command_msgs /home/wq/MDH/ros_ws/build/motor_control_command_msgs /home/wq/MDH/ros_ws/build/motor_control_command_msgs /home/wq/MDH/ros_ws/build/motor_control_command_msgs/CMakeFiles/motor_control_command_msgs.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/motor_control_command_msgs.dir/depend
 

@@ -1,7 +1,7 @@
 {
   "package_name": "motor_control_command_msgs",
   "non_idl_tuples": [
-    "/home/abc/MDH/ros_ws/src/internal_msgs/motor_control_command_msgs:msg/Motor.msg",
-    "/home/abc/MDH/ros_ws/src/internal_msgs/motor_control_command_msgs:msg/MotorControlCommand.msg"
+    "/home/wq/MDH/ros_ws/src/internal_msgs/motor_control_command_msgs:msg/Motor.msg",
+    "/home/wq/MDH/ros_ws/src/internal_msgs/motor_control_command_msgs:msg/MotorControlCommand.msg"
   ]
 }

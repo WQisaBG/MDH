@@ -1,9 +1,9 @@
 CMakeFiles/motor_control_node.dir/src/Node.cpp.o: \
- /home/abc/MDH/ros_ws/src/motor_control_v2/src/Node.cpp \
+ /home/wq/MDH/ros_ws/src/motor_control_v2/src/Node.cpp \
  /usr/include/stdc-predef.h \
- /home/abc/MDH/ros_ws/src/motor_control_v2/include/motor_control_v2/Node.hpp \
- /home/abc/MDH/ros_ws/src/motor_control_v2/include/motor_control_v2/motor_config.hpp \
- /home/abc/MDH/ros_ws/src/motor_control_v2/../../../thirdparty/json/include/nlohmann/json.hpp \
+ /home/wq/MDH/ros_ws/src/motor_control_v2/include/motor_control_v2/Node.hpp \
+ /home/wq/MDH/ros_ws/src/motor_control_v2/include/motor_control_v2/motor_config.hpp \
+ /home/wq/MDH/ros_ws/src/motor_control_v2/../../../thirdparty/json/include/nlohmann/json.hpp \
  /usr/include/c++/11/algorithm /usr/include/c++/11/utility \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -175,9 +175,9 @@ CMakeFiles/motor_control_node.dir/src/Node.cpp.o: \
  /usr/include/c++/11/bits/atomic_lockfree_defines.h \
  /usr/include/c++/11/backward/auto_ptr.h \
  /usr/include/c++/11/pstl/glue_memory_defs.h \
- /home/abc/MDH/ros_ws/src/motor_control_v2/../../../thirdparty/json/include/nlohmann/adl_serializer.hpp \
- /home/abc/MDH/ros_ws/src/motor_control_v2/../../../thirdparty/json/include/nlohmann/detail/abi_macros.hpp \
- /home/abc/MDH/ros_ws/src/motor_control_v2/../../../thirdparty/json/include/nlohmann/detail/conversions/from_json.hpp \
+ /home/wq/MDH/ros_ws/src/motor_control_v2/../../../thirdparty/json/include/nlohmann/adl_serializer.hpp \
+ /home/wq/MDH/ros_ws/src/motor_control_v2/../../../thirdparty/json/include/nlohmann/detail/abi_macros.hpp \
+ /home/wq/MDH/ros_ws/src/motor_control_v2/../../../thirdparty/json/include/nlohmann/detail/conversions/from_json.hpp \
  /usr/include/c++/11/forward_list /usr/include/c++/11/bits/forward_list.h \
  /usr/include/c++/11/bits/forward_list.tcc /usr/include/c++/11/map \
  /usr/include/c++/11/bits/stl_tree.h /usr/include/c++/11/bits/stl_map.h \
@@ -214,26 +214,26 @@ CMakeFiles/motor_control_node.dir/src/Node.cpp.o: \
  /usr/include/c++/11/bits/gslice_array.h \
  /usr/include/c++/11/bits/mask_array.h \
  /usr/include/c++/11/bits/indirect_array.h \
- /home/abc/MDH/ros_ws/src/motor_control_v2/../../../thirdparty/json/include/nlohmann/detail/exceptions.hpp \
- /home/abc/MDH/ros_ws/src/motor_control_v2/../../../thirdparty/json/include/nlohmann/detail/value_t.hpp \
- /home/abc/MDH/ros_ws/src/motor_control_v2/../../../thirdparty/json/include/nlohmann/detail/macro_scope.hpp \
- /home/abc/MDH/ros_ws/src/motor_control_v2/../../../thirdparty/json/include/nlohmann/detail/meta/detected.hpp \
- /home/abc/MDH/ros_ws/src/motor_control_v2/../../../thirdparty/json/include/nlohmann/detail/meta/void_t.hpp \
- /home/abc/MDH/ros_ws/src/motor_control_v2/../../../thirdparty/json/include/nlohmann/thirdparty/hedley/hedley.hpp \
+ /home/wq/MDH/ros_ws/src/motor_control_v2/../../../thirdparty/json/include/nlohmann/detail/exceptions.hpp \
+ /home/wq/MDH/ros_ws/src/motor_control_v2/../../../thirdparty/json/include/nlohmann/detail/value_t.hpp \
+ /home/wq/MDH/ros_ws/src/motor_control_v2/../../../thirdparty/json/include/nlohmann/detail/macro_scope.hpp \
+ /home/wq/MDH/ros_ws/src/motor_control_v2/../../../thirdparty/json/include/nlohmann/detail/meta/detected.hpp \
+ /home/wq/MDH/ros_ws/src/motor_control_v2/../../../thirdparty/json/include/nlohmann/detail/meta/void_t.hpp \
+ /home/wq/MDH/ros_ws/src/motor_control_v2/../../../thirdparty/json/include/nlohmann/thirdparty/hedley/hedley.hpp \
  /usr/include/c++/11/version /usr/include/c++/11/cassert \
  /usr/include/assert.h \
- /home/abc/MDH/ros_ws/src/motor_control_v2/../../../thirdparty/json/include/nlohmann/detail/string_escape.hpp \
- /home/abc/MDH/ros_ws/src/motor_control_v2/../../../thirdparty/json/include/nlohmann/detail/input/position_t.hpp \
- /home/abc/MDH/ros_ws/src/motor_control_v2/../../../thirdparty/json/include/nlohmann/detail/meta/cpp_future.hpp \
- /home/abc/MDH/ros_ws/src/motor_control_v2/../../../thirdparty/json/include/nlohmann/detail/meta/type_traits.hpp \
- /home/abc/MDH/ros_ws/src/motor_control_v2/../../../thirdparty/json/include/nlohmann/detail/iterators/iterator_traits.hpp \
- /home/abc/MDH/ros_ws/src/motor_control_v2/../../../thirdparty/json/include/nlohmann/detail/meta/call_std/begin.hpp \
- /home/abc/MDH/ros_ws/src/motor_control_v2/../../../thirdparty/json/include/nlohmann/detail/meta/call_std/end.hpp \
- /home/abc/MDH/ros_ws/src/motor_control_v2/../../../thirdparty/json/include/nlohmann/json_fwd.hpp \
- /home/abc/MDH/ros_ws/src/motor_control_v2/../../../thirdparty/json/include/nlohmann/detail/string_concat.hpp \
+ /home/wq/MDH/ros_ws/src/motor_control_v2/../../../thirdparty/json/include/nlohmann/detail/string_escape.hpp \
+ /home/wq/MDH/ros_ws/src/motor_control_v2/../../../thirdparty/json/include/nlohmann/detail/input/position_t.hpp \
+ /home/wq/MDH/ros_ws/src/motor_control_v2/../../../thirdparty/json/include/nlohmann/detail/meta/cpp_future.hpp \
+ /home/wq/MDH/ros_ws/src/motor_control_v2/../../../thirdparty/json/include/nlohmann/detail/meta/type_traits.hpp \
+ /home/wq/MDH/ros_ws/src/motor_control_v2/../../../thirdparty/json/include/nlohmann/detail/iterators/iterator_traits.hpp \
+ /home/wq/MDH/ros_ws/src/motor_control_v2/../../../thirdparty/json/include/nlohmann/detail/meta/call_std/begin.hpp \
+ /home/wq/MDH/ros_ws/src/motor_control_v2/../../../thirdparty/json/include/nlohmann/detail/meta/call_std/end.hpp \
+ /home/wq/MDH/ros_ws/src/motor_control_v2/../../../thirdparty/json/include/nlohmann/json_fwd.hpp \
+ /home/wq/MDH/ros_ws/src/motor_control_v2/../../../thirdparty/json/include/nlohmann/detail/string_concat.hpp \
  /usr/include/c++/11/cstring /usr/include/string.h /usr/include/strings.h \
- /home/abc/MDH/ros_ws/src/motor_control_v2/../../../thirdparty/json/include/nlohmann/detail/meta/identity_tag.hpp \
- /home/abc/MDH/ros_ws/src/motor_control_v2/../../../thirdparty/json/include/nlohmann/detail/meta/std_fs.hpp \
+ /home/wq/MDH/ros_ws/src/motor_control_v2/../../../thirdparty/json/include/nlohmann/detail/meta/identity_tag.hpp \
+ /home/wq/MDH/ros_ws/src/motor_control_v2/../../../thirdparty/json/include/nlohmann/detail/meta/std_fs.hpp \
  /usr/include/c++/11/filesystem /usr/include/c++/11/bits/fs_fwd.h \
  /usr/include/c++/11/chrono /usr/include/c++/11/ratio \
  /usr/include/c++/11/ctime /usr/include/c++/11/bits/parse_numbers.h \
@@ -257,35 +257,35 @@ CMakeFiles/motor_control_node.dir/src/Node.cpp.o: \
  /usr/include/c++/11/bits/istream.tcc \
  /usr/include/c++/11/bits/sstream.tcc /usr/include/c++/11/codecvt \
  /usr/include/c++/11/bits/fs_dir.h /usr/include/c++/11/bits/fs_ops.h \
- /home/abc/MDH/ros_ws/src/motor_control_v2/../../../thirdparty/json/include/nlohmann/detail/conversions/to_json.hpp \
+ /home/wq/MDH/ros_ws/src/motor_control_v2/../../../thirdparty/json/include/nlohmann/detail/conversions/to_json.hpp \
  /usr/include/c++/11/optional \
- /home/abc/MDH/ros_ws/src/motor_control_v2/../../../thirdparty/json/include/nlohmann/detail/iterators/iteration_proxy.hpp \
- /home/abc/MDH/ros_ws/src/motor_control_v2/../../../thirdparty/json/include/nlohmann/detail/string_utils.hpp \
- /home/abc/MDH/ros_ws/src/motor_control_v2/../../../thirdparty/json/include/nlohmann/byte_container_with_subtype.hpp \
- /home/abc/MDH/ros_ws/src/motor_control_v2/../../../thirdparty/json/include/nlohmann/detail/hash.hpp \
- /home/abc/MDH/ros_ws/src/motor_control_v2/../../../thirdparty/json/include/nlohmann/detail/input/binary_reader.hpp \
- /home/abc/MDH/ros_ws/src/motor_control_v2/../../../thirdparty/json/include/nlohmann/detail/input/input_adapters.hpp \
+ /home/wq/MDH/ros_ws/src/motor_control_v2/../../../thirdparty/json/include/nlohmann/detail/iterators/iteration_proxy.hpp \
+ /home/wq/MDH/ros_ws/src/motor_control_v2/../../../thirdparty/json/include/nlohmann/detail/string_utils.hpp \
+ /home/wq/MDH/ros_ws/src/motor_control_v2/../../../thirdparty/json/include/nlohmann/byte_container_with_subtype.hpp \
+ /home/wq/MDH/ros_ws/src/motor_control_v2/../../../thirdparty/json/include/nlohmann/detail/hash.hpp \
+ /home/wq/MDH/ros_ws/src/motor_control_v2/../../../thirdparty/json/include/nlohmann/detail/input/binary_reader.hpp \
+ /home/wq/MDH/ros_ws/src/motor_control_v2/../../../thirdparty/json/include/nlohmann/detail/input/input_adapters.hpp \
  /usr/include/c++/11/numeric /usr/include/c++/11/bits/stl_numeric.h \
  /usr/include/c++/11/pstl/glue_numeric_defs.h \
- /home/abc/MDH/ros_ws/src/motor_control_v2/../../../thirdparty/json/include/nlohmann/detail/input/json_sax.hpp \
- /home/abc/MDH/ros_ws/src/motor_control_v2/../../../thirdparty/json/include/nlohmann/detail/input/lexer.hpp \
- /home/abc/MDH/ros_ws/src/motor_control_v2/../../../thirdparty/json/include/nlohmann/detail/meta/is_sax.hpp \
- /home/abc/MDH/ros_ws/src/motor_control_v2/../../../thirdparty/json/include/nlohmann/detail/input/parser.hpp \
- /home/abc/MDH/ros_ws/src/motor_control_v2/../../../thirdparty/json/include/nlohmann/detail/iterators/internal_iterator.hpp \
- /home/abc/MDH/ros_ws/src/motor_control_v2/../../../thirdparty/json/include/nlohmann/detail/iterators/primitive_iterator.hpp \
- /home/abc/MDH/ros_ws/src/motor_control_v2/../../../thirdparty/json/include/nlohmann/detail/iterators/iter_impl.hpp \
- /home/abc/MDH/ros_ws/src/motor_control_v2/../../../thirdparty/json/include/nlohmann/detail/iterators/json_reverse_iterator.hpp \
- /home/abc/MDH/ros_ws/src/motor_control_v2/../../../thirdparty/json/include/nlohmann/detail/json_custom_base_class.hpp \
- /home/abc/MDH/ros_ws/src/motor_control_v2/../../../thirdparty/json/include/nlohmann/detail/json_pointer.hpp \
- /home/abc/MDH/ros_ws/src/motor_control_v2/../../../thirdparty/json/include/nlohmann/detail/json_ref.hpp \
- /home/abc/MDH/ros_ws/src/motor_control_v2/../../../thirdparty/json/include/nlohmann/detail/output/binary_writer.hpp \
- /home/abc/MDH/ros_ws/src/motor_control_v2/../../../thirdparty/json/include/nlohmann/detail/output/output_adapters.hpp \
- /home/abc/MDH/ros_ws/src/motor_control_v2/../../../thirdparty/json/include/nlohmann/detail/output/serializer.hpp \
- /home/abc/MDH/ros_ws/src/motor_control_v2/../../../thirdparty/json/include/nlohmann/detail/conversions/to_chars.hpp \
- /home/abc/MDH/ros_ws/src/motor_control_v2/../../../thirdparty/json/include/nlohmann/ordered_map.hpp \
+ /home/wq/MDH/ros_ws/src/motor_control_v2/../../../thirdparty/json/include/nlohmann/detail/input/json_sax.hpp \
+ /home/wq/MDH/ros_ws/src/motor_control_v2/../../../thirdparty/json/include/nlohmann/detail/input/lexer.hpp \
+ /home/wq/MDH/ros_ws/src/motor_control_v2/../../../thirdparty/json/include/nlohmann/detail/meta/is_sax.hpp \
+ /home/wq/MDH/ros_ws/src/motor_control_v2/../../../thirdparty/json/include/nlohmann/detail/input/parser.hpp \
+ /home/wq/MDH/ros_ws/src/motor_control_v2/../../../thirdparty/json/include/nlohmann/detail/iterators/internal_iterator.hpp \
+ /home/wq/MDH/ros_ws/src/motor_control_v2/../../../thirdparty/json/include/nlohmann/detail/iterators/primitive_iterator.hpp \
+ /home/wq/MDH/ros_ws/src/motor_control_v2/../../../thirdparty/json/include/nlohmann/detail/iterators/iter_impl.hpp \
+ /home/wq/MDH/ros_ws/src/motor_control_v2/../../../thirdparty/json/include/nlohmann/detail/iterators/json_reverse_iterator.hpp \
+ /home/wq/MDH/ros_ws/src/motor_control_v2/../../../thirdparty/json/include/nlohmann/detail/json_custom_base_class.hpp \
+ /home/wq/MDH/ros_ws/src/motor_control_v2/../../../thirdparty/json/include/nlohmann/detail/json_pointer.hpp \
+ /home/wq/MDH/ros_ws/src/motor_control_v2/../../../thirdparty/json/include/nlohmann/detail/json_ref.hpp \
+ /home/wq/MDH/ros_ws/src/motor_control_v2/../../../thirdparty/json/include/nlohmann/detail/output/binary_writer.hpp \
+ /home/wq/MDH/ros_ws/src/motor_control_v2/../../../thirdparty/json/include/nlohmann/detail/output/output_adapters.hpp \
+ /home/wq/MDH/ros_ws/src/motor_control_v2/../../../thirdparty/json/include/nlohmann/detail/output/serializer.hpp \
+ /home/wq/MDH/ros_ws/src/motor_control_v2/../../../thirdparty/json/include/nlohmann/detail/conversions/to_chars.hpp \
+ /home/wq/MDH/ros_ws/src/motor_control_v2/../../../thirdparty/json/include/nlohmann/ordered_map.hpp \
  /usr/include/c++/11/any \
- /home/abc/MDH/ros_ws/src/motor_control_v2/../../../thirdparty/json/include/nlohmann/detail/macro_unscope.hpp \
- /home/abc/MDH/ros_ws/src/motor_control_v2/../../../thirdparty/json/include/nlohmann/thirdparty/hedley/hedley_undef.hpp \
+ /home/wq/MDH/ros_ws/src/motor_control_v2/../../../thirdparty/json/include/nlohmann/detail/macro_unscope.hpp \
+ /home/wq/MDH/ros_ws/src/motor_control_v2/../../../thirdparty/json/include/nlohmann/thirdparty/hedley/hedley_undef.hpp \
  /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp \
  /usr/include/c++/11/csignal /usr/include/signal.h \
  /usr/include/x86_64-linux-gnu/bits/signum-generic.h \
@@ -680,31 +680,31 @@ CMakeFiles/motor_control_node.dir/src/Node.cpp.o: \
  /opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/thread_safe_synchronization.hpp \
  /opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/detail/write_preferring_read_write_lock.hpp \
  /opt/ros/humble/include/rclcpp/rclcpp/wait_set_template.hpp \
- /home/abc/MDH/ros_ws/src/motor_control_v2/include/motor_control_v2/motor_command.hpp \
- /home/abc/MDH/ros_ws/src/motor_control_v2/../rmf_utils/rmf_utils/include/rmf_utils/impl_ptr.hpp \
- /home/abc/MDH/ros_ws/src/motor_control_v2/include/motor_control_v2/serial_communication.hpp \
- /home/abc/MDH/ros_ws/src/motor_control_v2/../../../thirdparty/serial/src/Serial.h \
- /home/abc/MDH/ros_ws/src/motor_control_v2/include/motor_control_v2/ros2_communication.hpp \
- /home/abc/MDH/ros_ws/install/motor_control_command_msgs/include/motor_control_command_msgs/motor_control_command_msgs/msg/motor_control_command.hpp \
- /home/abc/MDH/ros_ws/install/motor_control_command_msgs/include/motor_control_command_msgs/motor_control_command_msgs/msg/detail/motor_control_command__struct.hpp \
- /home/abc/MDH/ros_ws/install/motor_control_command_msgs/include/motor_control_command_msgs/motor_control_command_msgs/msg/detail/motor__struct.hpp \
- /home/abc/MDH/ros_ws/install/motor_control_command_msgs/include/motor_control_command_msgs/motor_control_command_msgs/msg/detail/motor_control_command__builder.hpp \
- /home/abc/MDH/ros_ws/install/motor_control_command_msgs/include/motor_control_command_msgs/motor_control_command_msgs/msg/detail/motor_control_command__traits.hpp \
- /home/abc/MDH/ros_ws/install/motor_control_command_msgs/include/motor_control_command_msgs/motor_control_command_msgs/msg/detail/motor__traits.hpp \
- /home/abc/MDH/ros_ws/install/motor_control_command_msgs/include/motor_control_command_msgs/motor_control_command_msgs/msg/detail/motor_control_command__type_support.hpp \
- /home/abc/MDH/ros_ws/install/motor_control_command_msgs/include/motor_control_command_msgs/motor_control_command_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
- /home/abc/MDH/ros_ws/install/motor_control_command_msgs/include/motor_control_command_msgs/motor_control_command_msgs/msg/motor.hpp \
- /home/abc/MDH/ros_ws/install/motor_control_command_msgs/include/motor_control_command_msgs/motor_control_command_msgs/msg/detail/motor__builder.hpp \
- /home/abc/MDH/ros_ws/install/motor_control_command_msgs/include/motor_control_command_msgs/motor_control_command_msgs/msg/detail/motor__type_support.hpp \
+ /home/wq/MDH/ros_ws/src/motor_control_v2/include/motor_control_v2/motor_command.hpp \
+ /home/wq/MDH/ros_ws/src/motor_control_v2/../rmf_utils/rmf_utils/include/rmf_utils/impl_ptr.hpp \
+ /home/wq/MDH/ros_ws/src/motor_control_v2/include/motor_control_v2/serial_communication.hpp \
+ /home/wq/MDH/ros_ws/src/motor_control_v2/../../../thirdparty/serial/src/Serial.h \
+ /home/wq/MDH/ros_ws/src/motor_control_v2/include/motor_control_v2/ros2_communication.hpp \
+ /home/wq/MDH/ros_ws/install/motor_control_command_msgs/include/motor_control_command_msgs/motor_control_command_msgs/msg/motor_control_command.hpp \
+ /home/wq/MDH/ros_ws/install/motor_control_command_msgs/include/motor_control_command_msgs/motor_control_command_msgs/msg/detail/motor_control_command__struct.hpp \
+ /home/wq/MDH/ros_ws/install/motor_control_command_msgs/include/motor_control_command_msgs/motor_control_command_msgs/msg/detail/motor__struct.hpp \
+ /home/wq/MDH/ros_ws/install/motor_control_command_msgs/include/motor_control_command_msgs/motor_control_command_msgs/msg/detail/motor_control_command__builder.hpp \
+ /home/wq/MDH/ros_ws/install/motor_control_command_msgs/include/motor_control_command_msgs/motor_control_command_msgs/msg/detail/motor_control_command__traits.hpp \
+ /home/wq/MDH/ros_ws/install/motor_control_command_msgs/include/motor_control_command_msgs/motor_control_command_msgs/msg/detail/motor__traits.hpp \
+ /home/wq/MDH/ros_ws/install/motor_control_command_msgs/include/motor_control_command_msgs/motor_control_command_msgs/msg/detail/motor_control_command__type_support.hpp \
+ /home/wq/MDH/ros_ws/install/motor_control_command_msgs/include/motor_control_command_msgs/motor_control_command_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
+ /home/wq/MDH/ros_ws/install/motor_control_command_msgs/include/motor_control_command_msgs/motor_control_command_msgs/msg/motor.hpp \
+ /home/wq/MDH/ros_ws/install/motor_control_command_msgs/include/motor_control_command_msgs/motor_control_command_msgs/msg/detail/motor__builder.hpp \
+ /home/wq/MDH/ros_ws/install/motor_control_command_msgs/include/motor_control_command_msgs/motor_control_command_msgs/msg/detail/motor__type_support.hpp \
  /opt/ros/humble/include/std_msgs/std_msgs/msg/string.hpp \
  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/string__struct.hpp \
  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/string__builder.hpp \
  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/string__traits.hpp \
  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/string__type_support.hpp \
  /opt/ros/humble/include/std_msgs/std_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
- /home/abc/MDH/ros_ws/src/motor_control_v2/include/motor_control_v2/internal_http_server.hpp \
- /home/abc/MDH/ros_ws/src/motor_control_v2/include/motor_control_v2/http_server.hpp \
- /home/abc/MDH/ros_ws/src/motor_control_v2/../../../thirdparty/cpp-httplib/httplib.h \
+ /home/wq/MDH/ros_ws/src/motor_control_v2/include/motor_control_v2/internal_http_server.hpp \
+ /home/wq/MDH/ros_ws/src/motor_control_v2/include/motor_control_v2/http_server.hpp \
+ /home/wq/MDH/ros_ws/src/motor_control_v2/../../../thirdparty/cpp-httplib/httplib.h \
  /usr/include/arpa/inet.h /usr/include/netinet/in.h \
  /usr/include/x86_64-linux-gnu/sys/socket.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h \

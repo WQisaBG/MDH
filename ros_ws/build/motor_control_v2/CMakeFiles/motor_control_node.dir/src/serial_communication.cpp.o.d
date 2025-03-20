@@ -1,7 +1,7 @@
 CMakeFiles/motor_control_node.dir/src/serial_communication.cpp.o: \
- /home/abc/MDH/ros_ws/src/motor_control_v2/src/serial_communication.cpp \
+ /home/wq/MDH/ros_ws/src/motor_control_v2/src/serial_communication.cpp \
  /usr/include/stdc-predef.h \
- /home/abc/MDH/ros_ws/src/motor_control_v2/include/motor_control_v2/serial_communication.hpp \
+ /home/wq/MDH/ros_ws/src/motor_control_v2/include/motor_control_v2/serial_communication.hpp \
  /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp \
  /usr/include/c++/11/csignal \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
@@ -619,5 +619,5 @@ CMakeFiles/motor_control_node.dir/src/serial_communication.cpp.o: \
  /opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/thread_safe_synchronization.hpp \
  /opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/detail/write_preferring_read_write_lock.hpp \
  /opt/ros/humble/include/rclcpp/rclcpp/wait_set_template.hpp \
- /home/abc/MDH/ros_ws/src/motor_control_v2/../../../thirdparty/serial/src/Serial.h \
- /home/abc/MDH/ros_ws/src/motor_control_v2/../rmf_utils/rmf_utils/include/rmf_utils/impl_ptr.hpp
+ /home/wq/MDH/ros_ws/src/motor_control_v2/../../../thirdparty/serial/src/Serial.h \
+ /home/wq/MDH/ros_ws/src/motor_control_v2/../rmf_utils/rmf_utils/include/rmf_utils/impl_ptr.hpp

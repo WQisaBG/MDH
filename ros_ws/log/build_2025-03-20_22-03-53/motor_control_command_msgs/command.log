@@ -1,0 +1,6 @@
+Invoking command in '/home/wq/MDH/ros_ws/build/motor_control_command_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/wq/MDH/ros_ws/src/internal_msgs/motor_control_command_msgs -DCMAKE_INSTALL_PREFIX=/home/wq/MDH/ros_ws/install/motor_control_command_msgs
+Invoked command in '/home/wq/MDH/ros_ws/build/motor_control_command_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/wq/MDH/ros_ws/src/internal_msgs/motor_control_command_msgs -DCMAKE_INSTALL_PREFIX=/home/wq/MDH/ros_ws/install/motor_control_command_msgs
+Invoking command in '/home/wq/MDH/ros_ws/build/motor_control_command_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/wq/MDH/ros_ws/build/motor_control_command_msgs -- -j28 -l28
+Invoked command in '/home/wq/MDH/ros_ws/build/motor_control_command_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/wq/MDH/ros_ws/build/motor_control_command_msgs -- -j28 -l28
+Invoking command in '/home/wq/MDH/ros_ws/build/motor_control_command_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/wq/MDH/ros_ws/build/motor_control_command_msgs
+Invoked command in '/home/wq/MDH/ros_ws/build/motor_control_command_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/wq/MDH/ros_ws/build/motor_control_command_msgs
