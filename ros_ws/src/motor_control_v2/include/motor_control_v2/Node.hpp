@@ -6,6 +6,7 @@
 #include "motor_control_v2/motor_command.hpp"
 #include "motor_control_v2/serial_communication.hpp"
 #include "motor_control_v2/ros2_communication.hpp"
+#include "motor_control_v2/internal_http_server.hpp"
 #include <rclcpp/rclcpp.hpp>
 #include <nlohmann/json.hpp>
 #include "motor_control_v2/motor_config.hpp"
@@ -38,10 +39,6 @@ namespace motor_control_v2
 
         int motor_count_;
 
-        void process_post_request();
-        void query_motor_state();
-        void get_motor_state();
-        void update_motor_state(std::vector<unsigned char> feedback);
 
         
 
@@ -49,9 +46,12 @@ namespace motor_control_v2
         std::shared_ptr<SerialCommunication> serial_comm_;
         std::shared_ptr<ROS2Communication> ros2_comm_;
         std::shared_ptr<MotorCommand> motor_command_;
+        std::shared_ptr<InternalHttpServer> http_server_;
 
         void initialize_components();
         void initialize_motor_state(int motor_count);
+        std::queue<json> request_queue_;
+
     };
 
 } // namespace motor_control_v2

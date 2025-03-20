@@ -306,6 +306,30 @@ src/http_server.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_control_node.dir/build.make CMakeFiles/motor_control_node.dir/src/http_server.cpp.s
 .PHONY : src/http_server.cpp.s
 
+src/internal_http_server.o: src/internal_http_server.cpp.o
+.PHONY : src/internal_http_server.o
+
+# target to build an object file
+src/internal_http_server.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_control_node.dir/build.make CMakeFiles/motor_control_node.dir/src/internal_http_server.cpp.o
+.PHONY : src/internal_http_server.cpp.o
+
+src/internal_http_server.i: src/internal_http_server.cpp.i
+.PHONY : src/internal_http_server.i
+
+# target to preprocess a source file
+src/internal_http_server.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_control_node.dir/build.make CMakeFiles/motor_control_node.dir/src/internal_http_server.cpp.i
+.PHONY : src/internal_http_server.cpp.i
+
+src/internal_http_server.s: src/internal_http_server.cpp.s
+.PHONY : src/internal_http_server.s
+
+# target to generate assembly for a file
+src/internal_http_server.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_control_node.dir/build.make CMakeFiles/motor_control_node.dir/src/internal_http_server.cpp.s
+.PHONY : src/internal_http_server.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -454,6 +478,9 @@ help:
 	@echo "... src/http_server.o"
 	@echo "... src/http_server.i"
 	@echo "... src/http_server.s"
+	@echo "... src/internal_http_server.o"
+	@echo "... src/internal_http_server.i"
+	@echo "... src/internal_http_server.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

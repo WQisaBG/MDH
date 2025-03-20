@@ -92,7 +92,7 @@ private:
                         }
 
                         // 发送状态查询命令
-                        for (uint8_t motor_index = 1; motor_index < 7; motor_index++) {
+                        for (uint8_t motor_index = 1; motor_index < 11; motor_index++) {
                             std::vector<uint8_t> command = create_motor_status_query_command(motor_index);
                             send_serial_command(command);
                             std::this_thread::sleep_for(std::chrono::milliseconds(50));
@@ -116,7 +116,7 @@ private:
         // 初始化电机状态
         motor_status_["motor"] = json::array(); // 确保 "motor" 是一个数组
 
-        for (uint8_t motor_index = 1; motor_index < 7; motor_index++)
+        for (uint8_t motor_index = 1; motor_index < 11; motor_index++)
         {
             std::vector<uint8_t> command = create_motor_status_query_command(motor_index);
             send_serial_command(command);
@@ -232,7 +232,7 @@ private:
         }
 
         // 发送状态查询命令
-        for (uint8_t motor_index = 1; motor_index < 7; motor_index++)
+        for (uint8_t motor_index = 1; motor_index < 11; motor_index++)
         {
             std::vector<uint8_t> command = create_motor_status_query_command(motor_index);
             send_serial_command(command);

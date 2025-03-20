@@ -1,0 +1,121 @@
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/include/motor_control_v2/serial_communication.hpp:4[m[K,
+                 from [01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/src/serial_communication.cpp:1[m[K:
+[01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/src/serial_communication.cpp:[m[K In member function ‘[01m[Kvoid motor_control_v2::SerialCommunication::Implementation::initSerialPort()[m[K’:
+[01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/src/serial_communication.cpp:50:46:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%s[m[K’ expects a matching ‘[01m[Kchar*[m[K’ argument [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+   50 |             RCLCPP_INFO(node_->get_logger(), [01;35m[K"Serial port opened successfully at %s with baud rate %d"[m[K);
+      |                                              [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/src/serial_communication.cpp:50:83:[m[K [01;36m[Knote: [m[Kformat string is defined here
+   50 |             RCLCPP_INFO(node_->get_logger(), "Serial port opened successfully at [01;36m[K%s[m[K with baud rate %d");
+      |                                                                                  [01;36m[K~^[m[K
+      |                                                                                   [01;36m[K|[m[K
+      |                                                                                   [01;36m[Kchar*[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/include/motor_control_v2/serial_communication.hpp:4[m[K,
+                 from [01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/src/serial_communication.cpp:1[m[K:
+[01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/src/serial_communication.cpp:50:46:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects a matching ‘[01m[Kint[m[K’ argument [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+   50 |             RCLCPP_INFO(node_->get_logger(), [01;35m[K"Serial port opened successfully at %s with baud rate %d"[m[K);
+      |                                              [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/src/serial_communication.cpp:50:101:[m[K [01;36m[Knote: [m[Kformat string is defined here
+   50 |             RCLCPP_INFO(node_->get_logger(), "Serial port opened successfully at %s with baud rate [01;36m[K%d[m[K");
+      |                                                                                                    [01;36m[K~^[m[K
+      |                                                                                                     [01;36m[K|[m[K
+      |                                                                                                     [01;36m[Kint[m[K
+[01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/src/motor_command.cpp:[m[K In constructor ‘[01m[Kmotor_control_v2::MotorCommand::MotorCommand(rclcpp::Node::SharedPtr, const string&, int)[m[K’:
+[01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/src/motor_command.cpp:35:66:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kmotor_control_v2::MotorCommand::Implementation::serial_communication_[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+   35 |               Implementation{node, serial_port.c_str(), baud_rate[01;35m[K}[m[K))
+      |                                                                  [01;35m[K^[m[K
+[01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/src/motor_command.cpp:[m[K In member function ‘[01m[Kvoid motor_control_v2::MotorCommand::Implementation::send_serial_command_async(std::vector<unsigned char>)[m[K’:
+[01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/src/motor_command.cpp:194:23:[m[K [01;35m[Kwarning: [m[Kignoring return value of ‘[01m[Kstd::future<typename std::__invoke_result<typename std::decay<_Tp>::type, typename std::decay<_Args>::type ...>::type> std::async(std::launch, _Fn&&, _Args&& ...) [with _Fn = motor_control_v2::MotorCommand::Implementation::send_serial_command_async(std::vector<unsigned char>)::<lambda()>; _Args = {}; typename std::__invoke_result<typename std::decay<_Tp>::type, typename std::decay<_Args>::type ...>::type = void; typename std::decay<_Tp>::type = std::decay<motor_control_v2::MotorCommand::Implementation::send_serial_command_async(std::vector<unsigned char>)::<lambda()> >::type][m[K’, declared with attribute ‘[01m[Knodiscard[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-result-Wunused-result]8;;[m[K]
+  194 |                     })[01;35m[K;[m[K
+      |                       [01;35m[K^[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/include/motor_control_v2/motor_command.hpp:5[m[K,
+                 from [01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/src/motor_command.cpp:1[m[K:
+[01m[K/usr/include/c++/11/future:1768:5:[m[K [01;36m[Knote: [m[Kdeclared here
+ 1768 |     [01;36m[Kasync[m[K(launch __policy, _Fn&& __fn, _Args&&... __args)
+      |     [01;36m[K^~~~~[m[K
+[01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/src/motor_config.cpp:[m[K In member function ‘[01m[Kvoid MotorConfig::update_motor_status(const string&)[m[K’:
+[01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/src/motor_config.cpp:38:58:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kfeedback[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   38 | void MotorConfig::update_motor_status([01;35m[Kconst std::string &feedback[m[K)
+      |                                       [01;35m[K~~~~~~~~~~~~~~~~~~~^~~~~~~~[m[K
+[01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/src/internal_http_server.cpp:[m[K In constructor ‘[01m[Kmotor_control_v2::InternalHttpServer::Implementation::Implementation(rclcpp::Node::SharedPtr, const string&, int, const string&, int)[m[K’:
+[01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/src/internal_http_server.cpp:43:13:[m[K [01;35m[Kwarning: [m[K‘[01m[Kmotor_control_v2::InternalHttpServer::Implementation::port[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+   43 |         int [01;35m[Kport[m[K;
+      |             [01;35m[K^~~~[m[K
+[01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/src/internal_http_server.cpp:33:39:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kstd::shared_ptr<motor_control_v2::MotorCommand> motor_control_v2::InternalHttpServer::Implementation::motor_command_ptr[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+   33 |         std::shared_ptr<MotorCommand> [01;35m[Kmotor_command_ptr[m[K;
+      |                                       [01;35m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/src/internal_http_server.cpp:8:9:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+    8 |         [01;35m[KImplementation[m[K(rclcpp::Node::SharedPtr node,
+      |         [01;35m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/src/internal_http_server.cpp:[m[K At global scope:
+[01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/src/internal_http_server.cpp:61:45:[m[K [01;31m[Kerror: [m[Kdefinition of implicitly-declared ‘[01m[Kmotor_control_v2::InternalHttpServer::~InternalHttpServer()[m[K’
+   61 |     InternalHttpServer::~InternalHttpServer([01;31m[K)[m[K
+      |                                             [01;31m[K^[m[K
+[01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/src/Node.cpp:[m[K In member function ‘[01m[Kvoid motor_control_v2::MotorControlApp::query_motor_state()[m[K’:
+[01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/src/Node.cpp:62:31:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Knlohmann::json_abi_v3_11_3::basic_json<>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+   62 |             for (int i = 0; [01;35m[Ki < motor_state_.size()[m[K ; i++)
+      |                             [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/src/Node.cpp:[m[K In member function ‘[01m[Kvoid motor_control_v2::MotorControlApp::update_motor_state(std::vector<unsigned char>)[m[K’:
+[01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/src/Node.cpp:76:73:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kfeedback[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   76 |     void MotorControlApp::update_motor_state([01;35m[Kstd::vector<unsigned char> feedback[m[K)
+      |                                              [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~[m[K
+In file included from [01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/include/motor_control_v2/motor_command.hpp:10[m[K,
+                 from [01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/include/motor_control_v2/internal_http_server.hpp:25[m[K,
+                 from [01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/src/internal_http_server.cpp:1[m[K:
+/home/abc/MDH/ros_ws/src/motor_control_v2/../rmf_utils/rmf_utils/include/rmf_utils/impl_ptr.hpp: In instantiation of ‘[01m[Krmf_utils::impl_ptr<T> rmf_utils::make_impl(Args&& ...) [with T = motor_control_v2::InternalHttpServer::Implementation; Args = {motor_control_v2::InternalHttpServer::Implementation}][m[K’:
+[01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/src/internal_http_server.cpp:54:54:[m[K   required from here
+[01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/../rmf_utils/rmf_utils/include/rmf_utils/impl_ptr.hpp:479:22:[m[K [01;31m[Kerror: [m[Kuse of deleted function ‘[01m[Kmotor_control_v2::InternalHttpServer::Implementation::Implementation(motor_control_v2::InternalHttpServer::Implementation&&)[m[K’
+  479 |   return impl_ptr<T>([01;31m[Knew T(std::forward<Args>([m[K
+      |                      [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  480 | [01;31m[K        args)...)[m[K, &details::default_delete<T>, &details::default_copy<T>);
+      |         [01;31m[K~~~~~~~~~[m[K     
+[01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/src/internal_http_server.cpp:5:31:[m[K [01;36m[Knote: [m[K‘[01m[Kmotor_control_v2::InternalHttpServer::Implementation::Implementation(motor_control_v2::InternalHttpServer::Implementation&&)[m[K’ is implicitly deleted because the default definition would be ill-formed:
+    5 |     class InternalHttpServer::[01;36m[KImplementation[m[K
+      |                               [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/src/internal_http_server.cpp:5:31:[m[K [01;31m[Kerror: [m[Kuse of deleted function ‘[01m[Kstd::mutex::mutex(const std::mutex&)[m[K’
+In file included from [01m[K/usr/include/c++/11/condition_variable:40[m[K,
+                 from [01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/../../../thirdparty/cpp-httplib/httplib.h:238[m[K,
+                 from [01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/include/motor_control_v2/http_server.hpp:4[m[K,
+                 from [01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/include/motor_control_v2/internal_http_server.hpp:24[m[K,
+                 from [01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/src/internal_http_server.cpp:1[m[K:
+[01m[K/usr/include/c++/11/bits/std_mutex.h:94:5:[m[K [01;36m[Knote: [m[Kdeclared here
+   94 |     [01;36m[Kmutex[m[K(const mutex&) = delete;
+      |     [01;36m[K^~~~~[m[K
+[01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/src/internal_http_server.cpp:5:31:[m[K [01;31m[Kerror: [m[Kuse of deleted function ‘[01m[Kstd::mutex::mutex(const std::mutex&)[m[K’
+    5 |     class InternalHttpServer::[01;31m[KImplementation[m[K
+      |                               [01;31m[K^~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/c++/11/condition_variable:40[m[K,
+                 from [01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/../../../thirdparty/cpp-httplib/httplib.h:238[m[K,
+                 from [01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/include/motor_control_v2/http_server.hpp:4[m[K,
+                 from [01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/include/motor_control_v2/internal_http_server.hpp:24[m[K,
+                 from [01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/src/internal_http_server.cpp:1[m[K:
+[01m[K/usr/include/c++/11/bits/std_mutex.h:94:5:[m[K [01;36m[Knote: [m[Kdeclared here
+   94 |     [01;36m[Kmutex[m[K(const mutex&) = delete;
+      |     [01;36m[K^~~~~[m[K
+gmake[2]: *** [CMakeFiles/motor_control_node.dir/build.make:174：CMakeFiles/motor_control_node.dir/src/internal_http_server.cpp.o] 错误 1
+gmake[2]: *** 正在等待未完成的任务....
+gmake[1]: *** [CMakeFiles/Makefile2:137：CMakeFiles/motor_control_node.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

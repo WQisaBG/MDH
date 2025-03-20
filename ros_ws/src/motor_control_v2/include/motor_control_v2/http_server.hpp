@@ -21,12 +21,12 @@ namespace motor_control_v2
     public:
         using PostHandler = std::function<void(const httplib::Request &, httplib::Response &)>;
         using GetHandler = std::function<void(const httplib::Request &, httplib::Response &)>;
-        using PostDataCallback = std::function<void(const json &)>;
 
         // 构造函数，允许配置 IP 地址和端口号
         HttpServerNode(const std::string &ip = "127.0.0.1", int port = 8080);
         ~HttpServerNode();
 
+        bool start(const std::string &ip, int port);
         // 注册 POST 请求处理函数
         void registerPostHandler(const std::string &path, PostHandler handler);
 
@@ -37,10 +37,8 @@ namespace motor_control_v2
     private:
         std::string ip_;
         int port_;
+        httplib::Server server_;
 
-        // 路由表
-        std::unordered_map<std::string, PostHandler> post_handlers_;
-        std::unordered_map<std::string, GetHandler> get_handlers_;  
     };
 
 }// namespace motor_control_v2

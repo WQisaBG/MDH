@@ -1,0 +1,43 @@
+[35m[1mConsolidate compiler generated dependencies of target motor_control_node[0m
+[ 18%] [32mBuilding CXX object CMakeFiles/motor_control_node.dir/src/Node.cpp.o[0m
+[ 18%] [32mBuilding CXX object CMakeFiles/motor_control_node.dir/src/main.cpp.o[0m
+[ 27%] [32mBuilding CXX object CMakeFiles/motor_control_node.dir/src/internal_http_server.cpp.o[0m
+[01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/src/internal_http_server.cpp:[m[K In constructor ‘[01m[Kmotor_control_v2::InternalHttpServer::Implementation::Implementation(rclcpp::Node::SharedPtr, const string&, int, const string&, int)[m[K’:
+[01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/src/internal_http_server.cpp:57:13:[m[K [01;35m[Kwarning: [m[K‘[01m[Kmotor_control_v2::InternalHttpServer::Implementation::port[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+   57 |         int [01;35m[Kport[m[K;
+      |             [01;35m[K^~~~[m[K
+[01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/src/internal_http_server.cpp:47:39:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kstd::shared_ptr<motor_control_v2::MotorCommand> motor_control_v2::InternalHttpServer::Implementation::motor_command_ptr[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+   47 |         std::shared_ptr<MotorCommand> [01;35m[Kmotor_command_ptr[m[K;
+      |                                       [01;35m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/src/internal_http_server.cpp:8:9:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+    8 |         [01;35m[KImplementation[m[K(rclcpp::Node::SharedPtr node,
+      |         [01;35m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/src/internal_http_server.cpp:[m[K In member function ‘[01m[Kvoid motor_control_v2::InternalHttpServer::Implementation::initialize_motor_state(int)[m[K’:
+[01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/src/internal_http_server.cpp:161:73:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmotor_count[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  161 |     void InternalHttpServer::Implementation::initialize_motor_state([01;35m[Kint motor_count[m[K)
+      |                                                                     [01;35m[K~~~~^~~~~~~~~~~[m[K
+[01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/src/Node.cpp:[m[K In member function ‘[01m[Kvoid motor_control_v2::MotorControlApp::query_motor_state()[m[K’:
+[01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/src/Node.cpp:62:31:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Knlohmann::json_abi_v3_11_3::basic_json<>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+   62 |             for (int i = 0; [01;35m[Ki < motor_state_.size()[m[K ; i++)
+      |                             [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/src/Node.cpp:[m[K In member function ‘[01m[Kvoid motor_control_v2::MotorControlApp::update_motor_state(std::vector<unsigned char>)[m[K’:
+[01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/src/Node.cpp:76:73:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kfeedback[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   76 |     void MotorControlApp::update_motor_state([01;35m[Kstd::vector<unsigned char> feedback[m[K)
+      |                                              [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~[m[K
+In file included from [01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/include/motor_control_v2/motor_command.hpp:10[m[K,
+                 from [01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/include/motor_control_v2/internal_http_server.hpp:25[m[K,
+                 from [01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/src/internal_http_server.cpp:1[m[K:
+/home/abc/MDH/ros_ws/src/motor_control_v2/../rmf_utils/rmf_utils/include/rmf_utils/impl_ptr.hpp: In instantiation of ‘[01m[Krmf_utils::impl_ptr<T> rmf_utils::make_impl(Args&& ...) [with T = motor_control_v2::InternalHttpServer::Implementation; Args = {motor_control_v2::InternalHttpServer::Implementation}][m[K’:
+[01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/src/internal_http_server.cpp:68:54:[m[K   required from here
+[01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/../rmf_utils/rmf_utils/include/rmf_utils/impl_ptr.hpp:479:22:[m[K [01;31m[Kerror: [m[Kuse of deleted function ‘[01m[Kmotor_control_v2::InternalHttpServer::Implementation::Implementation(motor_control_v2::InternalHttpServer::Implementation&&)[m[K’
+  479 |   return impl_ptr<T>([01;31m[Knew T(std::forward<Args>([m[K
+      |                      [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  480 | [01;31m[K        args)...)[m[K, &details::default_delete<T>, &details::default_copy<T>);
+      |         [01;31m[K~~~~~~~~~[m[K     
+[01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/src/internal_http_server.cpp:29:9:[m[K [01;36m[Knote: [m[Kdeclared here
+   29 |         [01;36m[KImplementation[m[K(Implementation &&) = delete;
+      |         [01;36m[K^~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/motor_control_node.dir/build.make:174：CMakeFiles/motor_control_node.dir/src/internal_http_server.cpp.o] 错误 1
+gmake[2]: *** 正在等待未完成的任务....
+gmake[1]: *** [CMakeFiles/Makefile2:137：CMakeFiles/motor_control_node.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

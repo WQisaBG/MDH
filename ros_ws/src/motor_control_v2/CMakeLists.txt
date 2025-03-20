@@ -33,6 +33,7 @@ add_executable(motor_control_node
     src/serial_communication.cpp
     src/ros2_communication.cpp
     src/http_server.cpp
+    src/internal_http_server.cpp
     ${CMAKE_CURRENT_SOURCE_DIR}/../../../thirdparty/serial/src/Serial.cpp
     ${CMAKE_CURRENT_SOURCE_DIR}/../../../thirdparty/serial/src/SerialImplUnix.cpp
 )

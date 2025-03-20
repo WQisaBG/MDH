@@ -2,13 +2,17 @@
 #ifndef NODE_HPP
 #define NODE_HPP
 
-#include "motor_control_v2/http_server.hpp"
 #include "motor_control_v2/motor_config.hpp"
 #include "motor_control_v2/motor_command.hpp"
 #include "motor_control_v2/serial_communication.hpp"
 #include "motor_control_v2/ros2_communication.hpp"
+#include "motor_control_v2/internal_http_server.hpp"
 #include <rclcpp/rclcpp.hpp>
 #include <nlohmann/json.hpp>
+#include "motor_control_v2/motor_config.hpp"
+#include <fstream>  
+
+
 
 namespace motor_control_v2
 {
@@ -21,39 +25,33 @@ namespace motor_control_v2
         void initialize();
 
     private:
-        std::mutex request_mutex_, current_request_mutex_;
+        std::mutex request_mutex_, current_request_mutex_, motor_state_mutex_;
 
         json current_request_;
-        
+
         std::atomic<bool> stop_server_;
         nlohmann::json motor_state_;
-        std::queue<json> request_queue_;
         std::condition_variable request_cv_;
 
         std::thread post_request_processing_thread_;
         std::thread query_motor_state_thread_;
         std::thread get_motor_state_thread_;
 
-
         int motor_count_;
 
 
+        
 
-        void process_post_request();
-        void query_motor_state();
-        void get_motor_state();
-        void update_motor_state(std::vector<unsigned char> feedback);
-
-
-        std::shared_ptr<HttpServerNode> http_server_;
         std::shared_ptr<MotorConfig> motor_config_;
         std::shared_ptr<SerialCommunication> serial_comm_;
         std::shared_ptr<ROS2Communication> ros2_comm_;
         std::shared_ptr<MotorCommand> motor_command_;
+        std::shared_ptr<InternalHttpServer> http_server_;
 
-        void initialize_http_server();
         void initialize_components();
         void initialize_motor_state(int motor_count);
+        std::queue<json> request_queue_;
+
     };
 
 } // namespace motor_control_v2

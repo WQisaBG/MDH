@@ -1,0 +1,37 @@
+[0.011s] Invoking command in '/home/abc/MDH/ros_ws/build/motor_control_v2': AMENT_PREFIX_PATH=/home/abc/MDH/ros_ws/install/motor_control_command_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/abc/MDH/ros_ws/install/motor_control_command_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/abc/MDH/ros_ws/install/motor_control_command_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/abc/MDH/ros_ws/install/motor_control_command_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/abc/MDH/ros_ws/build/motor_control_v2 -- -j8 -l8
+[0.053s] [35m[1mConsolidate compiler generated dependencies of target motor_control_node[0m
+[0.084s] [  9%] [32mBuilding CXX object CMakeFiles/motor_control_node.dir/src/main.cpp.o[0m
+[0.084s] [ 18%] [32mBuilding CXX object CMakeFiles/motor_control_node.dir/src/Node.cpp.o[0m
+[9.382s] [ 27%] [32m[1mLinking CXX executable motor_control_node[0m
+[10.211s] [100%] Built target motor_control_node
+[10.219s] Invoked command in '/home/abc/MDH/ros_ws/build/motor_control_v2' returned '0': AMENT_PREFIX_PATH=/home/abc/MDH/ros_ws/install/motor_control_command_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/abc/MDH/ros_ws/install/motor_control_command_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/abc/MDH/ros_ws/install/motor_control_command_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/abc/MDH/ros_ws/install/motor_control_command_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/abc/MDH/ros_ws/build/motor_control_v2 -- -j8 -l8
+[10.221s] Invoking command in '/home/abc/MDH/ros_ws/build/motor_control_v2': AMENT_PREFIX_PATH=/home/abc/MDH/ros_ws/install/motor_control_command_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/abc/MDH/ros_ws/install/motor_control_command_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/abc/MDH/ros_ws/install/motor_control_command_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/abc/MDH/ros_ws/install/motor_control_command_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/abc/MDH/ros_ws/build/motor_control_v2
+[10.229s] -- Install configuration: ""
+[10.229s] -- Installing: /home/abc/MDH/ros_ws/install/motor_control_v2/lib/motor_control_v2/motor_control_node
+[10.232s] -- Set runtime path of "/home/abc/MDH/ros_ws/install/motor_control_v2/lib/motor_control_v2/motor_control_node" to ""
+[10.232s] -- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_v2/include
+[10.233s] -- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_v2/include/motor_control_v2
+[10.233s] -- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_v2/include/motor_control_v2/motor_command.hpp
+[10.233s] -- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_v2/include/motor_control_v2/motor_config.hpp
+[10.233s] -- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_v2/include/motor_control_v2/serial_communication.hpp
+[10.233s] -- Installing: /home/abc/MDH/ros_ws/install/motor_control_v2/include/motor_control_v2/Node.hpp
+[10.233s] -- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_v2/include/motor_control_v2/internal_http_server.hpp
+[10.233s] -- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_v2/include/motor_control_v2/ros2_communication.hpp
+[10.233s] -- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_v2/include/motor_control_v2/http_server.hpp
+[10.233s] -- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_v2/share/ament_index/resource_index/package_run_dependencies/motor_control_v2
+[10.233s] -- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_v2/share/ament_index/resource_index/parent_prefix_path/motor_control_v2
+[10.233s] -- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_v2/share/motor_control_v2/environment/ament_prefix_path.sh
+[10.233s] -- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_v2/share/motor_control_v2/environment/ament_prefix_path.dsv
+[10.233s] -- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_v2/share/motor_control_v2/environment/path.sh
+[10.233s] -- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_v2/share/motor_control_v2/environment/path.dsv
+[10.234s] -- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_v2/share/motor_control_v2/local_setup.bash
+[10.234s] -- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_v2/share/motor_control_v2/local_setup.sh
+[10.234s] -- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_v2/share/motor_control_v2/local_setup.zsh
+[10.234s] -- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_v2/share/motor_control_v2/local_setup.dsv
+[10.234s] -- Installing: /home/abc/MDH/ros_ws/install/motor_control_v2/share/motor_control_v2/package.dsv
+[10.234s] -- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_v2/share/ament_index/resource_index/packages/motor_control_v2
+[10.234s] -- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_v2/share/motor_control_v2/cmake/ament_cmake_export_dependencies-extras.cmake
+[10.234s] -- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_v2/share/motor_control_v2/cmake/motor_control_v2Config.cmake
+[10.234s] -- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_v2/share/motor_control_v2/cmake/motor_control_v2Config-version.cmake
+[10.234s] -- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_v2/share/motor_control_v2/package.xml
+[10.235s] Invoked command in '/home/abc/MDH/ros_ws/build/motor_control_v2' returned '0': AMENT_PREFIX_PATH=/home/abc/MDH/ros_ws/install/motor_control_command_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/abc/MDH/ros_ws/install/motor_control_command_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/abc/MDH/ros_ws/install/motor_control_command_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/abc/MDH/ros_ws/install/motor_control_command_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/abc/MDH/ros_ws/build/motor_control_v2

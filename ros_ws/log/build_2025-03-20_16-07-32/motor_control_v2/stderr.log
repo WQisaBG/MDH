@@ -1,0 +1,37 @@
+[01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/src/internal_http_server.cpp:[m[K In constructor ‘[01m[Kmotor_control_v2::InternalHttpServer::Implementation::Implementation(rclcpp::Node::SharedPtr, const string&, int, const string&, int)[m[K’:
+[01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/src/internal_http_server.cpp:53:27:[m[K [01;35m[Kwarning: [m[K‘[01m[Kmotor_control_v2::InternalHttpServer::Implementation::serial_port[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+   53 |         const std::string [01;35m[Kserial_port[m[K;
+      |                           [01;35m[K^~~~~~~~~~~[m[K
+[01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/src/internal_http_server.cpp:46:39:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kstd::shared_ptr<motor_control_v2::MotorCommand> motor_control_v2::InternalHttpServer::Implementation::motor_command_ptr[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+   46 |         std::shared_ptr<MotorCommand> [01;35m[Kmotor_command_ptr[m[K;
+      |                                       [01;35m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/src/internal_http_server.cpp:8:9:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+    8 |         [01;35m[KImplementation[m[K(rclcpp::Node::SharedPtr node,
+      |         [01;35m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/src/internal_http_server.cpp:59:20:[m[K [01;35m[Kwarning: [m[K‘[01m[Kmotor_control_v2::InternalHttpServer::Implementation::motor_state_mutex_[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+   59 |         std::mutex [01;35m[Kmotor_state_mutex_[m[K;
+      |                    [01;35m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/src/internal_http_server.cpp:56:13:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kint motor_control_v2::InternalHttpServer::Implementation::port[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+   56 |         int [01;35m[Kport[m[K;
+      |             [01;35m[K^~~~[m[K
+[01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/src/internal_http_server.cpp:8:9:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+    8 |         [01;35m[KImplementation[m[K(rclcpp::Node::SharedPtr node,
+      |         [01;35m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/src/internal_http_server.cpp:56:13:[m[K [01;35m[Kwarning: [m[K‘[01m[Kmotor_control_v2::InternalHttpServer::Implementation::port[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+   56 |         int [01;35m[Kport[m[K;
+      |             [01;35m[K^~~~[m[K
+[01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/src/internal_http_server.cpp:55:27:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kconst string motor_control_v2::InternalHttpServer::Implementation::ip[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+   55 |         const std::string [01;35m[Kip[m[K;
+      |                           [01;35m[K^~[m[K
+[01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/src/internal_http_server.cpp:8:9:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+    8 |         [01;35m[KImplementation[m[K(rclcpp::Node::SharedPtr node,
+      |         [01;35m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/src/internal_http_server.cpp:55:27:[m[K [01;35m[Kwarning: [m[K‘[01m[Kmotor_control_v2::InternalHttpServer::Implementation::ip[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+   55 |         const std::string [01;35m[Kip[m[K;
+      |                           [01;35m[K^~[m[K
+[01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/src/internal_http_server.cpp:54:13:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kint motor_control_v2::InternalHttpServer::Implementation::baud_rate[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+   54 |         int [01;35m[Kbaud_rate[m[K;
+      |             [01;35m[K^~~~~~~~~[m[K
+[01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/src/internal_http_server.cpp:8:9:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+    8 |         [01;35m[KImplementation[m[K(rclcpp::Node::SharedPtr node,
+      |         [01;35m[K^~~~~~~~~~~~~~[m[K

@@ -3,18 +3,25 @@
 
 namespace motor_control_v2
 {
-
     HttpServerNode::HttpServerNode(const std::string &ip, int port)
-        : Node("http_server_node_"), ip_(ip), port_(port)
+        : Node("http_server_node_"), ip_(ip), port_(port), server_()
     {
-        
+        //
     }
 
     HttpServerNode::~HttpServerNode()
     {
-       
     }
 
+    bool HttpServerNode::start(const std::string &ip, int port)
+    {
+        // 启动HTTP服务器
+        server_.Get("/", [](const httplib::Request &, httplib::Response &res)
+                    { res.set_content("Hello World!", "text/plain"); });
+
+        // 监听指定IP和端口
+        return server_.listen(ip.c_str(), port);
+    }
 
     /**
        * @brief 注册POST请求处理函数
@@ -27,11 +34,10 @@ namespace motor_control_v2
        */
     void HttpServerNode::registerPostHandler(const std::string &path, PostHandler handler)
     {
-        post_handlers_[path] = handler;
+       server_.Post(path, handler);
     }
-
     void HttpServerNode::registerGetHandler(const std::string &path, GetHandler handler)
     {
-        get_handlers_[path] = handler;
+        server_.Get(path, handler);
     }
 } // namespace motor_control_v2
