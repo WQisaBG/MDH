@@ -1,10 +1,10 @@
 {
   "package_name": "motor_control_command_msgs",
-  "output_dir": "/home/wq/MDH/ros_ws/build/motor_control_command_msgs/rosidl_generator_c/motor_control_command_msgs",
+  "output_dir": "/home/abc/MDH/ros_ws/build/motor_control_command_msgs/rosidl_generator_c/motor_control_command_msgs",
   "template_dir": "/opt/ros/humble/share/rosidl_generator_c/cmake/../resource",
   "idl_tuples": [
-    "/home/wq/MDH/ros_ws/build/motor_control_command_msgs/rosidl_adapter/motor_control_command_msgs:msg/Motor.idl",
-    "/home/wq/MDH/ros_ws/build/motor_control_command_msgs/rosidl_adapter/motor_control_command_msgs:msg/MotorControlCommand.idl"
+    "/home/abc/MDH/ros_ws/build/motor_control_command_msgs/rosidl_adapter/motor_control_command_msgs:msg/Motor.idl",
+    "/home/abc/MDH/ros_ws/build/motor_control_command_msgs/rosidl_adapter/motor_control_command_msgs:msg/MotorControlCommand.idl"
   ],
   "ros_interface_dependencies": [
     "builtin_interfaces:/opt/ros/humble/share/builtin_interfaces/msg/Duration.idl",
@@ -24,8 +24,8 @@
     "/opt/ros/humble/share/rosidl_generator_c/cmake/../resource/msg__struct.h.em",
     "/opt/ros/humble/share/rosidl_generator_c/cmake/../resource/msg__type_support.h.em",
     "/opt/ros/humble/share/rosidl_generator_c/cmake/../resource/srv__type_support.h.em",
-    "/home/wq/MDH/ros_ws/build/motor_control_command_msgs/rosidl_adapter/motor_control_command_msgs/msg/Motor.idl",
-    "/home/wq/MDH/ros_ws/build/motor_control_command_msgs/rosidl_adapter/motor_control_command_msgs/msg/MotorControlCommand.idl",
+    "/home/abc/MDH/ros_ws/build/motor_control_command_msgs/rosidl_adapter/motor_control_command_msgs/msg/Motor.idl",
+    "/home/abc/MDH/ros_ws/build/motor_control_command_msgs/rosidl_adapter/motor_control_command_msgs/msg/MotorControlCommand.idl",
     "/opt/ros/humble/share/builtin_interfaces/msg/Duration.idl",
     "/opt/ros/humble/share/builtin_interfaces/msg/Time.idl"
   ]

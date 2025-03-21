@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/wq/MDH/ros_ws/src/internal_msgs/motor_control_command_msgs
+CMAKE_SOURCE_DIR = /home/abc/MDH/ros_ws/src/internal_msgs/motor_control_command_msgs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/wq/MDH/ros_ws/build/motor_control_command_msgs
+CMAKE_BINARY_DIR = /home/abc/MDH/ros_ws/build/motor_control_command_msgs
 
 # Include any dependencies generated for this target.
 include CMakeFiles/motor_control_command_msgs__rosidl_generator_c.dir/depend.make
@@ -86,8 +86,8 @@ rosidl_generator_c/motor_control_command_msgs/msg/motor.h: rosidl_adapter/motor_
 rosidl_generator_c/motor_control_command_msgs/msg/motor.h: rosidl_adapter/motor_control_command_msgs/msg/MotorControlCommand.idl
 rosidl_generator_c/motor_control_command_msgs/msg/motor.h: /opt/ros/humble/share/builtin_interfaces/msg/Duration.idl
 rosidl_generator_c/motor_control_command_msgs/msg/motor.h: /opt/ros/humble/share/builtin_interfaces/msg/Time.idl
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/wq/MDH/ros_ws/build/motor_control_command_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C code for ROS interfaces"
-	/usr/bin/python3 /opt/ros/humble/share/rosidl_generator_c/cmake/../../../lib/rosidl_generator_c/rosidl_generator_c --generator-arguments-file /home/wq/MDH/ros_ws/build/motor_control_command_msgs/rosidl_generator_c__arguments.json
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/abc/MDH/ros_ws/build/motor_control_command_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C code for ROS interfaces"
+	/usr/bin/python3 /opt/ros/humble/share/rosidl_generator_c/cmake/../../../lib/rosidl_generator_c/rosidl_generator_c --generator-arguments-file /home/abc/MDH/ros_ws/build/motor_control_command_msgs/rosidl_generator_c__arguments.json
 
 rosidl_generator_c/motor_control_command_msgs/msg/detail/motor__functions.h: rosidl_generator_c/motor_control_command_msgs/msg/motor.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/motor_control_command_msgs/msg/detail/motor__functions.h
@@ -119,30 +119,30 @@ rosidl_generator_c/motor_control_command_msgs/msg/detail/motor_control_command__
 CMakeFiles/motor_control_command_msgs__rosidl_generator_c.dir/rosidl_generator_c/motor_control_command_msgs/msg/detail/motor__functions.c.o: CMakeFiles/motor_control_command_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/motor_control_command_msgs__rosidl_generator_c.dir/rosidl_generator_c/motor_control_command_msgs/msg/detail/motor__functions.c.o: rosidl_generator_c/motor_control_command_msgs/msg/detail/motor__functions.c
 CMakeFiles/motor_control_command_msgs__rosidl_generator_c.dir/rosidl_generator_c/motor_control_command_msgs/msg/detail/motor__functions.c.o: CMakeFiles/motor_control_command_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wq/MDH/ros_ws/build/motor_control_command_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/motor_control_command_msgs__rosidl_generator_c.dir/rosidl_generator_c/motor_control_command_msgs/msg/detail/motor__functions.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/motor_control_command_msgs__rosidl_generator_c.dir/rosidl_generator_c/motor_control_command_msgs/msg/detail/motor__functions.c.o -MF CMakeFiles/motor_control_command_msgs__rosidl_generator_c.dir/rosidl_generator_c/motor_control_command_msgs/msg/detail/motor__functions.c.o.d -o CMakeFiles/motor_control_command_msgs__rosidl_generator_c.dir/rosidl_generator_c/motor_control_command_msgs/msg/detail/motor__functions.c.o -c /home/wq/MDH/ros_ws/build/motor_control_command_msgs/rosidl_generator_c/motor_control_command_msgs/msg/detail/motor__functions.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/abc/MDH/ros_ws/build/motor_control_command_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/motor_control_command_msgs__rosidl_generator_c.dir/rosidl_generator_c/motor_control_command_msgs/msg/detail/motor__functions.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/motor_control_command_msgs__rosidl_generator_c.dir/rosidl_generator_c/motor_control_command_msgs/msg/detail/motor__functions.c.o -MF CMakeFiles/motor_control_command_msgs__rosidl_generator_c.dir/rosidl_generator_c/motor_control_command_msgs/msg/detail/motor__functions.c.o.d -o CMakeFiles/motor_control_command_msgs__rosidl_generator_c.dir/rosidl_generator_c/motor_control_command_msgs/msg/detail/motor__functions.c.o -c /home/abc/MDH/ros_ws/build/motor_control_command_msgs/rosidl_generator_c/motor_control_command_msgs/msg/detail/motor__functions.c
 
 CMakeFiles/motor_control_command_msgs__rosidl_generator_c.dir/rosidl_generator_c/motor_control_command_msgs/msg/detail/motor__functions.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/motor_control_command_msgs__rosidl_generator_c.dir/rosidl_generator_c/motor_control_command_msgs/msg/detail/motor__functions.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/wq/MDH/ros_ws/build/motor_control_command_msgs/rosidl_generator_c/motor_control_command_msgs/msg/detail/motor__functions.c > CMakeFiles/motor_control_command_msgs__rosidl_generator_c.dir/rosidl_generator_c/motor_control_command_msgs/msg/detail/motor__functions.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/abc/MDH/ros_ws/build/motor_control_command_msgs/rosidl_generator_c/motor_control_command_msgs/msg/detail/motor__functions.c > CMakeFiles/motor_control_command_msgs__rosidl_generator_c.dir/rosidl_generator_c/motor_control_command_msgs/msg/detail/motor__functions.c.i
 
 CMakeFiles/motor_control_command_msgs__rosidl_generator_c.dir/rosidl_generator_c/motor_control_command_msgs/msg/detail/motor__functions.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/motor_control_command_msgs__rosidl_generator_c.dir/rosidl_generator_c/motor_control_command_msgs/msg/detail/motor__functions.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/wq/MDH/ros_ws/build/motor_control_command_msgs/rosidl_generator_c/motor_control_command_msgs/msg/detail/motor__functions.c -o CMakeFiles/motor_control_command_msgs__rosidl_generator_c.dir/rosidl_generator_c/motor_control_command_msgs/msg/detail/motor__functions.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/abc/MDH/ros_ws/build/motor_control_command_msgs/rosidl_generator_c/motor_control_command_msgs/msg/detail/motor__functions.c -o CMakeFiles/motor_control_command_msgs__rosidl_generator_c.dir/rosidl_generator_c/motor_control_command_msgs/msg/detail/motor__functions.c.s
 
 CMakeFiles/motor_control_command_msgs__rosidl_generator_c.dir/rosidl_generator_c/motor_control_command_msgs/msg/detail/motor_control_command__functions.c.o: CMakeFiles/motor_control_command_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/motor_control_command_msgs__rosidl_generator_c.dir/rosidl_generator_c/motor_control_command_msgs/msg/detail/motor_control_command__functions.c.o: rosidl_generator_c/motor_control_command_msgs/msg/detail/motor_control_command__functions.c
 CMakeFiles/motor_control_command_msgs__rosidl_generator_c.dir/rosidl_generator_c/motor_control_command_msgs/msg/detail/motor_control_command__functions.c.o: CMakeFiles/motor_control_command_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wq/MDH/ros_ws/build/motor_control_command_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/motor_control_command_msgs__rosidl_generator_c.dir/rosidl_generator_c/motor_control_command_msgs/msg/detail/motor_control_command__functions.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/motor_control_command_msgs__rosidl_generator_c.dir/rosidl_generator_c/motor_control_command_msgs/msg/detail/motor_control_command__functions.c.o -MF CMakeFiles/motor_control_command_msgs__rosidl_generator_c.dir/rosidl_generator_c/motor_control_command_msgs/msg/detail/motor_control_command__functions.c.o.d -o CMakeFiles/motor_control_command_msgs__rosidl_generator_c.dir/rosidl_generator_c/motor_control_command_msgs/msg/detail/motor_control_command__functions.c.o -c /home/wq/MDH/ros_ws/build/motor_control_command_msgs/rosidl_generator_c/motor_control_command_msgs/msg/detail/motor_control_command__functions.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/abc/MDH/ros_ws/build/motor_control_command_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/motor_control_command_msgs__rosidl_generator_c.dir/rosidl_generator_c/motor_control_command_msgs/msg/detail/motor_control_command__functions.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/motor_control_command_msgs__rosidl_generator_c.dir/rosidl_generator_c/motor_control_command_msgs/msg/detail/motor_control_command__functions.c.o -MF CMakeFiles/motor_control_command_msgs__rosidl_generator_c.dir/rosidl_generator_c/motor_control_command_msgs/msg/detail/motor_control_command__functions.c.o.d -o CMakeFiles/motor_control_command_msgs__rosidl_generator_c.dir/rosidl_generator_c/motor_control_command_msgs/msg/detail/motor_control_command__functions.c.o -c /home/abc/MDH/ros_ws/build/motor_control_command_msgs/rosidl_generator_c/motor_control_command_msgs/msg/detail/motor_control_command__functions.c
 
 CMakeFiles/motor_control_command_msgs__rosidl_generator_c.dir/rosidl_generator_c/motor_control_command_msgs/msg/detail/motor_control_command__functions.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/motor_control_command_msgs__rosidl_generator_c.dir/rosidl_generator_c/motor_control_command_msgs/msg/detail/motor_control_command__functions.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/wq/MDH/ros_ws/build/motor_control_command_msgs/rosidl_generator_c/motor_control_command_msgs/msg/detail/motor_control_command__functions.c > CMakeFiles/motor_control_command_msgs__rosidl_generator_c.dir/rosidl_generator_c/motor_control_command_msgs/msg/detail/motor_control_command__functions.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/abc/MDH/ros_ws/build/motor_control_command_msgs/rosidl_generator_c/motor_control_command_msgs/msg/detail/motor_control_command__functions.c > CMakeFiles/motor_control_command_msgs__rosidl_generator_c.dir/rosidl_generator_c/motor_control_command_msgs/msg/detail/motor_control_command__functions.c.i
 
 CMakeFiles/motor_control_command_msgs__rosidl_generator_c.dir/rosidl_generator_c/motor_control_command_msgs/msg/detail/motor_control_command__functions.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/motor_control_command_msgs__rosidl_generator_c.dir/rosidl_generator_c/motor_control_command_msgs/msg/detail/motor_control_command__functions.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/wq/MDH/ros_ws/build/motor_control_command_msgs/rosidl_generator_c/motor_control_command_msgs/msg/detail/motor_control_command__functions.c -o CMakeFiles/motor_control_command_msgs__rosidl_generator_c.dir/rosidl_generator_c/motor_control_command_msgs/msg/detail/motor_control_command__functions.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/abc/MDH/ros_ws/build/motor_control_command_msgs/rosidl_generator_c/motor_control_command_msgs/msg/detail/motor_control_command__functions.c -o CMakeFiles/motor_control_command_msgs__rosidl_generator_c.dir/rosidl_generator_c/motor_control_command_msgs/msg/detail/motor_control_command__functions.c.s
 
 # Object files for target motor_control_command_msgs__rosidl_generator_c
 motor_control_command_msgs__rosidl_generator_c_OBJECTS = \
@@ -159,7 +159,7 @@ libmotor_control_command_msgs__rosidl_generator_c.so: /opt/ros/humble/lib/libbui
 libmotor_control_command_msgs__rosidl_generator_c.so: /opt/ros/humble/lib/librosidl_runtime_c.so
 libmotor_control_command_msgs__rosidl_generator_c.so: /opt/ros/humble/lib/librcutils.so
 libmotor_control_command_msgs__rosidl_generator_c.so: CMakeFiles/motor_control_command_msgs__rosidl_generator_c.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/wq/MDH/ros_ws/build/motor_control_command_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C shared library libmotor_control_command_msgs__rosidl_generator_c.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/abc/MDH/ros_ws/build/motor_control_command_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C shared library libmotor_control_command_msgs__rosidl_generator_c.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/motor_control_command_msgs__rosidl_generator_c.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -180,6 +180,6 @@ CMakeFiles/motor_control_command_msgs__rosidl_generator_c.dir/depend: rosidl_gen
 CMakeFiles/motor_control_command_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/motor_control_command_msgs/msg/detail/motor_control_command__type_support.h
 CMakeFiles/motor_control_command_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/motor_control_command_msgs/msg/motor.h
 CMakeFiles/motor_control_command_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/motor_control_command_msgs/msg/motor_control_command.h
-	cd /home/wq/MDH/ros_ws/build/motor_control_command_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/wq/MDH/ros_ws/src/internal_msgs/motor_control_command_msgs /home/wq/MDH/ros_ws/src/internal_msgs/motor_control_command_msgs /home/wq/MDH/ros_ws/build/motor_control_command_msgs /home/wq/MDH/ros_ws/build/motor_control_command_msgs /home/wq/MDH/ros_ws/build/motor_control_command_msgs/CMakeFiles/motor_control_command_msgs__rosidl_generator_c.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/abc/MDH/ros_ws/build/motor_control_command_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/abc/MDH/ros_ws/src/internal_msgs/motor_control_command_msgs /home/abc/MDH/ros_ws/src/internal_msgs/motor_control_command_msgs /home/abc/MDH/ros_ws/build/motor_control_command_msgs /home/abc/MDH/ros_ws/build/motor_control_command_msgs /home/abc/MDH/ros_ws/build/motor_control_command_msgs/CMakeFiles/motor_control_command_msgs__rosidl_generator_c.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/motor_control_command_msgs__rosidl_generator_c.dir/depend
 

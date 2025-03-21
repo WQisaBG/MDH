@@ -1,5 +1,5 @@
 {
     "serial_port": "/dev/ttyUSB0",
     "baud_rate": 921600,
-    "motor_count": 2
+    "motor_count": 10
 }

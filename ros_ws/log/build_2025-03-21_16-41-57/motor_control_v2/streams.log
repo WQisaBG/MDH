@@ -1,0 +1,51 @@
+[0.016s] Invoking command in '/home/abc/MDH/ros_ws/build/motor_control_v2': CMAKE_PREFIX_PATH=/home/abc/MDH/ros_ws/install/motor_control_command_msgs:/home/abc/MDH/ros_ws/install/rmf_utils:/home/abc/MDH/ros_ws/install/motor_status:/home/abc/MDH/ros_ws/install/motor_control_v2:/home/abc/MDH/ros_ws/install/motor_control:/opt/ros/humble LD_LIBRARY_PATH=/home/abc/MDH/ros_ws/install/motor_control_command_msgs/lib:/home/abc/MDH/ros_ws/install/rmf_utils/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/abc/MDH/ros_ws/build/motor_control_v2 -- -j8 -l8
+[0.061s] [35m[1mConsolidate compiler generated dependencies of target motor_control_node[0m
+[0.092s] [  9%] [32mBuilding CXX object CMakeFiles/motor_control_node.dir/src/motor_command.cpp.o[0m
+[2.481s] [01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/src/motor_command.cpp:[m[K In constructor ‘[01m[Kmotor_control_v2::MotorCommand::MotorCommand(rclcpp::Node::SharedPtr, const string&, int)[m[K’:
+[2.481s] [01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/src/motor_command.cpp:35:66:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kmotor_control_v2::MotorCommand::Implementation::serial_communication_[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[2.481s]    35 |               Implementation{node, serial_port.c_str(), baud_rate[01;35m[K}[m[K))
+[2.481s]       |                                                                  [01;35m[K^[m[K
+[2.528s] [01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/src/motor_command.cpp:[m[K In member function ‘[01m[Kvoid motor_control_v2::MotorCommand::Implementation::send_serial_command_async(std::vector<unsigned char>)[m[K’:
+[2.528s] [01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/src/motor_command.cpp:196:23:[m[K [01;35m[Kwarning: [m[Kignoring return value of ‘[01m[Kstd::future<typename std::__invoke_result<typename std::decay<_Tp>::type, typename std::decay<_Args>::type ...>::type> std::async(std::launch, _Fn&&, _Args&& ...) [with _Fn = motor_control_v2::MotorCommand::Implementation::send_serial_command_async(std::vector<unsigned char>)::<lambda()>; _Args = {}; typename std::__invoke_result<typename std::decay<_Tp>::type, typename std::decay<_Args>::type ...>::type = void; typename std::decay<_Tp>::type = std::decay<motor_control_v2::MotorCommand::Implementation::send_serial_command_async(std::vector<unsigned char>)::<lambda()> >::type][m[K’, declared with attribute ‘[01m[Knodiscard[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-result-Wunused-result]8;;[m[K]
+[2.528s]   196 |                     })[01;35m[K;[m[K
+[2.528s]       |                       [01;35m[K^[m[K
+[2.528s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:18[m[K,
+[2.528s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[2.528s]                  from [01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/include/motor_control_v2/motor_command.hpp:5[m[K,
+[2.528s]                  from [01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/src/motor_command.cpp:1[m[K:
+[2.528s] [01m[K/usr/include/c++/11/future:1768:5:[m[K [01;36m[Knote: [m[Kdeclared here
+[2.528s]  1768 |     [01;36m[Kasync[m[K(launch __policy, _Fn&& __fn, _Args&&... __args)
+[2.528s]       |     [01;36m[K^~~~~[m[K
+[4.289s] [ 18%] [32m[1mLinking CXX executable motor_control_node[0m
+[5.416s] [100%] Built target motor_control_node
+[5.429s] Invoked command in '/home/abc/MDH/ros_ws/build/motor_control_v2' returned '0': CMAKE_PREFIX_PATH=/home/abc/MDH/ros_ws/install/motor_control_command_msgs:/home/abc/MDH/ros_ws/install/rmf_utils:/home/abc/MDH/ros_ws/install/motor_status:/home/abc/MDH/ros_ws/install/motor_control_v2:/home/abc/MDH/ros_ws/install/motor_control:/opt/ros/humble LD_LIBRARY_PATH=/home/abc/MDH/ros_ws/install/motor_control_command_msgs/lib:/home/abc/MDH/ros_ws/install/rmf_utils/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/abc/MDH/ros_ws/build/motor_control_v2 -- -j8 -l8
+[5.433s] Invoking command in '/home/abc/MDH/ros_ws/build/motor_control_v2': CMAKE_PREFIX_PATH=/home/abc/MDH/ros_ws/install/motor_control_command_msgs:/home/abc/MDH/ros_ws/install/rmf_utils:/home/abc/MDH/ros_ws/install/motor_status:/home/abc/MDH/ros_ws/install/motor_control_v2:/home/abc/MDH/ros_ws/install/motor_control:/opt/ros/humble LD_LIBRARY_PATH=/home/abc/MDH/ros_ws/install/motor_control_command_msgs/lib:/home/abc/MDH/ros_ws/install/rmf_utils/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/abc/MDH/ros_ws/build/motor_control_v2
+[5.440s] -- Install configuration: ""
+[5.440s] -- Installing: /home/abc/MDH/ros_ws/install/motor_control_v2/lib/motor_control_v2/motor_control_node
+[5.447s] -- Set runtime path of "/home/abc/MDH/ros_ws/install/motor_control_v2/lib/motor_control_v2/motor_control_node" to ""
+[5.447s] -- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_v2/include
+[5.447s] -- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_v2/include/motor_control_v2
+[5.447s] -- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_v2/include/motor_control_v2/motor_command.hpp
+[5.448s] -- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_v2/include/motor_control_v2/motor_config.hpp
+[5.448s] -- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_v2/include/motor_control_v2/serial_communication.hpp
+[5.448s] -- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_v2/include/motor_control_v2/Node.hpp
+[5.448s] -- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_v2/include/motor_control_v2/internal_http_server.hpp
+[5.448s] -- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_v2/include/motor_control_v2/ros2_communication.hpp
+[5.448s] -- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_v2/include/motor_control_v2/http_server.hpp
+[5.449s] -- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_v2/share/ament_index/resource_index/package_run_dependencies/motor_control_v2
+[5.449s] -- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_v2/share/ament_index/resource_index/parent_prefix_path/motor_control_v2
+[5.449s] -- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_v2/share/motor_control_v2/environment/ament_prefix_path.sh
+[5.449s] -- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_v2/share/motor_control_v2/environment/ament_prefix_path.dsv
+[5.449s] -- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_v2/share/motor_control_v2/environment/path.sh
+[5.449s] -- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_v2/share/motor_control_v2/environment/path.dsv
+[5.449s] -- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_v2/share/motor_control_v2/local_setup.bash
+[5.449s] -- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_v2/share/motor_control_v2/local_setup.sh
+[5.450s] -- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_v2/share/motor_control_v2/local_setup.zsh
+[5.450s] -- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_v2/share/motor_control_v2/local_setup.dsv
+[5.450s] -- Installing: /home/abc/MDH/ros_ws/install/motor_control_v2/share/motor_control_v2/package.dsv
+[5.451s] -- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_v2/share/ament_index/resource_index/packages/motor_control_v2
+[5.451s] -- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_v2/share/motor_control_v2/cmake/ament_cmake_export_dependencies-extras.cmake
+[5.452s] -- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_v2/share/motor_control_v2/cmake/motor_control_v2Config.cmake
+[5.453s] -- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_v2/share/motor_control_v2/cmake/motor_control_v2Config-version.cmake
+[5.453s] -- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_v2/share/motor_control_v2/package.xml
+[5.454s] Invoked command in '/home/abc/MDH/ros_ws/build/motor_control_v2' returned '0': CMAKE_PREFIX_PATH=/home/abc/MDH/ros_ws/install/motor_control_command_msgs:/home/abc/MDH/ros_ws/install/rmf_utils:/home/abc/MDH/ros_ws/install/motor_status:/home/abc/MDH/ros_ws/install/motor_control_v2:/home/abc/MDH/ros_ws/install/motor_control:/opt/ros/humble LD_LIBRARY_PATH=/home/abc/MDH/ros_ws/install/motor_control_command_msgs/lib:/home/abc/MDH/ros_ws/install/rmf_utils/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/abc/MDH/ros_ws/build/motor_control_v2

@@ -5,9 +5,14 @@ namespace motor_control_v2
     class SerialCommunication::Implementation
     {
     public:
+        Implementation(const char *serial_port, int baud_rate)
+            : serial_(serial_port), baud_rate_(baud_rate)
+        {
+            // doing nothing
+        }
         void initSerialPort();
 
-        void send_serial_command(const unsigned char *command);
+        void send_serial_command(const unsigned char *command, size_t length);
         std::vector<unsigned char> get_feedback_from_motor_Ms(int timeout_millsec);
         std::vector<unsigned char> get_feedback_from_motor(int timeout_sec);
         uint8_t calculateChecksum(const uint8_t *data, size_t length);
@@ -25,29 +30,24 @@ namespace motor_control_v2
     };
     //========================================================================================================================
     SerialCommunication::SerialCommunication(rclcpp::Node::SharedPtr node, const char *serial_port, int baud_rate)
-        : _pimpl(rmf_utils::make_impl<Implementation>(
-              Implementation{
-                  Serial(serial_port),
-                  node,
-                  serial_port,
-                  baud_rate
-
-              }))
+        : _pimpl(rmf_utils::make_impl<Implementation>(serial_port, baud_rate))
     {
-        // doing noting
+        _pimpl->node_ = node; // 初始化 node_ 成员变量
+        initSerialPort();
     }
     //========================================================================================================================
 
     void SerialCommunication::Implementation::initSerialPort()
     {
         serial_.setOpt(baud_rate_, 8, 'N', 1);
+
         try
         {
             if (serial_.setOpt(baud_rate_, 8, 'N', 1) != 0)
             {
                 throw std::runtime_error("Failed to set serial port options");
             }
-            RCLCPP_INFO(node_->get_logger(), "Serial port opened successfully at %s with baud rate %d");
+            RCLCPP_INFO(node_->get_logger(), "Serial port opened successfully");
         }
         catch (const std::exception &e)
         {
@@ -56,14 +56,23 @@ namespace motor_control_v2
         }
     }
     //========================================================================================================================
-    void SerialCommunication::Implementation::send_serial_command(const unsigned char *command)
+    void SerialCommunication::Implementation::send_serial_command(const unsigned char *command, size_t length)
     {
         if (serial_.setOpt(baud_rate_, 8, 'N', 1) != 0)
         {
             RCLCPP_ERROR(node_->get_logger(), "Serial port is not open");
             return;
         }
-        size_t bytes_to_write = sizeof(command);
+        // 打印 command 的内容
+        std::ostringstream oss;
+        for (size_t i = 0; i < length; ++i)
+        {
+            oss << "0x" << std::setfill('0') << std::setw(2) << std::hex << static_cast<int>(static_cast<uint8_t>(command[i])) << " ";
+
+        }
+        RCLCPP_INFO(node_->get_logger(), "Sending command: %s", oss.str().c_str());
+
+        size_t bytes_to_write = length;
         size_t bytes_written = serial_.write(const_cast<char *>(reinterpret_cast<const char *>(command)), bytes_to_write);
         if (bytes_written != bytes_to_write)
         {
@@ -84,10 +93,10 @@ namespace motor_control_v2
         std::vector<unsigned char> feedback;                        // 存储完整的反馈数据帧
 
         unsigned char buffer[128];
-        int bytes_read = serial_.readBlockMs(reinterpret_cast<char *>(buffer), sizeof(buffer), timeout_sec);
+        int bytes_read = serial_.readBlock(reinterpret_cast<char *>(buffer), sizeof(buffer), timeout_sec);
         if (bytes_read == 0)
         {
-            RCLCPP_ERROR(node_->get_logger(), "No response from motor");
+            // RCLCPP_ERROR(node_->get_logger(), "No response from motor");
             return std::vector<unsigned char>();
         }
         else if (bytes_read < 0)
@@ -120,13 +129,13 @@ namespace motor_control_v2
             std::vector<unsigned char> frame(it, it + 3 + length + 1);
 
             // 验证校验和
-            uint8_t checksum = calculateChecksum(frame.data() + 2, length + 1); // 计算校验和
-            if (checksum != frame.back())
-            {
-                RCLCPP_WARN(node_->get_logger(), "Invalid checksum, discarding frame");
-                it += 3 + length + 1; // 跳过当前帧，继续处理后续数据
-                continue;
-            }
+            // uint8_t checksum = calculateChecksum(frame.data() + 2, length + 1); // 计算校验和
+            // if (checksum != frame.back())
+            // {
+            //     RCLCPP_WARN(node_->get_logger(), "Invalid checksum, discarding frame");
+            //     it += 3 + length + 1; // 跳过当前帧，继续处理后续数据
+            //     continue;
+            // }
 
             // 返回有效的反馈数据帧
             feedback = frame;
@@ -184,13 +193,13 @@ namespace motor_control_v2
             std::vector<unsigned char> frame(it, it + 3 + length + 1);
 
             // 验证校验和
-            uint8_t checksum = calculateChecksum(frame.data() + 2, length + 1); // 计算校验和
-            if (checksum != frame.back())
-            {
-                RCLCPP_WARN(node_->get_logger(), "Invalid checksum, discarding frame");
-                it += 3 + length + 1; // 跳过当前帧，继续处理后续数据
-                continue;
-            }
+            // uint8_t checksum = calculateChecksum(frame.data() + 2, length + 1); // 计算校验和
+            // if (checksum != frame.back())
+            // {
+            //     RCLCPP_WARN(node_->get_logger(), "Invalid checksum, discarding frame");
+            //     it += 3 + length + 1; // 跳过当前帧，继续处理后续数据
+            //     continue;
+            // }
 
             // 返回有效的反馈数据帧
             feedback = frame;
@@ -259,9 +268,9 @@ namespace motor_control_v2
     }
     //========================================================================================================================
 
-    void SerialCommunication::send_serial_command(const unsigned char *command)
+    void SerialCommunication::send_serial_command(const unsigned char *command, size_t command_length)
     {
-        _pimpl->send_serial_command(command);
+        _pimpl->send_serial_command(command, command_length);
     }
     //========================================================================================================================
     std::vector<unsigned char> SerialCommunication::get_feedback_from_motor(int timeout_sec)

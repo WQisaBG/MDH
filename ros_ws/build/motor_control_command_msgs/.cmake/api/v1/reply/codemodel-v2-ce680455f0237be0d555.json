@@ -1,0 +1,233 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-e762f4898cc17ec8aed6.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					]
+				},
+				{
+					"build" : "motor_control_command_msgs__py",
+					"jsonFile" : "directory-motor_control_command_msgs__py-5ef61a2fd11fb087890b.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/abc/MDH/ros_ws/build/motor_control_command_msgs/motor_control_command_msgs__py",
+					"targetIndexes" : 
+					[
+						4
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "motor_control_command_msgs",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_motor_control_command_msgs_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_motor_control_command_msgs_egg-bacfe46b519288cface2.json",
+					"name" : "ament_cmake_python_build_motor_control_command_msgs_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_copy_motor_control_command_msgs::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_copy_motor_control_command_msgs-751409c26a46ffd8be7a.json",
+					"name" : "ament_cmake_python_copy_motor_control_command_msgs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "motor_control_command_msgs::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-motor_control_command_msgs-d753f82040362f3d3bc4.json",
+					"name" : "motor_control_command_msgs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "motor_control_command_msgs__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-motor_control_command_msgs__cpp-82eba51b06813b606032.json",
+					"name" : "motor_control_command_msgs__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "motor_control_command_msgs__py::@47b3957e16a4943178ef",
+					"jsonFile" : "target-motor_control_command_msgs__py-c16a22f2f879a769b6e7.json",
+					"name" : "motor_control_command_msgs__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "motor_control_command_msgs__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-motor_control_command_msgs__rosidl_generator_c-f9978c1c71c2abe72e55.json",
+					"name" : "motor_control_command_msgs__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "motor_control_command_msgs__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-motor_control_command_msgs__rosidl_generator_py-5a0b8f82fdba6c8ba1ff.json",
+					"name" : "motor_control_command_msgs__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "motor_control_command_msgs__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-motor_control_command_msgs__rosidl_typesupport_c-607dc22d75b88f8566d2.json",
+					"name" : "motor_control_command_msgs__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "motor_control_command_msgs__rosidl_typesupport_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-motor_control_command_msgs__rosidl_typesupport_c__pyext-60c06f9692d92e999f23.json",
+					"name" : "motor_control_command_msgs__rosidl_typesupport_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "motor_control_command_msgs__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-motor_control_command_msgs__rosidl_typesupport_cpp-a293cab968457400a30f.json",
+					"name" : "motor_control_command_msgs__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "motor_control_command_msgs__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-motor_control_command_msgs__rosidl_typesupport_fastrtps_c-440d4660127a4f42582b.json",
+					"name" : "motor_control_command_msgs__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "motor_control_command_msgs__rosidl_typesupport_fastrtps_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-motor_control_command_msgs__rosidl_typesupport_fastrtps_c__pyext-598dbd9a40f7b5e25e3b.json",
+					"name" : "motor_control_command_msgs__rosidl_typesupport_fastrtps_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "motor_control_command_msgs__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-motor_control_command_msgs__rosidl_typesupport_fastrtps_cpp-9d314cb072e1513edad2.json",
+					"name" : "motor_control_command_msgs__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "motor_control_command_msgs__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-motor_control_command_msgs__rosidl_typesupport_introspection_c-7d34e9acacef386acc2f.json",
+					"name" : "motor_control_command_msgs__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "motor_control_command_msgs__rosidl_typesupport_introspection_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-motor_control_command_msgs__rosidl_typesupport_introspection_c__pyext-38a924be418fb055f69e.json",
+					"name" : "motor_control_command_msgs__rosidl_typesupport_introspection_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "motor_control_command_msgs__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-motor_control_command_msgs__rosidl_typesupport_introspection_cpp-9cf114c094f18350cb79.json",
+					"name" : "motor_control_command_msgs__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "motor_control_command_msgs_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-motor_control_command_msgs_uninstall-a29a6a45081ed1e137ff.json",
+					"name" : "motor_control_command_msgs_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-bfeb3d08d629e5f0f5a5.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/abc/MDH/ros_ws/build/motor_control_command_msgs",
+		"source" : "/home/abc/MDH/ros_ws/src/internal_msgs/motor_control_command_msgs"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

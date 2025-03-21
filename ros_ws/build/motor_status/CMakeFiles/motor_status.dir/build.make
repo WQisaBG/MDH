@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/wq/MDH/ros_ws/src/motor_status
+CMAKE_SOURCE_DIR = /home/abc/MDH/ros_ws/src/motor_status
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/wq/MDH/ros_ws/build/motor_status
+CMAKE_BINARY_DIR = /home/abc/MDH/ros_ws/build/motor_status
 
 # Include any dependencies generated for this target.
 include CMakeFiles/motor_status.dir/depend.make
@@ -70,59 +70,59 @@ include CMakeFiles/motor_status.dir/progress.make
 include CMakeFiles/motor_status.dir/flags.make
 
 CMakeFiles/motor_status.dir/src/motor_status.cpp.o: CMakeFiles/motor_status.dir/flags.make
-CMakeFiles/motor_status.dir/src/motor_status.cpp.o: /home/wq/MDH/ros_ws/src/motor_status/src/motor_status.cpp
+CMakeFiles/motor_status.dir/src/motor_status.cpp.o: /home/abc/MDH/ros_ws/src/motor_status/src/motor_status.cpp
 CMakeFiles/motor_status.dir/src/motor_status.cpp.o: CMakeFiles/motor_status.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wq/MDH/ros_ws/build/motor_status/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/motor_status.dir/src/motor_status.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/motor_status.dir/src/motor_status.cpp.o -MF CMakeFiles/motor_status.dir/src/motor_status.cpp.o.d -o CMakeFiles/motor_status.dir/src/motor_status.cpp.o -c /home/wq/MDH/ros_ws/src/motor_status/src/motor_status.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/abc/MDH/ros_ws/build/motor_status/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/motor_status.dir/src/motor_status.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/motor_status.dir/src/motor_status.cpp.o -MF CMakeFiles/motor_status.dir/src/motor_status.cpp.o.d -o CMakeFiles/motor_status.dir/src/motor_status.cpp.o -c /home/abc/MDH/ros_ws/src/motor_status/src/motor_status.cpp
 
 CMakeFiles/motor_status.dir/src/motor_status.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/motor_status.dir/src/motor_status.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wq/MDH/ros_ws/src/motor_status/src/motor_status.cpp > CMakeFiles/motor_status.dir/src/motor_status.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/abc/MDH/ros_ws/src/motor_status/src/motor_status.cpp > CMakeFiles/motor_status.dir/src/motor_status.cpp.i
 
 CMakeFiles/motor_status.dir/src/motor_status.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/motor_status.dir/src/motor_status.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wq/MDH/ros_ws/src/motor_status/src/motor_status.cpp -o CMakeFiles/motor_status.dir/src/motor_status.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/abc/MDH/ros_ws/src/motor_status/src/motor_status.cpp -o CMakeFiles/motor_status.dir/src/motor_status.cpp.s
 
-CMakeFiles/motor_status.dir/home/wq/MDH/thirdparty/serial/src/Serial.cpp.o: CMakeFiles/motor_status.dir/flags.make
-CMakeFiles/motor_status.dir/home/wq/MDH/thirdparty/serial/src/Serial.cpp.o: /home/wq/MDH/thirdparty/serial/src/Serial.cpp
-CMakeFiles/motor_status.dir/home/wq/MDH/thirdparty/serial/src/Serial.cpp.o: CMakeFiles/motor_status.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wq/MDH/ros_ws/build/motor_status/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/motor_status.dir/home/wq/MDH/thirdparty/serial/src/Serial.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/motor_status.dir/home/wq/MDH/thirdparty/serial/src/Serial.cpp.o -MF CMakeFiles/motor_status.dir/home/wq/MDH/thirdparty/serial/src/Serial.cpp.o.d -o CMakeFiles/motor_status.dir/home/wq/MDH/thirdparty/serial/src/Serial.cpp.o -c /home/wq/MDH/thirdparty/serial/src/Serial.cpp
+CMakeFiles/motor_status.dir/home/abc/MDH/thirdparty/serial/src/Serial.cpp.o: CMakeFiles/motor_status.dir/flags.make
+CMakeFiles/motor_status.dir/home/abc/MDH/thirdparty/serial/src/Serial.cpp.o: /home/abc/MDH/thirdparty/serial/src/Serial.cpp
+CMakeFiles/motor_status.dir/home/abc/MDH/thirdparty/serial/src/Serial.cpp.o: CMakeFiles/motor_status.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/abc/MDH/ros_ws/build/motor_status/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/motor_status.dir/home/abc/MDH/thirdparty/serial/src/Serial.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/motor_status.dir/home/abc/MDH/thirdparty/serial/src/Serial.cpp.o -MF CMakeFiles/motor_status.dir/home/abc/MDH/thirdparty/serial/src/Serial.cpp.o.d -o CMakeFiles/motor_status.dir/home/abc/MDH/thirdparty/serial/src/Serial.cpp.o -c /home/abc/MDH/thirdparty/serial/src/Serial.cpp
 
-CMakeFiles/motor_status.dir/home/wq/MDH/thirdparty/serial/src/Serial.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/motor_status.dir/home/wq/MDH/thirdparty/serial/src/Serial.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wq/MDH/thirdparty/serial/src/Serial.cpp > CMakeFiles/motor_status.dir/home/wq/MDH/thirdparty/serial/src/Serial.cpp.i
+CMakeFiles/motor_status.dir/home/abc/MDH/thirdparty/serial/src/Serial.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/motor_status.dir/home/abc/MDH/thirdparty/serial/src/Serial.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/abc/MDH/thirdparty/serial/src/Serial.cpp > CMakeFiles/motor_status.dir/home/abc/MDH/thirdparty/serial/src/Serial.cpp.i
 
-CMakeFiles/motor_status.dir/home/wq/MDH/thirdparty/serial/src/Serial.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/motor_status.dir/home/wq/MDH/thirdparty/serial/src/Serial.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wq/MDH/thirdparty/serial/src/Serial.cpp -o CMakeFiles/motor_status.dir/home/wq/MDH/thirdparty/serial/src/Serial.cpp.s
+CMakeFiles/motor_status.dir/home/abc/MDH/thirdparty/serial/src/Serial.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/motor_status.dir/home/abc/MDH/thirdparty/serial/src/Serial.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/abc/MDH/thirdparty/serial/src/Serial.cpp -o CMakeFiles/motor_status.dir/home/abc/MDH/thirdparty/serial/src/Serial.cpp.s
 
-CMakeFiles/motor_status.dir/home/wq/MDH/thirdparty/serial/src/SerialImplUnix.cpp.o: CMakeFiles/motor_status.dir/flags.make
-CMakeFiles/motor_status.dir/home/wq/MDH/thirdparty/serial/src/SerialImplUnix.cpp.o: /home/wq/MDH/thirdparty/serial/src/SerialImplUnix.cpp
-CMakeFiles/motor_status.dir/home/wq/MDH/thirdparty/serial/src/SerialImplUnix.cpp.o: CMakeFiles/motor_status.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wq/MDH/ros_ws/build/motor_status/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/motor_status.dir/home/wq/MDH/thirdparty/serial/src/SerialImplUnix.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/motor_status.dir/home/wq/MDH/thirdparty/serial/src/SerialImplUnix.cpp.o -MF CMakeFiles/motor_status.dir/home/wq/MDH/thirdparty/serial/src/SerialImplUnix.cpp.o.d -o CMakeFiles/motor_status.dir/home/wq/MDH/thirdparty/serial/src/SerialImplUnix.cpp.o -c /home/wq/MDH/thirdparty/serial/src/SerialImplUnix.cpp
+CMakeFiles/motor_status.dir/home/abc/MDH/thirdparty/serial/src/SerialImplUnix.cpp.o: CMakeFiles/motor_status.dir/flags.make
+CMakeFiles/motor_status.dir/home/abc/MDH/thirdparty/serial/src/SerialImplUnix.cpp.o: /home/abc/MDH/thirdparty/serial/src/SerialImplUnix.cpp
+CMakeFiles/motor_status.dir/home/abc/MDH/thirdparty/serial/src/SerialImplUnix.cpp.o: CMakeFiles/motor_status.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/abc/MDH/ros_ws/build/motor_status/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/motor_status.dir/home/abc/MDH/thirdparty/serial/src/SerialImplUnix.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/motor_status.dir/home/abc/MDH/thirdparty/serial/src/SerialImplUnix.cpp.o -MF CMakeFiles/motor_status.dir/home/abc/MDH/thirdparty/serial/src/SerialImplUnix.cpp.o.d -o CMakeFiles/motor_status.dir/home/abc/MDH/thirdparty/serial/src/SerialImplUnix.cpp.o -c /home/abc/MDH/thirdparty/serial/src/SerialImplUnix.cpp
 
-CMakeFiles/motor_status.dir/home/wq/MDH/thirdparty/serial/src/SerialImplUnix.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/motor_status.dir/home/wq/MDH/thirdparty/serial/src/SerialImplUnix.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wq/MDH/thirdparty/serial/src/SerialImplUnix.cpp > CMakeFiles/motor_status.dir/home/wq/MDH/thirdparty/serial/src/SerialImplUnix.cpp.i
+CMakeFiles/motor_status.dir/home/abc/MDH/thirdparty/serial/src/SerialImplUnix.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/motor_status.dir/home/abc/MDH/thirdparty/serial/src/SerialImplUnix.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/abc/MDH/thirdparty/serial/src/SerialImplUnix.cpp > CMakeFiles/motor_status.dir/home/abc/MDH/thirdparty/serial/src/SerialImplUnix.cpp.i
 
-CMakeFiles/motor_status.dir/home/wq/MDH/thirdparty/serial/src/SerialImplUnix.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/motor_status.dir/home/wq/MDH/thirdparty/serial/src/SerialImplUnix.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wq/MDH/thirdparty/serial/src/SerialImplUnix.cpp -o CMakeFiles/motor_status.dir/home/wq/MDH/thirdparty/serial/src/SerialImplUnix.cpp.s
+CMakeFiles/motor_status.dir/home/abc/MDH/thirdparty/serial/src/SerialImplUnix.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/motor_status.dir/home/abc/MDH/thirdparty/serial/src/SerialImplUnix.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/abc/MDH/thirdparty/serial/src/SerialImplUnix.cpp -o CMakeFiles/motor_status.dir/home/abc/MDH/thirdparty/serial/src/SerialImplUnix.cpp.s
 
 # Object files for target motor_status
 motor_status_OBJECTS = \
 "CMakeFiles/motor_status.dir/src/motor_status.cpp.o" \
-"CMakeFiles/motor_status.dir/home/wq/MDH/thirdparty/serial/src/Serial.cpp.o" \
-"CMakeFiles/motor_status.dir/home/wq/MDH/thirdparty/serial/src/SerialImplUnix.cpp.o"
+"CMakeFiles/motor_status.dir/home/abc/MDH/thirdparty/serial/src/Serial.cpp.o" \
+"CMakeFiles/motor_status.dir/home/abc/MDH/thirdparty/serial/src/SerialImplUnix.cpp.o"
 
 # External object files for target motor_status
 motor_status_EXTERNAL_OBJECTS =
 
 motor_status: CMakeFiles/motor_status.dir/src/motor_status.cpp.o
-motor_status: CMakeFiles/motor_status.dir/home/wq/MDH/thirdparty/serial/src/Serial.cpp.o
-motor_status: CMakeFiles/motor_status.dir/home/wq/MDH/thirdparty/serial/src/SerialImplUnix.cpp.o
+motor_status: CMakeFiles/motor_status.dir/home/abc/MDH/thirdparty/serial/src/Serial.cpp.o
+motor_status: CMakeFiles/motor_status.dir/home/abc/MDH/thirdparty/serial/src/SerialImplUnix.cpp.o
 motor_status: CMakeFiles/motor_status.dir/build.make
 motor_status: /opt/ros/humble/lib/librclcpp.so
 motor_status: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_fastrtps_c.so
@@ -187,7 +187,7 @@ motor_status: /opt/ros/humble/lib/librosidl_runtime_c.so
 motor_status: /opt/ros/humble/lib/librcutils.so
 motor_status: /usr/lib/x86_64-linux-gnu/libpython3.10.so
 motor_status: CMakeFiles/motor_status.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/wq/MDH/ros_ws/build/motor_status/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable motor_status"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/abc/MDH/ros_ws/build/motor_status/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable motor_status"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/motor_status.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -199,6 +199,6 @@ CMakeFiles/motor_status.dir/clean:
 .PHONY : CMakeFiles/motor_status.dir/clean
 
 CMakeFiles/motor_status.dir/depend:
-	cd /home/wq/MDH/ros_ws/build/motor_status && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/wq/MDH/ros_ws/src/motor_status /home/wq/MDH/ros_ws/src/motor_status /home/wq/MDH/ros_ws/build/motor_status /home/wq/MDH/ros_ws/build/motor_status /home/wq/MDH/ros_ws/build/motor_status/CMakeFiles/motor_status.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/abc/MDH/ros_ws/build/motor_status && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/abc/MDH/ros_ws/src/motor_status /home/abc/MDH/ros_ws/src/motor_status /home/abc/MDH/ros_ws/build/motor_status /home/abc/MDH/ros_ws/build/motor_status /home/abc/MDH/ros_ws/build/motor_status/CMakeFiles/motor_status.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/motor_status.dir/depend
 

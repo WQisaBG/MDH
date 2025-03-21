@@ -52,7 +52,7 @@ namespace motor_control_v2
          * @brief 发送命令
          * @param unsigned char* command 命令
          */
-        void send_serial_command(const unsigned char *command);                     
+        void send_serial_command(const unsigned char *command, size_t size);                     
         /*
          * @brief 获取反馈
          * @param int timeout_millsec 超时时间  秒

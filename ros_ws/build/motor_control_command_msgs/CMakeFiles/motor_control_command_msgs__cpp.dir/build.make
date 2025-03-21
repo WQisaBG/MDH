@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/wq/MDH/ros_ws/src/internal_msgs/motor_control_command_msgs
+CMAKE_SOURCE_DIR = /home/abc/MDH/ros_ws/src/internal_msgs/motor_control_command_msgs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/wq/MDH/ros_ws/build/motor_control_command_msgs
+CMAKE_BINARY_DIR = /home/abc/MDH/ros_ws/build/motor_control_command_msgs
 
 # Utility rule file for motor_control_command_msgs__cpp.
 
@@ -97,8 +97,8 @@ rosidl_generator_cpp/motor_control_command_msgs/msg/motor.hpp: rosidl_adapter/mo
 rosidl_generator_cpp/motor_control_command_msgs/msg/motor.hpp: rosidl_adapter/motor_control_command_msgs/msg/MotorControlCommand.idl
 rosidl_generator_cpp/motor_control_command_msgs/msg/motor.hpp: /opt/ros/humble/share/builtin_interfaces/msg/Duration.idl
 rosidl_generator_cpp/motor_control_command_msgs/msg/motor.hpp: /opt/ros/humble/share/builtin_interfaces/msg/Time.idl
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/wq/MDH/ros_ws/build/motor_control_command_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code for ROS interfaces"
-	/usr/bin/python3 /opt/ros/humble/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp --generator-arguments-file /home/wq/MDH/ros_ws/build/motor_control_command_msgs/rosidl_generator_cpp__arguments.json
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/abc/MDH/ros_ws/build/motor_control_command_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code for ROS interfaces"
+	/usr/bin/python3 /opt/ros/humble/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp --generator-arguments-file /home/abc/MDH/ros_ws/build/motor_control_command_msgs/rosidl_generator_cpp__arguments.json
 
 rosidl_generator_cpp/motor_control_command_msgs/msg/detail/motor__builder.hpp: rosidl_generator_cpp/motor_control_command_msgs/msg/motor.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/motor_control_command_msgs/msg/detail/motor__builder.hpp
@@ -150,6 +150,6 @@ CMakeFiles/motor_control_command_msgs__cpp.dir/clean:
 .PHONY : CMakeFiles/motor_control_command_msgs__cpp.dir/clean
 
 CMakeFiles/motor_control_command_msgs__cpp.dir/depend:
-	cd /home/wq/MDH/ros_ws/build/motor_control_command_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/wq/MDH/ros_ws/src/internal_msgs/motor_control_command_msgs /home/wq/MDH/ros_ws/src/internal_msgs/motor_control_command_msgs /home/wq/MDH/ros_ws/build/motor_control_command_msgs /home/wq/MDH/ros_ws/build/motor_control_command_msgs /home/wq/MDH/ros_ws/build/motor_control_command_msgs/CMakeFiles/motor_control_command_msgs__cpp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/abc/MDH/ros_ws/build/motor_control_command_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/abc/MDH/ros_ws/src/internal_msgs/motor_control_command_msgs /home/abc/MDH/ros_ws/src/internal_msgs/motor_control_command_msgs /home/abc/MDH/ros_ws/build/motor_control_command_msgs /home/abc/MDH/ros_ws/build/motor_control_command_msgs /home/abc/MDH/ros_ws/build/motor_control_command_msgs/CMakeFiles/motor_control_command_msgs__cpp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/motor_control_command_msgs__cpp.dir/depend
 

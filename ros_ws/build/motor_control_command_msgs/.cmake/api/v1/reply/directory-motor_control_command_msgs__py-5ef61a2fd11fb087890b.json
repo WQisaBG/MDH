@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "motor_control_command_msgs__py",
+		"source" : "/home/abc/MDH/ros_ws/build/motor_control_command_msgs/motor_control_command_msgs__py"
+	}
+}

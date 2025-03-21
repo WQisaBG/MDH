@@ -22,7 +22,7 @@ namespace motor_control_v2
         uint8_t calculateChecksum(const uint8_t *data, size_t length);
         bool are_all_motors_reached(const std::unordered_map<uint8_t, uint16_t> &target_positions,
                                     const std::unordered_map<uint8_t, uint16_t> &current_positions);
-        void send_serial_command_async(const std::vector<uint8_t> command);
+        void send_serial_command_async(const std::vector<uint8_t> command, size_t command_size);
 
         char get_serial_port() const;
         void set_serial_port(const char *&serial_port);
@@ -39,6 +39,7 @@ namespace motor_control_v2
         {
 
             _pimpl->serial_communication_ = std::make_unique<SerialCommunication>(node, serial_port.c_str(), baud_rate);
+            RCLCPP_INFO(node->get_logger(), "Serial communication initialized successfully.");
         }
         catch (const std::exception &e)
         {
@@ -69,7 +70,7 @@ namespace motor_control_v2
         auto &motor_list = cur_json_data["motor"];
         for (const auto &motor : motor_list)
         {
-            uint8_t motor_index = motor["ID"];
+            uint8_t motor_index = motor["motor_id"];
             uint16_t current_position = motor["currentPosition"];
             current_positions[motor_index] = current_position;
             // RCLCPP_INFO(this->get_logger(), "Current position of motor %d: %d", motor_index, current_position);
@@ -90,8 +91,8 @@ namespace motor_control_v2
                 int16_t position_diff = target_position - current_position;
                 int step_target = current_position + (position_diff > 0 ? 10 : -10);
                 step_target = std::clamp(step_target, 0, 2000);
-                RCLCPP_INFO(node_->get_logger(), "Motor %d: current_position=%d, target_position=%d, step_target=%d",
-                            motor_index, current_position, target_position, step_target);
+                // RCLCPP_INFO(node_->get_logger(), "Motor %d: current_position=%d, target_position=%d, step_target=%d",
+                //             motor_index, current_position, target_position, step_target);
 
                 // 添加电机索引和目标位置
                 trans_cmd.push_back(motor_index);
@@ -109,13 +110,15 @@ namespace motor_control_v2
                 ss << "0x" << std::setfill('0') << std::setw(2) << std::hex << static_cast<int>(byte) << " ";
             }
             RCLCPP_INFO(node_->get_logger(), "%s", ss.str().c_str());
-            send_serial_command_async(trans_cmd);
+            size_t trans_cmd_size = trans_cmd.size();
+
+            send_serial_command_async(trans_cmd, trans_cmd_size);
+            std::this_thread::sleep_for(std::chrono::milliseconds(20));
         }
 
         // 4、检查是否所有电机都已到达目标位置
         if (are_all_motors_reached(current_positions, target_positions))
         {
-            // current_request_.clear();
             return; // 所有电机都已到达目标位置，退出循环
         }
     }
@@ -125,7 +128,8 @@ namespace motor_control_v2
         std::vector<unsigned char> command = {0x55, 0xAA, 0x03, static_cast<unsigned char>(motor_id), 0x04, 0x00, 0x22};
         uint8_t checkSum = calculateChecksum(command.data() + 2, command.size() - 2);
         command.push_back(checkSum);
-        send_serial_command_async(command);
+        size_t command_size = command.size();
+        send_serial_command_async(command, command_size);
     }
     std::vector<unsigned char> MotorCommand::Implementation::get_feedback_from_motor(int timeout_sec)
     {
@@ -142,7 +146,8 @@ namespace motor_control_v2
         std::vector<unsigned char> command = {0x55, 0xAA, 0x03, static_cast<unsigned char>(motor_id), 0x04, 0x00, 0x01};
         uint8_t checkSum = calculateChecksum(command.data() + 2, command.size() - 2);
         command.push_back(checkSum);
-        send_serial_command_async(command);
+        size_t command_size = command.size();
+        send_serial_command_async(command, command_size);
     }
 
     void MotorCommand::Implementation::send_clear_fault_command(int motor_id)
@@ -150,7 +155,8 @@ namespace motor_control_v2
         std::vector<unsigned char> command = {0x55, 0xAA, 0x03, static_cast<unsigned char>(motor_id), 0x04, 0x00, 0x02};
         uint8_t checkSum = calculateChecksum(command.data() + 2, command.size() - 2);
         command.push_back(checkSum);
-        send_serial_command_async(command);
+        size_t command_size = command.size();
+        send_serial_command_async(command, command_size);
     }
 
     uint8_t MotorCommand::Implementation::calculateChecksum(const uint8_t *data, size_t length)
@@ -185,13 +191,12 @@ namespace motor_control_v2
         return true; // 所有电机都已到达目标位置
     }
 
-    void MotorCommand::Implementation::send_serial_command_async(const std::vector<unsigned char> command)
+    void MotorCommand::Implementation::send_serial_command_async(const std::vector<unsigned char> command, size_t command_size)
     {
         try
         {
-            std::async(std::launch::async, [this, command]()
-                       { serial_communication_->send_serial_command(command.data()); 
-                    });
+            std::async(std::launch::async, [this, command, command_size]()
+                       { serial_communication_->send_serial_command(command.data(), command_size); });
         }
         catch (const std::exception &e)
         {

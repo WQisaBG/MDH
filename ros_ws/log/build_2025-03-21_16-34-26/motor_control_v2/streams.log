@@ -1,0 +1,77 @@
+[0.019s] Invoking command in '/home/abc/MDH/ros_ws/build/motor_control_v2': CMAKE_PREFIX_PATH=/home/abc/MDH/ros_ws/install/motor_control_command_msgs:/home/abc/MDH/ros_ws/install/rmf_utils:/home/abc/MDH/ros_ws/install/motor_status:/home/abc/MDH/ros_ws/install/motor_control_v2:/home/abc/MDH/ros_ws/install/motor_control:/opt/ros/humble LD_LIBRARY_PATH=/home/abc/MDH/ros_ws/install/motor_control_command_msgs/lib:/home/abc/MDH/ros_ws/install/rmf_utils/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/abc/MDH/ros_ws/build/motor_control_v2 -- -j8 -l8
+[0.095s] [35m[1mConsolidate compiler generated dependencies of target motor_control_node[0m
+[0.158s] [  9%] [32mBuilding CXX object CMakeFiles/motor_control_node.dir/src/internal_http_server.cpp.o[0m
+[4.411s] [01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/src/internal_http_server.cpp:[m[K In constructor ‘[01m[Kmotor_control_v2::InternalHttpServer::Implementation::Implementation(rclcpp::Node::SharedPtr, const string&, int, const string&, int)[m[K’:
+[4.411s] [01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/src/internal_http_server.cpp:61:33:[m[K [01;35m[Kwarning: [m[K‘[01m[Kmotor_control_v2::InternalHttpServer::Implementation::node_[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[4.411s]    61 |         rclcpp::Node::SharedPtr [01;35m[Knode_[m[K;
+[4.411s]       |                                 [01;35m[K^~~~~[m[K
+[4.412s] [01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/src/internal_http_server.cpp:58:20:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kstd::mutex motor_control_v2::InternalHttpServer::Implementation::request_queue_mutex_[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[4.412s]    58 |         std::mutex [01;35m[Krequest_queue_mutex_[m[K;
+[4.412s]       |                    [01;35m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[4.412s] [01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/src/internal_http_server.cpp:8:9:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[4.412s]     8 |         [01;35m[KImplementation[m[K(rclcpp::Node::SharedPtr node,
+[4.412s]       |         [01;35m[K^~~~~~~~~~~~~~[m[K
+[4.412s] [01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/src/internal_http_server.cpp:69:20:[m[K [01;35m[Kwarning: [m[K‘[01m[Kmotor_control_v2::InternalHttpServer::Implementation::motor_state_mutex_[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[4.412s]    69 |         std::mutex [01;35m[Kmotor_state_mutex_[m[K;
+[4.412s]       |                    [01;35m[K^~~~~~~~~~~~~~~~~~[m[K
+[4.412s] [01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/src/internal_http_server.cpp:65:13:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kint motor_control_v2::InternalHttpServer::Implementation::port[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[4.412s]    65 |         int [01;35m[Kport[m[K;
+[4.412s]       |             [01;35m[K^~~~[m[K
+[4.412s] [01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/src/internal_http_server.cpp:8:9:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[4.412s]     8 |         [01;35m[KImplementation[m[K(rclcpp::Node::SharedPtr node,
+[4.412s]       |         [01;35m[K^~~~~~~~~~~~~~[m[K
+[4.412s] [01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/src/internal_http_server.cpp:65:13:[m[K [01;35m[Kwarning: [m[K‘[01m[Kmotor_control_v2::InternalHttpServer::Implementation::port[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[4.412s]    65 |         int [01;35m[Kport[m[K;
+[4.413s]       |             [01;35m[K^~~~[m[K
+[4.413s] [01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/src/internal_http_server.cpp:64:27:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kconst string motor_control_v2::InternalHttpServer::Implementation::ip[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[4.413s]    64 |         const std::string [01;35m[Kip[m[K;
+[4.413s]       |                           [01;35m[K^~[m[K
+[4.413s] [01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/src/internal_http_server.cpp:8:9:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[4.413s]     8 |         [01;35m[KImplementation[m[K(rclcpp::Node::SharedPtr node,
+[4.413s]       |         [01;35m[K^~~~~~~~~~~~~~[m[K
+[4.413s] [01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/src/internal_http_server.cpp:64:27:[m[K [01;35m[Kwarning: [m[K‘[01m[Kmotor_control_v2::InternalHttpServer::Implementation::ip[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[4.413s]    64 |         const std::string [01;35m[Kip[m[K;
+[4.413s]       |                           [01;35m[K^~[m[K
+[4.413s] [01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/src/internal_http_server.cpp:62:27:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kconst string motor_control_v2::InternalHttpServer::Implementation::serial_port[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[4.413s]    62 |         const std::string [01;35m[Kserial_port[m[K;
+[4.413s]       |                           [01;35m[K^~~~~~~~~~~[m[K
+[4.413s] [01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/src/internal_http_server.cpp:8:9:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[4.413s]     8 |         [01;35m[KImplementation[m[K(rclcpp::Node::SharedPtr node,
+[4.413s]       |         [01;35m[K^~~~~~~~~~~~~~[m[K
+[4.493s] [01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/src/internal_http_server.cpp:[m[K In member function ‘[01m[Kvoid motor_control_v2::InternalHttpServer::Implementation::update_motor_state(std::vector<unsigned char, std::allocator<unsigned char> >&)[m[K’:
+[4.493s] [01m[K/home/abc/MDH/ros_ws/src/motor_control_v2/src/internal_http_server.cpp:294:27:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<unsigned char, std::allocator<unsigned char> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[4.493s]   294 |         for (int i = 0; [01;35m[Ki < feedback.size()[m[K; ++i)
+[4.493s]       |                         [01;35m[K~~^~~~~~~~~~~~~~~~~[m[K
+[11.107s] [ 18%] [32m[1mLinking CXX executable motor_control_node[0m
+[12.231s] [100%] Built target motor_control_node
+[12.251s] Invoked command in '/home/abc/MDH/ros_ws/build/motor_control_v2' returned '0': CMAKE_PREFIX_PATH=/home/abc/MDH/ros_ws/install/motor_control_command_msgs:/home/abc/MDH/ros_ws/install/rmf_utils:/home/abc/MDH/ros_ws/install/motor_status:/home/abc/MDH/ros_ws/install/motor_control_v2:/home/abc/MDH/ros_ws/install/motor_control:/opt/ros/humble LD_LIBRARY_PATH=/home/abc/MDH/ros_ws/install/motor_control_command_msgs/lib:/home/abc/MDH/ros_ws/install/rmf_utils/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/abc/MDH/ros_ws/build/motor_control_v2 -- -j8 -l8
+[12.254s] Invoking command in '/home/abc/MDH/ros_ws/build/motor_control_v2': CMAKE_PREFIX_PATH=/home/abc/MDH/ros_ws/install/motor_control_command_msgs:/home/abc/MDH/ros_ws/install/rmf_utils:/home/abc/MDH/ros_ws/install/motor_status:/home/abc/MDH/ros_ws/install/motor_control_v2:/home/abc/MDH/ros_ws/install/motor_control:/opt/ros/humble LD_LIBRARY_PATH=/home/abc/MDH/ros_ws/install/motor_control_command_msgs/lib:/home/abc/MDH/ros_ws/install/rmf_utils/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/abc/MDH/ros_ws/build/motor_control_v2
+[12.263s] -- Install configuration: ""
+[12.263s] -- Installing: /home/abc/MDH/ros_ws/install/motor_control_v2/lib/motor_control_v2/motor_control_node
+[12.268s] -- Set runtime path of "/home/abc/MDH/ros_ws/install/motor_control_v2/lib/motor_control_v2/motor_control_node" to ""
+[12.269s] -- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_v2/include
+[12.269s] -- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_v2/include/motor_control_v2
+[12.269s] -- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_v2/include/motor_control_v2/motor_command.hpp
+[12.269s] -- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_v2/include/motor_control_v2/motor_config.hpp
+[12.269s] -- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_v2/include/motor_control_v2/serial_communication.hpp
+[12.269s] -- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_v2/include/motor_control_v2/Node.hpp
+[12.270s] -- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_v2/include/motor_control_v2/internal_http_server.hpp
+[12.270s] -- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_v2/include/motor_control_v2/ros2_communication.hpp
+[12.270s] -- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_v2/include/motor_control_v2/http_server.hpp
+[12.270s] -- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_v2/share/ament_index/resource_index/package_run_dependencies/motor_control_v2
+[12.270s] -- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_v2/share/ament_index/resource_index/parent_prefix_path/motor_control_v2
+[12.270s] -- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_v2/share/motor_control_v2/environment/ament_prefix_path.sh
+[12.270s] -- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_v2/share/motor_control_v2/environment/ament_prefix_path.dsv
+[12.271s] -- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_v2/share/motor_control_v2/environment/path.sh
+[12.271s] -- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_v2/share/motor_control_v2/environment/path.dsv
+[12.271s] -- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_v2/share/motor_control_v2/local_setup.bash
+[12.271s] -- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_v2/share/motor_control_v2/local_setup.sh
+[12.271s] -- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_v2/share/motor_control_v2/local_setup.zsh
+[12.271s] -- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_v2/share/motor_control_v2/local_setup.dsv
+[12.271s] -- Installing: /home/abc/MDH/ros_ws/install/motor_control_v2/share/motor_control_v2/package.dsv
+[12.271s] -- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_v2/share/ament_index/resource_index/packages/motor_control_v2
+[12.271s] -- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_v2/share/motor_control_v2/cmake/ament_cmake_export_dependencies-extras.cmake
+[12.271s] -- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_v2/share/motor_control_v2/cmake/motor_control_v2Config.cmake
+[12.271s] -- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_v2/share/motor_control_v2/cmake/motor_control_v2Config-version.cmake
+[12.271s] -- Up-to-date: /home/abc/MDH/ros_ws/install/motor_control_v2/share/motor_control_v2/package.xml
+[12.274s] Invoked command in '/home/abc/MDH/ros_ws/build/motor_control_v2' returned '0': CMAKE_PREFIX_PATH=/home/abc/MDH/ros_ws/install/motor_control_command_msgs:/home/abc/MDH/ros_ws/install/rmf_utils:/home/abc/MDH/ros_ws/install/motor_status:/home/abc/MDH/ros_ws/install/motor_control_v2:/home/abc/MDH/ros_ws/install/motor_control:/opt/ros/humble LD_LIBRARY_PATH=/home/abc/MDH/ros_ws/install/motor_control_command_msgs/lib:/home/abc/MDH/ros_ws/install/rmf_utils/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/abc/MDH/ros_ws/build/motor_control_v2
