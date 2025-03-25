@@ -141,13 +141,14 @@ int clawControl::readClawStatus(int slaveId, uint16_t startAddr, int count)
     {
         modbus_set_slave(d_ctx, slaveId);
 
-        if (count <= 0 || startAddr < 0) {
+        if (count <= 0 || startAddr < 0)
+        {
             RCLCPP_ERROR(rclcpp::get_logger("clawControl"), "readClawStatus error: 参数无效");
             return -1;
         }
 
-        std::vector<uint8_t> buffer(count);
-        int ret = safe_modbus_read_bits(d_ctx, startAddr, count, buffer.data());
+        std::vector<uint16_t> buffer(count);
+        int ret = safe_modbus_read_registers(d_ctx, startAddr, count, buffer.data());
 
         if (ret == -1)
         {
@@ -158,9 +159,11 @@ int clawControl::readClawStatus(int slaveId, uint16_t startAddr, int count)
         // 打印 buffer 内容（十六进制格式）
         std::stringstream ss;
         ss << "Read " << ret << " bits: [";
-        for (int i = 0; i < ret; ++i) {
+        for (int i = 0; i < ret; ++i)
+        {
             ss << std::hex << std::setw(2) << std::setfill('0') << static_cast<int>(buffer[i]);
-            if (i < ret - 1) ss << ", ";
+            if (i < ret - 1)
+                ss << ", ";
         }
         ss << "]";
         RCLCPP_INFO(rclcpp::get_logger("clawControl"), "%s", ss.str().c_str());
@@ -179,14 +182,8 @@ int clawControl::safe_modbus_write_raw_req(modbus_t *ctx, uint8_t raw_req[], int
     return modbus_send_raw_request(ctx, raw_req, raw_req_length);
 }
 
-
-
-
-int clawControl::safe_modbus_read_bits(modbus_t *ctx, int addr, int nb, uint8_t *dest)
+int clawControl::safe_modbus_read_registers(modbus_t *ctx, int addr, int nb, uint16_t *dest)
 {
     std::lock_guard<std::mutex> guard(d_mutex);
-    return modbus_read_bits(ctx, addr, nb, dest);
-
+    return modbus_read_registers(ctx, addr, nb, dest);
 }
-
-
