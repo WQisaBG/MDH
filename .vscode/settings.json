@@ -80,7 +80,8 @@
         "typeinfo": "cpp",
         "valarray": "cpp",
         "variant": "cpp",
-        "*.ipp": "cpp"
+        "*.ipp": "cpp",
+        "config.h": "c"
     },
     "cmake.sourceDirectory": "/home/abc/MDH/thirdparty/cpp-httplib"
 }
