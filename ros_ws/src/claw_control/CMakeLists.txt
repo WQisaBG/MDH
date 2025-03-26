@@ -65,6 +65,8 @@ find_package(rclcpp REQUIRED)
 # 设置头文件路径
 include_directories(
     ${CMAKE_CURRENT_SOURCE_DIR}/../../../thirdparty/libmodbus/src  # libmodbus 的头文件
+    ${CMAKE_CURRENT_SOURCE_DIR}/../../../thirdparty/cpp-httplib  # httplib.h 的路径
+    ${CMAKE_CURRENT_SOURCE_DIR}/../../../thirdparty/json/include  # json 的路径
     ${CMAKE_SOURCE_DIR}/include
 )
 
@@ -81,6 +83,7 @@ set(LIBMODBUS_SOURCES
 add_executable(claw_control_node
     src/main.cpp
     src/clawControl.cpp
+    src/Node.cpp
     ${LIBMODBUS_SOURCES}
 )
 
