@@ -5,7 +5,6 @@ MotorConfig::MotorConfig(rclcpp::Node::SharedPtr node, const std::string &config
     : node_(node)
 {
     load_config(config_file);
-    initialize_motor_status();
 }
 
 void MotorConfig::load_config(const std::string &config_file)
@@ -23,20 +22,3 @@ void MotorConfig::load_config(const std::string &config_file)
     motor_count_ = config.value("motor_count", 2);
 }
 
-void MotorConfig::initialize_motor_status()
-{
-    motor_status_["motor"] = json::array();
-    RCLCPP_INFO(node_->get_logger(), "Motor status initialization completed.");
-}
-
-json MotorConfig::get_motor_status()
-{
-    std::lock_guard<std::mutex> lock(motor_status_mutex_);
-    return motor_status_;
-}
-
-void MotorConfig::update_motor_status(const std::string &feedback)
-{
-    std::lock_guard<std::mutex> lock(motor_status_mutex_);
-    // Update motor status based on feedback
-}

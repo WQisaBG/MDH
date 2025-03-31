@@ -15,24 +15,6 @@ int main(int argc, char *argv[])
         9               // int slaveId
     );
     executor.add_node(claw_control_node);
-
-    // claw_control_node->clawEnable(9, true);
-
-    // while (true)
-    // {
-    //     for (int i = 0; i < 100; i++)       
-    //     {
-    //         claw_control_node->runWithParameter(9, 255, 255, 255);
-    //         std::this_thread::sleep_for(std::chrono::seconds(2));
-    //         claw_control_node->readClawStatus(9,0x07D0,3);
-    //         std::this_thread::sleep_for(std::chrono::seconds(2));
-    //         claw_control_node->runWithParameter(9, 0, 255, 255);
-    //         std::this_thread::sleep_for(std::chrono::seconds(2));
-    //         claw_control_node->readClawStatus(9,0x07D0,3);
-    //         std::this_thread::sleep_for(std::chrono::seconds(2));
-    //     }
-    // }
-
     executor.spin();
     rclcpp::shutdown();
     return 0;

@@ -6,12 +6,9 @@ httpSeverNode::httpSeverNode(std::string device, int baud, int parity, int dataB
       slaveId(slaveId), baudrate(baud), parity(parity), dataBits(dataBits), stopBits(stopBits), device(device),
       stop_server_(false)
 {
-    // Initialize the serial port
+    // 初始化
     claw_control_ = std::make_shared<clawControl>(device, baud, parity, dataBits, stopBits, slaveId);
-    claw_control_ ->clawEnable(slaveId, false);
-    std::this_thread::sleep_for(std::chrono::seconds(1));
-    claw_control_->clawEnable(slaveId, true);
-    http_server_thread_ = std::thread(&httpSeverNode::start_http_server, this); // http server thread
+    http_server_thread_ = std::thread(&httpSeverNode::start_http_server, this); 
 
 }
 
@@ -27,8 +24,6 @@ void httpSeverNode::start_http_server()
                     {
                         std::lock_guard<std::mutex> lock(status_update_mutex_);
                     }
-
-
 
                     // 等待状态更新完成
                     std::unique_lock<std::mutex> lock(status_update_mutex_);
@@ -92,7 +87,7 @@ void httpSeverNode::process_requests(nlohmann::json json_data)
 nlohmann::json httpSeverNode::get_claw_status()
 {
     nlohmann::json status;
-    status["claw"] = claw_control_->readClawStatus(slaveId);
+    status["currentPosition"] = claw_control_->getClawCurrentPosition(slaveId);
     return status;
 }
 

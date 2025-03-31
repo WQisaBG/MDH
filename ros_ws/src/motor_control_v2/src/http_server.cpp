@@ -1,16 +1,16 @@
 #include "motor_control_v2/http_server.hpp"
-#include "motor_control_v2/http_server.hpp"
 
 namespace motor_control_v2
 {
-    HttpServerNode::HttpServerNode(const std::string &ip, int port)
-        : Node("http_server_node_"), ip_(ip), port_(port), server_()
+    HttpServerNode::HttpServerNode(rclcpp::Node::SharedPtr node, const std::string &ip, int port)
+        : node_(node), ip_(ip), port_(port), server_()
     {
         //
     }
 
     HttpServerNode::~HttpServerNode()
     {
+        
     }
 
     bool HttpServerNode::start(const std::string &ip, int port)

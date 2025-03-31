@@ -4,7 +4,7 @@ namespace motor_control_v2
 {
     class InternalHttpServer::Implementation
     {
-    public:
+    public:     
         Implementation(rclcpp::Node::SharedPtr node,
                        const std::string &serial_port,
                        int baud_rate,
@@ -19,7 +19,7 @@ namespace motor_control_v2
               stop_server_(false)
         {
             motor_command_ptr = std::make_shared<MotorCommand>(node_, serial_port, baud_rate);
-            http_server_node_ptr = std::make_shared<HttpServerNode>(ip, port);
+            http_server_node_ptr = std::make_shared<HttpServerNode>(node_ ,ip, port);
         }
         // 禁用拷贝构造函数
         Implementation(const Implementation &) = delete;
@@ -43,7 +43,6 @@ namespace motor_control_v2
         void handle_single_motor_status(int motor_id, httplib::Response &res);
         void handle_all_motors_status(httplib::Response &res);
         void initialize_motor_state();
-        void deal_request(const json &json_data);
         void update_motor_status();
 
         void set_stop_server(bool value) { stop_server_ = value; }
@@ -83,6 +82,8 @@ namespace motor_control_v2
             throw std::invalid_argument("Invalid node pointer in InternalHttpServer");
         }
         RCLCPP_INFO(node->get_logger(), "Node pointer is valid in InternalHttpServer");
+
+
         http_server_thread = std::thread(&InternalHttpServer::start_http_server, this);
         deal_post_request_thread = std::thread(&InternalHttpServer::deal_post_request, this);
         update_motor_status_thread = std::thread(&InternalHttpServer::update_motor_status, this);
@@ -165,16 +166,12 @@ namespace motor_control_v2
                 json json_data = request_queue_.front();
                 request_queue_.pop();
                 lock.unlock();
-                deal_request(json_data);
+                motor_command_ptr ->send_moving_command(json_data, motor_state_, 10, 20);
             }
         }
     }
 
-    void InternalHttpServer::Implementation::deal_request(const json &json_data)
-    {
 
-        motor_command_ptr->send_moving_command(json_data, motor_state_);
-    }
 
     // void Implementation::send_request_topic(json json_data)
     // {
@@ -248,7 +245,7 @@ namespace motor_control_v2
         for (uint8_t motor_index = 1; motor_index <= 5; motor_index++)
         {
             motor_command_ptr->send_query_status_command(motor_index);
-            std::this_thread::sleep_for(std::chrono::milliseconds(50));
+            std::this_thread::sleep_for(std::chrono::milliseconds(10));
         }
         // 等待状态更新
         std::lock_guard<std::mutex> lock(motor_state_mutex_);
@@ -263,7 +260,7 @@ namespace motor_control_v2
         for (int i = 0; i < 5; ++i)
         {
             motor_command_ptr->send_query_status_command(i + 1);
-            std::this_thread::sleep_for(std::chrono::milliseconds(50));
+            std::this_thread::sleep_for(std::chrono::milliseconds(10));
         }
     }
 
@@ -277,10 +274,7 @@ namespace motor_control_v2
             {
                 update_motor_state(feedback);
             }
-            // else
-            // {
-            //     RCLCPP_ERROR(node_->get_logger(), "Empty feedback from motor");
-            // }
+
         }
         RCLCPP_INFO(node_->get_logger(), "Exiting update_motor_status...");
     }

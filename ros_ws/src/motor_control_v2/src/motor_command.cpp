@@ -11,7 +11,7 @@ namespace motor_control_v2
         int baud_rate_;
         std::unique_ptr<SerialCommunication> serial_communication_;
 
-        void send_moving_command(const json &tar_json_data, const json &cur_json_data);
+        int send_moving_command(const json &tar_json_data, const json &cur_json_data, uint8_t step, uint8_t time);
         void send_query_status_command(int motor_id);
         std::vector<unsigned char> get_feedback_from_motor(int timeout_sec);
         std::vector<unsigned char> get_feedback_from_motor_Ms(int timeout_millsce);
@@ -24,10 +24,10 @@ namespace motor_control_v2
                                     const std::unordered_map<uint8_t, uint16_t> &current_positions);
         void send_serial_command_async(const std::vector<uint8_t> command, size_t command_size);
 
-        char get_serial_port() const;
-        void set_serial_port(const char *&serial_port);
-        int get_baud_rate() const;
-        void set_baud_rate(int baud_rate);
+        // char get_serial_port() const;
+        // void set_serial_port(const char *&serial_port);
+        // int get_baud_rate() const;
+        // void set_baud_rate(int baud_rate);
     };
 
     MotorCommand::MotorCommand(rclcpp::Node::SharedPtr node, const std::string &serial_port, int baud_rate)
@@ -48,7 +48,7 @@ namespace motor_control_v2
         }
     }
 
-    void MotorCommand::Implementation::send_moving_command(const json &tar_json_data, const json &cur_json_data)
+    int MotorCommand::Implementation::send_moving_command(const json &tar_json_data, const json &cur_json_data, uint8_t step, uint8_t time)
     {
         // 1、获取电机列表
         const auto &motors = tar_json_data["motor"];
@@ -89,8 +89,18 @@ namespace motor_control_v2
                 uint16_t current_position = current_positions[motor_index];
                 // 计算下一步目标位置
                 int16_t position_diff = target_position - current_position;
-                int step_target = current_position + (position_diff > 0 ? 10 : -10);
+                int step_target;
+                if(std::abs(position_diff) <= step)
+                {
+                    step_target = target_position;
+
+                }
+                else 
+                {
+                    step_target = current_position + (position_diff > 0 ? step : -step);
+                }
                 step_target = std::clamp(step_target, 0, 2000);
+                current_positions[motor_index] = step_target;
                 // RCLCPP_INFO(node_->get_logger(), "Motor %d: current_position=%d, target_position=%d, step_target=%d",
                 //             motor_index, current_position, target_position, step_target);
 
@@ -113,13 +123,13 @@ namespace motor_control_v2
             size_t trans_cmd_size = trans_cmd.size();
 
             send_serial_command_async(trans_cmd, trans_cmd_size);
-            std::this_thread::sleep_for(std::chrono::milliseconds(20));
+            std::this_thread::sleep_for(std::chrono::milliseconds(time));
         }
 
         // 4、检查是否所有电机都已到达目标位置
         if (are_all_motors_reached(current_positions, target_positions))
         {
-            return; // 所有电机都已到达目标位置，退出循环
+            return 0; // 所有电机都已到达目标位置，退出循环
         }
     }
 
@@ -196,7 +206,7 @@ namespace motor_control_v2
         try
         {
             std::async(std::launch::async, [this, command, command_size]()
-                       { serial_communication_->send_serial_command(command.data(), command_size); });
+                       {  serial_communication_->send_serial_command(command.data(), command_size); });
         }
         catch (const std::exception &e)
         {
@@ -205,31 +215,31 @@ namespace motor_control_v2
     }
 
     //========================================================================================================================
-    char MotorCommand::Implementation::get_serial_port() const
-    {
-        return serial_communication_->get_serial_port();
-    }
+    // char MotorCommand::Implementation::get_serial_port() const
+    // {
+    //     return serial_communication_->get_serial_port();
+    // }
 
-    void MotorCommand::Implementation::set_serial_port(const char *&serial_port)
-    {
-        serial_communication_->set_serial_port(serial_port);
-    }
+    // void MotorCommand::Implementation::set_serial_port(const char *&serial_port)
+    // {
+    //     serial_communication_->set_serial_port(serial_port);
+    // }
 
-    int MotorCommand::Implementation::get_baud_rate() const
-    {
-        return serial_communication_->get_baud_rate();
-    }
+    // int MotorCommand::Implementation::get_baud_rate() const
+    // {
+    //     return serial_communication_->get_baud_rate();
+    // }
 
-    void MotorCommand::Implementation::set_baud_rate(int baud_rate)
-    {
-        serial_communication_->set_baud_rate(baud_rate);
-    } //    这里不对     设定串口波特率   需要给电机写指令   需要串口通信模块   这里混乱了
+    // void MotorCommand::Implementation::set_baud_rate(int baud_rate)
+    // {
+    //     serial_communication_->set_baud_rate(baud_rate);
+    // } //    这里不对     设定串口波特率   需要给电机写指令   需要串口通信模块   这里混乱了
 
     //========================================================================================================================
 
-    void MotorCommand::send_moving_command(const json &tar_json_data, const json &cur_json_data)
+    int MotorCommand::send_moving_command(const json &tar_json_data, const json &cur_json_data, uint8_t step, uint8_t time)
     {
-        _pimpl->send_moving_command(tar_json_data, cur_json_data);
+        return _pimpl->send_moving_command(tar_json_data, cur_json_data, step, time);
     }
     //========================================================================================================================
 
@@ -260,24 +270,24 @@ namespace motor_control_v2
         _pimpl->send_clear_fault_command(motor_id);
     }
 
-    char MotorCommand::get_serial_port() const
-    {
-        return _pimpl->get_serial_port();
-    }
+    // char MotorCommand::get_serial_port() const
+    // {
+    //     return _pimpl->get_serial_port();
+    // }
 
-    void MotorCommand::set_serial_port(const char *&serial_port)
-    {
-        _pimpl->set_serial_port(serial_port);
-    }
+    // void MotorCommand::set_serial_port(const char *&serial_port)
+    // {
+    //     _pimpl->set_serial_port(serial_port);
+    // }
 
-    int MotorCommand::get_baud_rate() const
-    {
-        return _pimpl->get_baud_rate();
-    }
+    // int MotorCommand::get_baud_rate() const
+    // {
+    //     return _pimpl->get_baud_rate();
+    // }
 
-    void MotorCommand::set_baud_rate(int baud_rate)
-    {
-        _pimpl->set_baud_rate(baud_rate);
-    }
+    // void MotorCommand::set_baud_rate(int baud_rate)
+    // {
+    //     _pimpl->set_baud_rate(baud_rate);
+    // }
 
 }

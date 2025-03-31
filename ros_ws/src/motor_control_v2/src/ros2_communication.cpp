@@ -1,5 +1,3 @@
-
-
 #include "motor_control_v2/ros2_communication.hpp"
 
 namespace motor_control_v2 {
