@@ -107,7 +107,7 @@ private:
                         status_updated_.wait(lock, [this]{ return !status_update_needed_; });
                     
                         // 构建完整 JSON 并作为响应返回
-                        json response_json;
+                        nlohmann::ordered_json response_json;
                         {
                             std::lock_guard<std::mutex> lock(motor_status_mutex_);
 
@@ -115,12 +115,12 @@ private:
                             response_json["id"] = "RES_STATE_TASK_" + std::to_string(current_id);
                             response_json["timestamp"] = get_current_iso_time();
                     
-                            json motor_array = json::array();
+                            nlohmann::ordered_json motor_array = json::array();
                             auto &motors = motor_status_["motor"];
                     
                             for (const auto &motor : motors)
                             {
-                                json motor_obj;
+                                nlohmann::ordered_json motor_obj;
                                 motor_obj["index"] = motor["index"];
                                 motor_obj["currentPosition"] = motor["currentPosition"];
                                 motor_obj["targetPosition"] = motor["targetPosition"];
@@ -216,7 +216,13 @@ private:
                     std::this_thread::sleep_for(std::chrono::milliseconds(1));
                 }
             }
-            res.set_content("{\"status\":\"success\"}", "application/json");
+            
+            nlohmann::ordered_json response_json = {
+                {"id", json_data["id"].get<std::string>()},
+                {"timestamp", get_current_iso_time()},
+                {"status", "success"}};
+                res.set_content(response_json.dump(4, ' ', false, nlohmann::json::error_handler_t::replace), "application/json");
+
         }
         catch (const std::exception &e)
         {
@@ -385,24 +391,50 @@ private:
                 pause_requested_ = false;
                 if (res)
                 {
-                    res->set_content("{\"status\":\"PAUSED\"}", "application/json");
-                }
-                return false;
-            }
-
-            if (reach_max_force(motor_status, motor_targets))
-            {
-                if (res)
-                {
-                    RCLCPP_INFO(this->get_logger(), "[RESPONSE] Reach max force, sending FAILED.");
-                    json response_json = {
+                    nlohmann::ordered_json response_json = {
                         {"id", json_data["id"].get<std::string>()},
                         {"timestamp", get_current_iso_time()},
                         {"actioncompleted", false},
-                        {"error", "Reach max force"}};
-                    res->set_content(response_json.dump(), "application/json");
+                        {"error", "e_stop"}};
+                        res->set_content(response_json.dump(4, ' ', false, nlohmann::json::error_handler_t::replace), "application/json");
                 }
-                return false ; 
+                   
+                return false;
+            }
+
+            auto max_force_motors = reach_max_force(motor_status, motor_targets);
+            if (!max_force_motors.empty())
+            {
+                std::sort(max_force_motors.begin(), max_force_motors.end());
+                if (res)
+                {
+                    RCLCPP_INFO(this->get_logger(), "[RESPONSE] Reach max force on motors: %s",
+                                [&max_force_motors]()
+                                {
+                                    std::ostringstream oss;
+                                    for (size_t i = 0; i < max_force_motors.size(); ++i)
+                                    {
+                                        oss << static_cast<int>(max_force_motors[i]);
+                                        if (i != max_force_motors.size() - 1)
+                                            oss << ", ";
+                                    }
+                                    return oss.str();
+                                }());
+                    nlohmann::ordered_json response_json = {
+                        {"id", json_data["id"].get<std::string>()},
+                        {"timestamp", get_current_iso_time()},
+                        {"actioncompleted", false},
+                        {"error", "Reach max force"},
+                        {"motor", max_force_motors}};
+                        res->set_content(response_json.dump(4, ' ', false, nlohmann::json::error_handler_t::replace), "application/json");
+                }
+
+                for (int i = 1; i < 11; i++)
+                {
+                    send_e_stop_command(i);
+                    std::this_thread::sleep_for(std::chrono::milliseconds(5));
+                }
+                return false;
             }
 
             if (are_all_motors_reached(motor_status, motor_targets))
@@ -410,7 +442,7 @@ private:
                 if (res)
                 {
                     RCLCPP_INFO(this->get_logger(), "[RESPONSE] All motors reached, sending SUCCESS.");
-                    json response_json = {
+                    nlohmann::ordered_json response_json = {
                         {"id", json_data["id"].get<std::string>()},
                         {"timestamp", get_current_iso_time()},
                         {"actioncompleted", true},
@@ -449,9 +481,10 @@ private:
         return true; // 所有电机都已到达目标位置
     }
     //======================================================================================================================
-    bool reach_max_force(const std::unordered_map<uint8_t, MotorStatus> &status,
-                         const std::unordered_map<uint8_t, MotorTarget> &targets)
+    std::vector<uint8_t> reach_max_force(const std::unordered_map<uint8_t, MotorStatus> &status,
+                                         const std::unordered_map<uint8_t, MotorTarget> &targets)
     {
+        std::vector<uint8_t> max_force_motors_index;
         for (const auto &[motor_index, target] : targets)
         {
             auto it = status.find(motor_index);
@@ -459,21 +492,16 @@ private:
             if (it == status.end())
             {
                 RCLCPP_ERROR(this->get_logger(), "Motor index %d not found in current positions", motor_index);
-                return false; // 如果某个电机的状态缺失，直接返回 false
+                continue; // 如果某个电机的状态缺失, 直接跳过
             }
             uint16_t current_force = it->second.current_force;
-            if(std::abs(current_force) > target.force/100)
+            if (std::abs(current_force) > target.force / 100)
             {
                 RCLCPP_INFO(this->get_logger(), "Motor index %d reach max force", motor_index);
-                for (int i = 1; i <= 11; i++)
-                {
-                    send_e_stop_command(i);
-                    std::this_thread::sleep_for(std::chrono::milliseconds(1));
-                }
-                return true; // 如果任意一个电机未到达目标位置，返回 false
+                max_force_motors_index.push_back(motor_index);
             }
         }
-        return false;
+        return max_force_motors_index;
     }
 
     //======================================================================================================================
