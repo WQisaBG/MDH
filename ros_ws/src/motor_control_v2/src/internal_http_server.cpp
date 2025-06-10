@@ -4,8 +4,9 @@ namespace motor_control_v2
 {
     class InternalHttpServer::Implementation
     {
-    public:     
+    public:
         Implementation(rclcpp::Node::SharedPtr node,
+                       int motor_count,
                        const std::string &serial_port,
                        int baud_rate,
                        const std::string &ip,
@@ -13,13 +14,14 @@ namespace motor_control_v2
             : node_(node),
               request_queue_mutex_(),
               motor_state_mutex_(),
-              port(port),
-              ip(ip),
-              serial_port(serial_port),
+              motor_count_(motor_count),
+              port_(port),
+              ip_(ip),
+              serial_port_(serial_port),
               stop_server_(false)
         {
             motor_command_ptr = std::make_shared<MotorCommand>(node_, serial_port, baud_rate);
-            http_server_node_ptr = std::make_shared<HttpServerNode>(node_ ,ip, port);
+            http_server_node_ptr = std::make_shared<HttpServerNode>(node_, ip, port);
         }
         // 禁用拷贝构造函数
         Implementation(const Implementation &) = delete;
@@ -39,11 +41,15 @@ namespace motor_control_v2
         void deal_post_request();
 
         void handle_motor_task(const httplib::Request &req, httplib::Response &res);
+        void handle_motor_param(const httplib::Request &req, httplib::Response &res);
+        void handle_pause_motor(const httplib::Request &req, httplib::Response &res);
+        void handle_clear_fault_motor(const httplib::Request &req, httplib::Response &res);
         void handle_motor_status(const httplib::Request &req, httplib::Response &res);
         void handle_single_motor_status(int motor_id, httplib::Response &res);
         void handle_all_motors_status(httplib::Response &res);
         void initialize_motor_state();
         void update_motor_status();
+        void query_motor_status();
 
         void set_stop_server(bool value) { stop_server_ = value; }
 
@@ -58,10 +64,11 @@ namespace motor_control_v2
         std::condition_variable request_cv_;
 
         rclcpp::Node::SharedPtr node_;
-        const std::string serial_port;
-        int baud_rate;
-        const std::string ip;
-        int port;
+        const std::string serial_port_;
+        int baud_rate_;
+        const std::string ip_;
+        int port_;
+        int motor_count_;
         bool stop_server_;
 
         nlohmann::json motor_state_;
@@ -69,12 +76,13 @@ namespace motor_control_v2
     };
 
     InternalHttpServer::InternalHttpServer(rclcpp::Node::SharedPtr node,
+                                           int motor_count,
                                            const std::string &serial_port,
                                            int baud_rate,
                                            const std::string &ip,
                                            int port)
         : _pimpl(std::make_unique<Implementation>(
-              node, serial_port, baud_rate, ip, port))
+              node, motor_count, serial_port, baud_rate, ip, port))
     {
         if (!node)
         {
@@ -82,7 +90,6 @@ namespace motor_control_v2
             throw std::invalid_argument("Invalid node pointer in InternalHttpServer");
         }
         RCLCPP_INFO(node->get_logger(), "Node pointer is valid in InternalHttpServer");
-
 
         http_server_thread = std::thread(&InternalHttpServer::start_http_server, this);
         deal_post_request_thread = std::thread(&InternalHttpServer::deal_post_request, this);
@@ -110,18 +117,23 @@ namespace motor_control_v2
     {
         http_server_node_ptr->registerPostHandler("/motor/task", [this](const httplib::Request &req, httplib::Response &res)
                                                   { handle_motor_task(req, res); });
-
+        http_server_node_ptr->registerPostHandler("/motor/pause", [this](const httplib::Request &req, httplib::Response &res)
+                                                  { handle_pause_motor(req, res); });
+        http_server_node_ptr->registerPostHandler("/motor/clear_fault", [this](const httplib::Request &req, httplib::Response &res)
+                                                  { handle_clear_fault_motor(req, res); });
+        http_server_node_ptr->registerPostHandler("/motor/motor_control", [this](const httplib::Request &req, httplib::Response &res)
+                                                  { handle_motor_param(req, res); });
         http_server_node_ptr->registerGetHandler("/motor/state", [this](const httplib::Request &req, httplib::Response &res)
                                                  { handle_motor_status(req, res); });
 
         // 调用HttpServerNode的start方法启动服务
-        if (!http_server_node_ptr->start(ip, port))
+        if (!http_server_node_ptr->start(ip_, port_))
         {
-            RCLCPP_ERROR(node_->get_logger(), "Failed to start HTTP server on %s:%d", ip.c_str(), port);
+            RCLCPP_ERROR(node_->get_logger(), "Failed to start HTTP server on %s:%d", ip_.c_str(), port_);
         }
         else
         {
-            RCLCPP_INFO(node_->get_logger(), "HTTP server started successfully on %s:%d", ip.c_str(), port);
+            RCLCPP_INFO(node_->get_logger(), "HTTP server started successfully on %s:%d", ip_.c_str(), port_);
         }
     }
 
@@ -152,6 +164,82 @@ namespace motor_control_v2
         }
     }
 
+    void InternalHttpServer::Implementation::handle_motor_param(const httplib::Request &req, httplib::Response &res)
+    {
+        json json_data = json::parse(req.body);
+        RCLCPP_INFO(node_->get_logger(), "Received POST request data: %s", json_data.dump().c_str());
+        try
+        {
+            if(json_data.contains("id") && json_data.contains("timestamp") && json_data.contains("motor"))
+            {
+            //    motor_command_ptr->runWithParam(json_data);   // wqdd
+               motor_command_ptr->send_moving_command(json_data, json_data, 20, 1);
+               res.set_content("Received POST request data", "text/plain");
+            }
+        }
+        catch (const std::exception &e)
+        {
+            res.status = 400;
+            res.set_content(e.what(), "text/plain");
+        }
+    }
+
+    void InternalHttpServer::Implementation::handle_pause_motor(const httplib::Request &req, httplib::Response &res)
+    {
+        json json_data = json::parse(req.body);
+        try
+        {
+            int motor_id = json_data["id"];
+            bool is_all_pause = json_data["is_all_pause"];
+            if (is_all_pause)
+            {
+                for (int i = 0; i <= motor_count_; i++)
+                {
+                    motor_command_ptr->send_stop_command(i);
+                    std::this_thread::sleep_for(std::chrono::milliseconds(2));
+                }
+            }
+            else
+            {
+                motor_command_ptr->send_stop_command(motor_id);
+            }
+            res.set_content("{\"status\":\"success\"}", "application/json");
+        }
+        catch (const std::exception &e)
+        {
+            res.status = 400;
+            res.set_content(e.what(), "text/plain");
+        }
+    }
+
+    void InternalHttpServer::Implementation::handle_clear_fault_motor(const httplib::Request &req, httplib::Response &res)
+    {
+        json json_data = json::parse(req.body);
+        try
+        {
+            int motor_id = json_data["id"];
+            bool is_all_clear = json_data["is_all_clear"];
+            if (is_all_clear)
+            {
+                for (int i = 0; i <= motor_count_; i++)
+                {
+                    motor_command_ptr->send_clear_fault_command(i);
+                    std::this_thread::sleep_for(std::chrono::milliseconds(2));
+                }
+            }
+            else
+            {
+                motor_command_ptr->send_clear_fault_command(motor_id);
+            }
+            res.set_content("{\"status\":\"success\"}", "application/json");
+        }
+        catch (const std::exception &e)
+        {
+            res.status = 400;
+            res.set_content(e.what(), "text/plain");
+        }
+    }
+
     void InternalHttpServer::Implementation::deal_post_request()
     {
         while (!stop_server_)
@@ -166,12 +254,12 @@ namespace motor_control_v2
                 json json_data = request_queue_.front();
                 request_queue_.pop();
                 lock.unlock();
-                motor_command_ptr ->send_moving_command(json_data, motor_state_, 10, 20);
+
+                query_motor_status();
+                motor_command_ptr->send_moving_command(json_data, motor_state_, 10, 5);
             }
         }
     }
-
-
 
     // void Implementation::send_request_topic(json json_data)
     // {
@@ -242,7 +330,7 @@ namespace motor_control_v2
 
     void InternalHttpServer::Implementation::handle_all_motors_status(httplib::Response &res)
     {
-        for (uint8_t motor_index = 1; motor_index <= 5; motor_index++)
+        for (uint8_t motor_index = 1; motor_index <= motor_count_; motor_index++)
         {
             motor_command_ptr->send_query_status_command(motor_index);
             std::this_thread::sleep_for(std::chrono::milliseconds(10));
@@ -257,9 +345,9 @@ namespace motor_control_v2
     {
         motor_state_["motor"] = json::array(); // 确保 "motor" 是一个数组
 
-        for (int i = 0; i < 5; ++i)
+        for (int i = 1; i <= motor_count_; i++)
         {
-            motor_command_ptr->send_query_status_command(i + 1);
+            motor_command_ptr->send_query_status_command(i);
             std::this_thread::sleep_for(std::chrono::milliseconds(10));
         }
     }
@@ -274,7 +362,6 @@ namespace motor_control_v2
             {
                 update_motor_state(feedback);
             }
-
         }
         RCLCPP_INFO(node_->get_logger(), "Exiting update_motor_status...");
     }
@@ -295,6 +382,11 @@ namespace motor_control_v2
         int motor_index = feedback[3];
         int current_position = (feedback[10] << 8) | feedback[9];
         int target_position = (feedback[8] << 8) | feedback[7];
+        int real_electric_current = (feedback[12] << 8) | feedback[11];
+        int real_force = (feedback[14] << 8) | feedback[13];
+        int init_force = (feedback[16] << 8) | feedback[15];
+        int current_temperature = feedback[17];
+        int error_code = feedback[18];
 
         std::lock_guard<std::mutex> lock(motor_state_mutex_);
 
@@ -307,8 +399,11 @@ namespace motor_control_v2
             { // 使用正确的键名
                 motor["currentPosition"] = current_position;
                 motor["targetPosition"] = target_position;
-                motor["error"] = "No error";
-                motor["mode"] = "normal";
+                motor["realElectricCurrent"] = real_electric_current;
+                motor["realForce"] = real_force;
+                motor["initForce"] = init_force;
+                motor["currentTemperature"] = current_temperature;
+                motor["errorCode"] = error_code;
                 found = true;
                 break;
             }
@@ -319,11 +414,23 @@ namespace motor_control_v2
             motors.push_back({{"motor_id", motor_index},
                               {"currentPosition", current_position},
                               {"targetPosition", target_position},
-                              {"error", "No error"},
-                              {"mode", "normal"}});
+                              {"realElectricCurrent", real_electric_current},
+                              {"realForce", real_force},
+                              {"initForce", init_force},
+                              {"currentTemperature", current_temperature},
+                              {"errorCode", error_code}});
         }
 
         RCLCPP_INFO(node_->get_logger(), "Updated motor %d status: current=%d, target=%d", motor_index, current_position, target_position);
+    }
+
+    void InternalHttpServer::Implementation::query_motor_status()
+    {
+        for (uint8_t motor_index = 1; motor_index <= motor_count_; motor_index++)
+        {
+            motor_command_ptr->send_query_status_command(motor_index);
+            std::this_thread::sleep_for(std::chrono::milliseconds(10));
+        }
     }
 
     void InternalHttpServer::start_http_server()
@@ -334,6 +441,16 @@ namespace motor_control_v2
     void InternalHttpServer::handle_motor_task(const httplib::Request &req, httplib::Response &res)
     {
         _pimpl->handle_motor_task(req, res);
+    }
+
+    void InternalHttpServer::handle_pause_motor(const httplib::Request &req, httplib::Response &res)
+    {
+        _pimpl->handle_pause_motor(req, res);
+    }
+
+    void InternalHttpServer::handle_clear_fault_motor(const httplib::Request &req, httplib::Response &res)
+    {
+        _pimpl->handle_clear_fault_motor(req, res);
     }
 
     void InternalHttpServer::handle_motor_status(const httplib::Request &req, httplib::Response &res)
@@ -348,6 +465,11 @@ namespace motor_control_v2
     void InternalHttpServer::update_motor_status()
     {
         _pimpl->update_motor_status();
+    }
+
+    void InternalHttpServer::query_motor_status()
+    {
+        _pimpl->query_motor_status();
     }
 
 } // namespace motor_control_v2

@@ -68,11 +68,7 @@ namespace motor_control_v2
          */
         void send_clear_fault_command(int motor_id);
 
-        // 这里的函数存在调用逻辑上的错误，需要修改
-        // char get_serial_port() const;
-        // void set_serial_port(const char *&serial_port);
-        // int get_baud_rate() const;
-        // void set_baud_rate(int baud_rate);
+        void runWithParam(const json &tar_json_param);
 
         class Implementation;
 

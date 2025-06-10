@@ -12,6 +12,7 @@ namespace motor_control_v2
         std::unique_ptr<SerialCommunication> serial_communication_;
 
         int send_moving_command(const json &tar_json_data, const json &cur_json_data, uint8_t step, uint8_t time);
+        void runWithParam(const json &tar_json_param);
         void send_query_status_command(int motor_id);
         std::vector<unsigned char> get_feedback_from_motor(int timeout_sec);
         std::vector<unsigned char> get_feedback_from_motor_Ms(int timeout_millsce);
@@ -133,6 +134,35 @@ namespace motor_control_v2
         }
     }
 
+    void MotorCommand::Implementation::runWithParam(const json &tar_json_param)
+    {
+        const auto &motors = tar_json_param["motor"];
+
+        for (const auto &motor : motors)
+        {
+            uint8_t motor_index = motor["index"];
+            uint16_t target_position = motor["targetPosition"];
+            uint16_t target_velocity = motor["targetVelocity"];
+            uint16_t target_force = motor["targetForce"];
+
+            std::vector<unsigned char> trans_cmd = {0x55, 0xAA, 0x0D};
+            trans_cmd.push_back(static_cast<unsigned char>(motor_index));
+            trans_cmd.insert(trans_cmd.end(), {0x32,0x25,0x00,0x05, 0x00,0x00,0x00});
+            trans_cmd.push_back(static_cast<unsigned char>(target_force & 0xFF));
+            trans_cmd.push_back(static_cast<unsigned char>((target_force >> 8) & 0xFF)); 
+            trans_cmd.push_back(static_cast<unsigned char>(target_velocity & 0xFF));
+            trans_cmd.push_back(static_cast<unsigned char>(target_velocity >> 8) & 0xFF);
+            trans_cmd.push_back(static_cast<unsigned char>(target_position & 0xFF));
+            trans_cmd.push_back(static_cast<unsigned char>(target_position >> 8) & 0xFF);
+
+            uint8_t checkSum = calculateChecksum(trans_cmd.data() + 2, trans_cmd.size() - 2);
+            trans_cmd.push_back(checkSum);
+            size_t trans_cmd_size = trans_cmd.size();
+            send_serial_command_async(trans_cmd, trans_cmd_size);
+            std::this_thread::sleep_for(std::chrono::milliseconds(2));
+        }
+    }
+
     void MotorCommand::Implementation::send_query_status_command(int motor_id)
     {
         std::vector<unsigned char> command = {0x55, 0xAA, 0x03, static_cast<unsigned char>(motor_id), 0x04, 0x00, 0x22};
@@ -153,7 +183,7 @@ namespace motor_control_v2
 
     void MotorCommand::Implementation::send_stop_command(int motor_id)
     {
-        std::vector<unsigned char> command = {0x55, 0xAA, 0x03, static_cast<unsigned char>(motor_id), 0x04, 0x00, 0x01};
+        std::vector<unsigned char> command = {0x55, 0xAA, 0x05, static_cast<unsigned char>(motor_id), 0x1A, 0x00, 0x01, 0x00};
         uint8_t checkSum = calculateChecksum(command.data() + 2, command.size() - 2);
         command.push_back(checkSum);
         size_t command_size = command.size();
@@ -162,7 +192,7 @@ namespace motor_control_v2
 
     void MotorCommand::Implementation::send_clear_fault_command(int motor_id)
     {
-        std::vector<unsigned char> command = {0x55, 0xAA, 0x03, static_cast<unsigned char>(motor_id), 0x04, 0x00, 0x02};
+        std::vector<unsigned char> command = {0x55, 0xAA, 0x05, static_cast<unsigned char>(motor_id), 0x32, 0x18, 0x00, 0x01, 0x00};
         uint8_t checkSum = calculateChecksum(command.data() + 2, command.size() - 2);
         command.push_back(checkSum);
         size_t command_size = command.size();
@@ -240,6 +270,11 @@ namespace motor_control_v2
     int MotorCommand::send_moving_command(const json &tar_json_data, const json &cur_json_data, uint8_t step, uint8_t time)
     {
         return _pimpl->send_moving_command(tar_json_data, cur_json_data, step, time);
+    }
+
+    void MotorCommand::runWithParam(const json &tar_json_param)
+    {
+        _pimpl->runWithParam(tar_json_param);
     }
     //========================================================================================================================
 

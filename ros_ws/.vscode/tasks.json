@@ -1,0 +1,16 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "build: motor_control_state",
+        "type": "shell",
+        "command": "colcon",
+        "args": ["build", "--packages-select", "motor_control", "--symlink-install"],
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        },
+        "problemMatcher": ["$gcc"]
+      }
+    ]
+  }

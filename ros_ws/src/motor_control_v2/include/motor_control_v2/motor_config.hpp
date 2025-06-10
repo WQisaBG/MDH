@@ -15,6 +15,8 @@ public:
     std::string get_serial_port() const { return serial_port_; }
     int get_baud_rate() const { return baud_rate_; }
     int get_motor_count() const { return motor_count_; }
+    int get_http_port() const { return http_port_; }
+    std::string get_http_ip() const { return http_ip_; }
 
 private:
     void load_config(const std::string &config_file);
@@ -24,6 +26,8 @@ private:
     std::string serial_port_;
     int baud_rate_;
     int motor_count_;
+    int http_port_;
+    std::string http_ip_;
 };
 
 #endif // MOTOR_CONFIG_HPP

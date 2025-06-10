@@ -1,5 +1,19 @@
 {
-    "serial_port": "/dev/ttyUSB0",
-    "baud_rate": 921600,
-    "motor_count": 10
+    "motor_config":
+    {
+        "serial_port": "/dev/ttyUSB0",
+        "baud_rate": 921600,
+        "motor_count": 2
+    },
+    "http_config":
+    {
+        "ip": "127.0.0.1",
+        "port": 10088
+    },
+
+    "safe_limits":
+    {
+        "max_speed":100
+    }
+
 }

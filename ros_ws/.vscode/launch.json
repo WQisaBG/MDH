@@ -1,0 +1,26 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "C++ Debug (motor_control_state)",
+        "type": "cppdbg",
+        "request": "launch",
+        "program": "${workspaceFolder}/build/motor_control/motor_control_state", // 根据实际路径调整
+        "args": [],
+        "stopAtEntry": false,
+        "cwd": "${workspaceFolder}",
+        "environment": [],
+        "externalConsole": false,
+        "MIMode": "gdb",
+        "setupCommands": [
+          {
+            "description": "Enable pretty-printing for gdb",
+            "text": "-enable-pretty-printing",
+            "ignoreFailures": true
+          }
+        ],
+        "preLaunchTask": "build: motor_control_state",
+        "miDebuggerPath": "/usr/bin/gdb"
+      }
+    ]
+  }
