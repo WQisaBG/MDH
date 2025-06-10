@@ -230,7 +230,7 @@ private:
         uint8_t checkSum = calculateChecksum(command.data() + 2, command.size() - 2);
         command.push_back(checkSum);
         send_serial_command(command);
-        RCLCPP_INFO(this->get_logger(), "Sent clear e_stop to motor %d", motor_id);
+        // RCLCPP_INFO(this->get_logger(), "Sent clear e_stop to motor %d", motor_id);
     }
 
     //======================================================================================================================
@@ -465,7 +465,11 @@ private:
             if(std::abs(current_force) > target.force/100)
             {
                 RCLCPP_INFO(this->get_logger(), "Motor index %d reach max force", motor_index);
-                pause_requested_ = true; //检测到有电机达到最大力，暂停所有电缸的运动
+                for (int i = 1; i <= 11; i++)
+                {
+                    send_e_stop_command(i);
+                    std::this_thread::sleep_for(std::chrono::milliseconds(1));
+                }
                 return true; // 如果任意一个电机未到达目标位置，返回 false
             }
         }
